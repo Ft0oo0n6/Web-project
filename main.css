@@ -1,0 +1,160 @@
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 0;
+            margin: 0;
+            background-color: #fff;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: bold;
+            color: #f8bfbf;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Header Styles */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #fff2eb;
+            padding: 15px 30px;
+            border-bottom: 2px solid #3d3d3d;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        /* Align Logo and Title */
+        .logo-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        #logo img {
+            height: 50px;
+            width: auto;
+        }
+
+        /* Navigation Links in the Center */
+        #navigation-container {
+            display: flex;
+            justify-content: center;
+            flex-grow: 1;
+        }
+
+        #navigation {
+            display: flex;
+            gap: 25px;
+        }
+
+        #navigation a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: rgb(83, 82, 82);
+            background-color: #ecd5c8;
+            font-size: 18px;
+            font-weight: bold;
+            border: 1px ridge #3d3d3d;
+            padding: 5px 15px;
+            border-radius: 25px;
+            line-height: 1;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        #navigation a:hover {
+            background-color: rgb(255, 211, 211);
+            color: rgb(150, 130, 143);
+        }
+
+        /* Main Content Styles */
+        main {
+            text-align: center;
+            margin-top: 100px; /* Offset for fixed header */
+        }
+
+        .offers-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .offer {
+            width: 150px;
+            text-align: center;
+            border: 2px solid #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+        .custReview-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 50px;
+            margin-top: 30px;
+        }
+
+        .custReview {
+            width: 320px;
+            text-align: left;
+            border: 2px solid #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+        /* Global Styles */
+
+/* Section Background */
+.category-section {
+    background: url('images/halfcircle.png') no-repeat center bottom;
+    background-size: 1900px 300px; /* Adjusts the size to fit within the section */
+    height: 400px; /* Increase height to better fit the shape */
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Categories Container */
+.categories-container {
+    display: flex;
+    gap: 50px;
+}
+
+/* Category Links */
+.category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Circular Image Styling */
+.category img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #000;
+}
+
+/* Hover Effect */
+.category img:hover {
+    transform: scale(1.1);
+}
