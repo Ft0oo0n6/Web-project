@@ -75,7 +75,7 @@
         }
 
         /* Main Content Styles */
-        main {
+        #HomePageMain {
             text-align: center;
             margin-top: 100px; /* Offset for fixed header */
         }
@@ -157,4 +157,13 @@
 /* Hover Effect */
 .category img:hover {
     transform: scale(1.1);
+}
+
+footer {
+    margin-top: 70px;
+    text-align: center;
+    justify-content: space-between;
+    background-color: #fff2eb;
+    padding: 15px 30px;
+    border-top: 2px solid #3d3d3d;
 }
