@@ -3,11 +3,274 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bloom Mart</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 0;
+            margin: 0;
+            background-color: #fff;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: bold;
+            color: #f8bfbf;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Header Styles */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #fff2eb;
+            padding: 15px 30px;
+            border-bottom: 2px solid #3d3d3d;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        /* Align Logo and Title */
+        .logo-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        #logo img {
+            height: 50px;
+            width: auto;
+        }
+
+        /* Navigation Links in the Center */
+        #navigation-container {
+            display: flex;
+            justify-content: center;
+            flex-grow: 1;
+        }
+
+        #navigation {
+            display: flex;
+            gap: 25px;
+        }
+
+        #navigation a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: rgb(83, 82, 82);
+            background-color: #ecd5c8;
+            font-size: 18px;
+            font-weight: bold;
+            border: 1px ridge #3d3d3d;
+            padding: 5px 15px;
+            border-radius: 25px;
+            line-height: 1;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        #navigation a:hover {
+            background-color: rgb(255, 211, 211);
+            color: rgb(150, 130, 143);
+        }
+
+        /* Main Content Styles */
+        main {
+            text-align: center;
+            margin-top: 100px; /* Offset for fixed header */
+        }
+
+        .offers-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .offer {
+            width: 150px;
+            text-align: center;
+            border: 2px solid #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+        .custReview-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 50px;
+            margin-top: 30px;
+        }
+
+        .custReview {
+            width: 320px;
+            text-align: left;
+            border: 2px solid #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+        /* Global Styles */
+
+/* Section Background */
+.category-section {
+    background: url('images/halfcircle.png') no-repeat center bottom;
+    background-size: 1900px 300px; /* Adjusts the size to fit within the section */
+    height: 400px; /* Increase height to better fit the shape */
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Categories Container */
+.categories-container {
+    display: flex;
+    gap: 50px;
+}
+
+/* Category Links */
+.category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Circular Image Styling */
+.category img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #000;
+}
+
+/* Hover Effect */
+.category img:hover {
+    transform: scale(1.1);
+}
+
+    </style>
 </head>
 <body>
-    
-</body>
-</html>
+    <header>
+        <!-- Logo and Title on the Left -->
+        <div class="logo-title">
+            <div id="logo">
+                <a href="Index.html">
+                    <img src="images/Logo.png" alt="Website Logo">
+                </a>
+            </div>
+            <h1>Bloom Mart</h1>
+        </div>
 
-<!--hello-->
+        
+
+        <!-- Navigation in the Center -->
+        <div id="navigation-container">
+            <div id="navigation"> 
+                <a href="#"><img src="images/dashboard.webp" alt="Dashboard" width="20" height="20">Seller's dashboard</a>
+                <a href="#"><img src="images/profile.svg" alt="User Profile" width="15" height="15">User's page</a> 
+                <a href="#"><img src="images/categories.webp" alt="Categories" width="15" height="15">Categories</a>
+                <a href="#"><img src="images/cart.webp" alt="Cart" width="20" height="20"></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="category-section">
+            <div class="categories-container">
+                <a href="category1.html" class="category">
+                    <img src="images/category1.png" alt="Category 1">
+                    <p>Category1</p>
+                </a>
+                <a href="category2.html" class="category">
+                    <img src="images/category2.png" alt="Category 2">
+                    <p>Category2</p>
+                </a>
+                <a href="category3.html" class="category">
+                    <img src="images/category3.png" alt="Category 3">
+                    <p>Category3</p>
+                </a>
+            </div>
+        </div>
+        <dl>
+            <dt><strong>Vision</strong></dt>
+            <dd>Our website aims to create a vibrant, inclusive marketplace where customers can discover a wide variety of products, from fashion and accessories to kitchenware and household essentials.</dd>
+        </dl>
+
+        <h2>Special Offers</h2>
+        <div class="offers-container">
+            <div class="offer">
+                <img src="" alt="Icon 1">
+                <h3>Offer 1</h3>
+                <p>This is the first offer with an amazing deal for you.</p>
+            </div>
+            <div class="offer">
+                <img src="" alt="Icon 2">
+                <h3>Offer 2</h3>
+                <p>This is the second offer with an amazing deal for you.</p>
+            </div>
+            <div class="offer">
+                <img src="" alt="Icon 3">
+                <h3>Offer 3</h3>
+                <p>This is the third offer with an amazing deal for you.</p>
+            </div>
+            <div class="offer">
+                <img src="" alt="Icon 4">
+                <h3>Offer 4</h3>
+                <p>This is the fourth offer with an amazing deal for you.</p>
+            </div>
+            <div class="offer">
+                <img src="" alt="Icon 5">
+                <h3>Offer 5</h3>
+                <p>This is the fifth offer with an amazing deal for you.</p>
+            </div>
+            <div class="offer">
+                <img src="" alt="Icon 6">
+                <h3>Offer 6</h3>
+                <p>This is the sixth offer with an amazing deal for you.</p>
+            </div>
+        </div>
+
+        <h2>Customer Reviews</h2>
+        <div class="custReview-container">
+            <div class="custReview">
+                <pre><strong>#user</strong> 5 <img src="25069.png" alt="star" width="12" height="12"/></pre> 
+                <p>imperdiet. Sed cursus ante dapibus diam.</p>
+                <h2>Seller 1</h2>
+            </div> 
+            <div class="custReview">
+                <pre><strong>#user</strong> 5 <img src="25069.png" alt="star" width="12" height="12"/></pre> 
+                <p>imperdiet. Sed cursus ante dapibus diam.</p>
+                <h2>Seller 2</h2>
+            </div>  
+            <div class="custReview">
+                <pre><strong>#user</strong> 5 <img src="25069.png" alt="star" width="12" height="12"/></pre> 
+                <p>imperdiet. Sed cursus ante dapibus diam.</p>
+                <h2>Seller 3</h2>
+            </div>
+        </div>
+    </main>
+</body>
+
+<footer>
+    <p><img src="images/twitter.webp" alt="Twitter Icon" width="20" height="20" style="vertical-align:middle"> @BloomMart <img src="images/instagram.webp" alt="Instagram Icon" width="20" height="20" style="vertical-align:middle"> @BloomMart <img src="images/email.png" alt="Email Icon" width="20" height="20" style="vertical-align:middle"> BloomMart@gmail.com</p>
+</footer>
+</html>
