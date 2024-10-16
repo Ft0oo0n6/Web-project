@@ -168,3 +168,62 @@ footer {
     padding: 15px 30px;
     border-top: 2px solid #3d3d3d;
 }
+
+#UserPageMain {
+    padding: 20px;
+    margin-top: 70px;
+}
+
+.UserPage {
+    display: flex;
+    justify-content: space-around;
+    padding: 200px;
+    border: 2px solid;
+}
+
+.UserInfo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.ProfilePicture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid;
+    background-color: #ccc;
+    background-image: url(images/profile.svg);
+    background-position: center;
+    background-size: 250px;
+}
+
+.UserDetails {
+    font-size: 20px;
+}
+
+.UserLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.LinkButton {
+    display: inline-block;
+    padding: 20px 40px;
+    border: 1px solid #3d3d3d;
+    text-decoration: none;
+    color: #000;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 20px;
+    width: 150px;
+    background-color: #fff2eb;
+}
+
+.LinkButton:hover {
+    background-color: rgb(255, 211, 211);
+    color: rgb(150, 130, 143);
+}
