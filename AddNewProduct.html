@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <head>
+        <title>Add a new product</title>
+        <link rel="stylesheet" href="AddNewProduct.css">
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <header>
+        <!-- Logo and Title on the Left -->
+        <div class="logo-title">
+            <div id="logo">
+                <a href="Home.html">
+                    <img src="images/Logo.png" alt="Website Logo">
+                </a>
+            </div>
+            <h1>Bloom Mart</h1>
+        </div>
+
+
+
+        <!-- Navigation in the Center -->
+        <div id="navigation-container">
+            <div id="navigation">
+                <a href="#"><img src="images/dashboard.webp" alt="Dashboard" width="20" height="20">Seller's dashboard</a>
+                <a href="UserPage.html"><img src="images/profile.svg" alt="User Profile" width="15" height="15">User's page</a>
+                <a href="#"><img src="images/categories.webp" alt="Categories" width="15" height="15">Categories</a>
+                <a href="Cart.html"><img src="images/cart.webp" alt="Cart" width="20" height="20"></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="breadcrumb">
+            <p><a href="Home.html">home</a> > <a href="#">seller's dashboard</a> > <a href="AddNewProduct.html">add a new product</a></p>
+        </div>
+        <form action="/action_page.php" method="post">
+            <div class="container">
+                <div>
+                    <h2>General Information</h2>
+                    <label for="product-name">Name of product:</label>
+                    <input type="text" class="generalInfo" name="product-name" placeholder="Enter product name">
+
+                    <label for="description">Description:</label>
+                    <textarea class="generalInfo" name="description" placeholder="Enter product description"></textarea>
+                </div>
+
+                <div>
+                    <h2>Upload Images</h2>
+                    <div class="upload-image">
+                        <p>+</p>
+                        <p>Upload Images</p>
+                    </div>
+                </div>
+
+                <div class="price-stock">
+                    <div>
+                        <h2>Pricing And Stock</h2>
+                        <label for="base-pricing">Base Pricing:</label>
+                        <input type="number" class="PriceAndStock" name="base-pricing" placeholder="Enter base price">
+                    </div>
+                    <div>
+                        <label for="stock" id="stock">Stock:</label>
+                        <input type="number" class="PriceAndStock" name="stock" placeholder="Enter stock quantity">
+                    </div>
+                </div>
+                <div>
+                    <h2>Category</h2>
+                    <select id="category" name="category">
+                        <option value="category1">Category1</option>
+                        <option value="category2">Category2</option>
+                        <option value="category3">Category3</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="footer">
+                <button type="submit"> ADD PRODUCT </button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>Contact Us: <br><img src="images/twitter.webp" alt="Twitter Icon" width="20" height="20" style="vertical-align:middle"> @BloomMart <img src="images/instagram.webp" alt="Instagram Icon" width="20" height="20" style="vertical-align:middle"> @BloomMart <img src="images/email.png" alt="Email Icon" width="20" height="20" style="vertical-align:middle"> BloomMart@gmail.com <br>&copy; 2024 BloomMart</p>
+    </footer>
+</body>
+</html>
