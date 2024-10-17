@@ -23,9 +23,16 @@
         <!-- Navigation in the Center -->
         <div id="navigation-container">
             <div id="navigation">
-                <a href="SellerDash.html"><img src="images/dashboard.webp" alt="Dashboard" width="20" height="20">Seller's dashboard</a>
-                <a href="UserPage.html"><img src="images/profile.svg" alt="User Profile" width="15" height="15">User's page</a>
-                <a href="#"><img src="images/categories.webp" alt="Categories" width="15" height="15">Categories</a>
+                <a href="SellerDash.html">Seller's dashboard</a>
+                <a href="UserPage.html">User's page</a>
+                <div class="dropdown">
+                    <select id="categories" onchange="location = this.value;">
+                        <option value="#" disabled selected>Categories</option>
+                        <option value="category1.html">Category 1</option>
+                        <option value="category2.html">Category 2</option>
+                        <option value="category3.html">Category 3</option>
+                    </select>
+                </div>
                 <a href="Cart.html"><img src="images/cart.webp" alt="Cart" width="20" height="20"></a>
             </div>
         </div>
@@ -81,8 +88,16 @@
         </form>
     </main>
 
-    <footer>
-        <p>Contact Us: <br><img src="images/twitter.webp" alt="Twitter Icon" width="20" height="20" style="vertical-align:middle"> @BloomMart <img src="images/instagram.webp" alt="Instagram Icon" width="20" height="20" style="vertical-align:middle"> @BloomMart <img src="images/email.png" alt="Email Icon" width="20" height="20" style="vertical-align:middle"> BloomMart@gmail.com <br>&copy; 2024 BloomMart</p>
+    <footer style="margin-top: 70px;">
+        <div class="footer-left">
+            <p>Contact Us:</p>
+            <img src="images/twitter.webp" alt="Twitter Icon"> @BloomMart
+            <img src="images/instagram.webp" alt="Instagram Icon"> @BloomMart
+            <img src="images/email.png" alt="Email Icon"> BloomMart@gmail.com
+        </div>
+        <div class="footer-right">
+            &copy; 2024 BloomMart
+        </div>
     </footer>
 </body>
 </html>
