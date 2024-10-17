@@ -1,0 +1,126 @@
+main {
+    padding: 20px;
+    margin-top: 70px;
+}
+
+.sellerOff {
+    border: 1px solid black;
+    padding: 10px 20px;
+    display: inline-block;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #f7e9e9;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.SellerOffers {
+    display: flex;
+    padding: 20px 20px 70px 20px;
+    border: 2px solid;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+    .offer img {
+        width: 100px;
+        height: 100px;
+        background-color: #eaeaea;
+        display: block;
+        margin: 0 auto 10px;
+    }
+
+    .offer label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .offer input[type="checkbox"] {
+        margin-top: 10px;
+    }
+
+#DeleteBtn {
+    padding: 10px 25px;
+    background-color: #fff2eb;
+    color: rgb(83, 82, 82);
+    border: 1px ridge #3d3d3d;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 380px;
+    right: 50px;
+}
+
+.offerInfo {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+#AddBtn {
+    padding: 10px 25px;
+    background-color: #fff2eb;
+    color: rgb(83, 82, 82);
+    border: 1px ridge #3d3d3d;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    position: absolute;
+    bottom: -30px;
+    right: 50px;
+}
+
+.addOff {
+    border: 1px solid black;
+    padding: 10px 20px;
+    display: inline-block;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #f7e9e9;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+    .container > div {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+.upload-image {
+    display: flex;
+    margin-left: 100px;
+    margin-bottom: 10px;
+    border: 2px dashed #ccc;
+    text-align: center;
+    padding: 50px;
+    cursor: pointer;
+}
+
+textarea {
+    height: 80px;
+}
+
+.add-offer-form {
+    border: 2px solid;
+    padding: 20px 20px 20px 20px;
+    gap: 20px;
+}
+
+.add-offer-form input, .add-offer-form textarea {
+    width: 110%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <head>
+        <title>Make or delete offers</title>
+        <link rel="stylesheet" href="MakeOrDeleteOffers.css">
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <header>
+        <!-- Logo and Title on the Left -->
+        <div class="logo-title">
+            <div id="logo">
+                <a href="Home.html">
+                    <img src="images/Logo.png" alt="Website Logo">
+                </a>
+            </div>
+            <h1>Bloom Mart</h1>
+        </div>
+
+        <!-- Navigation in the Center -->
+        <div id="navigation-container">
+            <div id="navigation">
+                <a href="SellerDash.html"><img src="images/dashboard.webp" alt="Dashboard" width="20" height="20">Seller's dashboard</a>
+                <a href="UserPage.html"><img src="images/profile.svg" alt="User Profile" width="15" height="15">User's page</a>
+                <a href="#"><img src="images/categories.webp" alt="Categories" width="15" height="15">Categories</a>
+                <a href="Cart.html"><img src="images/cart.webp" alt="Cart" width="20" height="20"></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="breadcrumb">
+            <p><a href="Home.html">home</a> > <a href="SellerDash.html">seller's dashboard</a> > <a href="MakeOrDeleteOffers.html">make or delete offers</a></p>
+        </div>
+
+        <h2 class="sellerOff">Seller's offers</h2>
+        <div class="SellerOffers">
+
+            <div class="offer">
+                <img src="#" alt="Offer Image">
+                <label>Offer #1</label>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <input type="checkbox">
+            </div>
+            <div class="offer">
+                <img src="#" alt="Offer Image">
+                <label>Offer #2</label>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <input type="checkbox">
+            </div>
+            <div class="offer">
+                <img src="#" alt="Offer Image">
+                <label>Offer #3</label>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <input type="checkbox">
+            </div>
+            <div class="offer">
+                <img src="#" alt="Offer Image">
+                <label>Offer #4</label>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <input type="checkbox">
+            </div>
+            <div class="offer">
+                <img src="#" alt="Offer Image">
+                <label>Offer #5</label>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <input type="checkbox">
+            </div>
+
+            <div class"DeleteBtn"><button type="submit" id="DeleteBtn">Delete Offer</button></div>
+        </div>
+
+        <h2 class="addOff">Add Offer</h2>
+        <div class="add-offer-form">
+
+            <form action="/action_page.php" method="post">
+                <div class="container">
+                    <div>
+                        <label for="title">Title:</label>
+                        <input type="text" id="title" name="title" placeholder="Enter offer title">
+
+                        <label for="description">Description:</label>
+                        <textarea id="description" name="description" placeholder="Enter offer description"></textarea>
+                    </div>
+                     
+                    <div class="upload-image">
+                        <p>+</p>
+                        <p>Upload Images</p>
+                    </div>
+                </div>
+                <div class="AddBtn"><button type="submit" id="AddBtn">Add Offer</button></div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>Contact Us: <br><img src="images/twitter.webp" alt="Twitter Icon" width="20" height="20" style="vertical-align:middle"> @BloomMart <img src="images/instagram.webp" alt="Instagram Icon" width="20" height="20" style="vertical-align:middle"> @BloomMart <img src="images/email.png" alt="Email Icon" width="20" height="20" style="vertical-align:middle"> BloomMart@gmail.com <br>&copy; 2024 BloomMart</p>
+    </footer>
+</body>
+</html>
