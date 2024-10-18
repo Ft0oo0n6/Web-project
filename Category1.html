@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Bloom Mart</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo-title">
+                <div id="logo">
+                    <a href="Home.html">
+                        <img src="images/Logo.png" alt="Website Logo">
+                    </a>
+                </div>
+                <h1>Bloom Mart</h1>
+            </div>
+            <nav id="navigation-container">
+                <div id="navigation"> 
+                    <a href="SellerDash.html">Seller's dashboard</a>
+                    <a href="UserPage.html">User's page</a> 
+                    <div class="dropdown">
+                        <select id="categories" onchange="location = this.value;">
+                            <option value="#" disabled selected>Categories</option>
+                            <option value="category1.html">Category 1</option>
+                            <option value="category2.html">Category 2</option>
+                            <option value="category3.html">Category 3</option>
+                        </select>
+                    </div>
+                    <a href="Cart.html">
+                        <img src="images/cart.webp" alt="Cart" width="20" height="20">
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+        <nav class="breadcrumb">
+            <a href="Home.html">Home</a> &gt; 
+            <a href="categories.html">Categories</a> &gt; 
+            <span>Category 1</span>
+        </nav>
+
+        <main id="CategoriesMain">
+            <div class="sort-container">
+                <div class="sort-by-name-container">
+                    <label for="sort-name" class="sort-label">Sort by Name:</label>
+                    <form id="sort-name" class="sort-by-name">
+                        <label>
+                            <input type="radio" name="sortName" value="asc" checked> A-Z
+                        </label>
+                        <label>
+                            Z-A<input type="radio" name="sortName" value="desc"> 
+                        </label>
+                    </form>
+                </div>
+        
+                <div class="sort-by-price-container">
+                    <label for="price-range" class="sort-label">Sort by Price:</label>
+                    <div class="price-label">
+                        $$$ SAR - $$$ SAR & above
+                    </div>
+                    <input type="range" id="price-range" min="0" max="100" step="10">
+                </div>
+        
+                <div class="button-container">
+                    <button class="find-button">Find</button>
+                </div>
+            </div>
+
+            <div class="products-container">
+                <div class="product-card">
+                    <div class="product-info">
+                        <img src="images/Logo.png" alt="Product Image" class="product-image">
+                        <h3 class="product-title">Duis aute irure dolor in voluptate Ut</h3>
+                        <div class="product-rating">★★★★☆ (000)</div>
+                        <div class="product-price">$$$</div>
+                        <div class="product-seller">Seller1</div>
+                    </div>
+                    <button class="add-to-cart">
+                        <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                    </button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-info">
+                        <img src="images/Logo.png" alt="Product Image" class="product-image">
+                        <h3 class="product-title">Duis aute irure dolor in voluptate Ut</h3>
+                        <div class="product-rating">★★★★☆ (000)</div>
+                        <div class="product-price">$$$</div>
+                        <div class="product-seller">Seller1</div>
+                    </div>
+                    <button class="add-to-cart">
+                        <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                    </button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-info">
+                        <img src="images/Logo.png" alt="Product Image" class="product-image">
+                        <h3 class="product-title">Duis aute irure dolor in voluptate Ut</h3>
+                        <div class="product-rating">★★★★☆ (000)</div>
+                        <div class="product-price">$$$</div>
+                        <div class="product-seller">Seller1</div>
+                    </div>
+                    <button class="add-to-cart">
+                        <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                    </button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-info">
+                        <img src="images/Logo.png" alt="Product Image" class="product-image">
+                        <h3 class="product-title">Duis aute irure dolor in voluptate Ut</h3>
+                        <div class="product-rating">★★★★☆ (000)</div>
+                        <div class="product-price">$$$</div>
+                        <div class="product-seller">Seller1</div>
+                    </div>
+                    <button class="add-to-cart">
+                        <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                    </button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-info">
+                        <img src="images/Logo.png" alt="Product Image" class="product-image">
+                        <h3 class="product-title">Duis aute irure dolor in voluptate Ut</h3>
+                        <div class="product-rating">★★★★☆ (000)</div>
+                        <div class="product-price">$$$</div>
+                        <div class="product-seller">Seller1</div>
+                    </div>
+                    <button class="add-to-cart">
+                        <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                    </button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-info">
+                        <img src="images/Logo.png" alt="Product Image" class="product-image">
+                        <h3 class="product-title">Duis aute irure dolor in voluptate Ut</h3>
+                        <div class="product-rating">★★★★☆ (000)</div>
+                        <div class="product-price">$$$</div>
+                        <div class="product-seller">Seller1</div>
+                    </div>
+                    <button class="add-to-cart">
+                        <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                    </button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-info">
+                        <img src="images/Logo.png" alt="Product Image" class="product-image">
+                        <h3 class="product-title">Duis aute irure dolor in voluptate Ut</h3>
+                        <div class="product-rating">★★★★☆ (000)</div>
+                        <div class="product-price">$$$</div>
+                        <div class="product-seller">Seller1</div>
+                    </div>
+                    <button class="add-to-cart">
+                        <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                    </button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-info">
+                        <img src="images/Logo.png" alt="Product Image" class="product-image">
+                        <h3 class="product-title">Duis aute irure dolor in voluptate Ut</h3>
+                        <div class="product-rating">★★★★☆ (000)</div>
+                        <div class="product-price">$$$</div>
+                        <div class="product-seller">Seller1</div>
+                    </div>
+                    <button class="add-to-cart">
+                        <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                    </button>
+                </div>
+                
+                
+            </div>
+            
+        
+        </main>
+        
+        <footer>
+            <div class="footer-left">
+                <p>Contact Us:</p>
+                <img src="images/twitter.webp" alt="Twitter Icon"> @BloomMart
+                <img src="images/instagram.webp" alt="Instagram Icon"> @BloomMart
+                <img src="images/email.png" alt="Email Icon"> BloomMart@gmail.com
+            </div>
+            <div class="footer-right">
+                &copy; 2024 BloomMart
+            </div>
+        </footer>
+    </body>
+</html>

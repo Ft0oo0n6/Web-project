@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User's Page</title>
+    <link rel="stylesheet" href="main.css">
+</head>
 <body>
-    <head>
-        <title>User's Page</title>
-        <link rel="stylesheet" href="main.css">
-    </head>
-
     <header>
         <div class="logo-title">
             <div id="logo">
@@ -28,15 +29,20 @@
                         <option value="category3.html">Category 3</option>
                     </select>
                 </div>
-                <a href="Cart.html"><img src="images/cart.webp" alt="Cart" width="20" height="20"></a>
+                <a href="Cart.html">
+                    <img src="images/cart.webp" alt="Cart" width="20" height="20">
+                </a>
             </div>
         </div>
     </header>
 
+    <div class="breadcrumb">
+        <a href="Home.html">Home</a> &gt; 
+        <span>User's Page</span>
+    </div>
+
     <main id="UserPageMain">
-        <div class="breadcrumb">
-            <p><a href="Home.html">home</a> > <a href="UserPage.html">user's page</a></p>
-        </div>
+        
         <div class="UserPage">
             <div class="UserInfo">
                 <div class="ProfilePicture"></div>
@@ -53,11 +59,9 @@
                 <a href="#" class="LinkButton">Rate Your Order</a>
             </div>
         </div>
-
-
     </main>
 
-    <footer style="margin-top: 40px;">
+    <footer>
         <div class="footer-left">
             <p>Contact Us:</p>
             <img src="images/twitter.webp" alt="Twitter Icon"> @BloomMart
