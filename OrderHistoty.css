@@ -116,7 +116,7 @@ h2 {
         }
         
         .Order img {
-            width: 100%;
+            width: 50%;
             height: 150px;
             object-fit: cover;
             margin-bottom: 10px;
@@ -145,13 +145,30 @@ h2 {
         
        
 
-
-   
-footer {
-    margin-top: 70px;
-    text-align: center;
-    justify-content: space-between;
-    background-color: #fff2eb;
-    padding: 15px 30px;
-    border-top: 2px solid #3d3d3d;
-}
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff2eb;
+            border-top: 2px solid #e4cbcb;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px 30px;
+            font-size: 16px;
+            color: #644e41;
+        }
+        
+        .footer-left {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .footer-left img {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+        }
+        
+        .footer-right {
+            font-weight: bold;
+        }

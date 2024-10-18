@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
        
         <title>Bloom Mart</title>
-        <link rel="stylesheet" href="OrderHistoty.css">
+        <link rel="stylesheet" href="OrderEval.css">
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
@@ -35,119 +35,83 @@
                 </div>
             </nav>
         </header>
+        
         <nav class="breadcrumb">
             <a href="Home.html">Home</a> &gt; 
             <a href="UserPage.html">UserPage</a> &gt; 
-            <span>order History</span>
+            <span>rate your order</span>
         </nav>
-<main id="OrderHistory">
+<main id="OrderEval">
+
+  
+
+    <h2>Product Evaluation</h2>
+  
+    <form action="">
+    
+<div class="Products">
+    <div class="dropdown">
+        <select id="Order" onchange="location = this.value;">
+            <option value="#" disabled selected>Previous Orders</option>
+            <option value="OrderEval.html">Order #1</option>
+            <option value="OrderEval.html">Order #2</option>
  
-    <h2>Previous Orders</h2>
+        </select>
+    </div>
+    <div class="Product">
+        <img src="" alt="Product 1">
+        <h3>Product#</h3>
+        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <input  type="checkbox" checked >
+    </div>
 
-<div class="Orders">
-<div class="Order">
-    <img src="" alt="Order 1">
-    <h3>Order #</h3>
-    <div class="Date">
-        <pre>xx/xx/xxxx    xx:xx</pre></div>
+    <div class="Product">
+        <img src="" alt="Product 2">
+        <h3>Product#</h3>
+        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <input type="checkbox"  >
+    </div>
+    
+    <div class="Product">
+        <img src="" alt="Product 3">
+        <h3>Product#</h3>
+        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <input type="checkbox"  >
+    </div>
 
-<div class="Price">
-    <p>$$$</p>
 </div>
-</div>
 
-<div class="Order">
-    <img src="" alt="Order 2">
-    <h3>Order #</h3>
-    <div class="Date">
-        <pre>xx/xx/xxxx    xx:xx</pre></div>
+  <h2>Upload Images</h2>
+  <div class="Product-details">
 
-  
+      <div class="upload-image">
+        <p>+</p>
+        <p>Upload Images</p>
+        </div>
 
-<div class="Price">
-    <p>$$$</p>
+        <div class="feedback-section">
+        <label for="feedback">Feedback:</label>
+        <textarea class="feedback" name="feedback" placeholder="Enter feedback"></textarea>
+
+      
+        <label for="Rate">Rate:</label>
+        <ul class="Stars">
+            <li><pre>✰</pre></li>
+            <li><pre>✰</pre></li>
+            <li><pre>✰</pre></li>
+            <li><pre>✰</pre></li>
+            <li><pre>✰</pre></li>
+        </ul>
     </div>
 </div>
+
+
+</div class="footer">
+<button type="submit"> submit </button>
+</form>
+
 
     
-<div class="Order">
-    <img src="" alt="Order 3">
-    <h3>Order #</h3>
-    <div class="Date">
-        <pre>xx/xx/xxxx    xx:xx</pre></div>
-
-  
-
-<div class="Price">
-    <p>$$$</p>
-    </div>
-</div>
-
-    
-<div class="Order">
-    <img src="" alt="Order 4">
-    <h3>Order #</h3>
-    <div class="Date">
-        <pre>xx/xx/xxxx    xx:xx</pre></div>
-
-  
-<div class="Price">
-    <p>$$$</p>
-    </div>
-</div>
-    
-<div class="Order">
-    <img src="" alt="Order 5">
-    <h3>Order #</h3>
-    <div class="Date">
-        <pre>xx/xx/xxxx    xx:xx</pre></div>
-
-  
-
-<div class="Price">
-    <p>$$$</p>
-    </div>
-    </div>
-
-    
-<div class="Order">
-    <img src="" alt="Order 6">
-    <h3>Order #</h3>
-    <div class="Date">
-        <pre>xx/xx/xxxx    xx:xx</pre></div>
-
-        <div class="Price">
-            <p>$$$</p>
-            </div>
-            
-</div>
-
-<div class="Order">
-    <img src="" alt="Order 7">
-    <h3>Order #</h3>
-    <div class="Date">
-        <pre>xx/xx/xxxx    xx:xx</pre></div>
-
-        <div class="Price">
-            <p>$$$</p>
-            </div>
-            
-</div>
-<div class="Order">
-    <img src="" alt="Order 8">
-    <h3>Order #</h3>
-    <div class="Date">
-        <pre>xx/xx/xxxx    xx:xx</pre></div>
-
-  <div class="Price">
-    <p>$$$</p>
-</div>
-
-</div>
-
-
-</div>
-
 
 </main>
 
