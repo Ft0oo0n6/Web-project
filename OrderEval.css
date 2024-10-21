@@ -88,28 +88,38 @@ main {
     padding: 20px;
     margin-top: 70px;
 } 
+.Stars img {
+    height: 20px; 
+    width: 20px; 
+}
+.stars-box{
+    border: 2px solid #ddd; 
+    border-radius: 5px;
+    margin-right: 25px;
 
-
-.Stars {
+}
+#star {
     display: flex;
-    justify-content: center; /* Centers the stars */
-    gap: 5px; /* Space between each star */
-    margin-top: 10px;
-    padding: 0; /* Removes default padding */
-    border: gray solid 1px;
+    justify-content: center;
+    gap: 8px; 
+    margin-top: 15px;
+    padding: 10px; 
+   
+
 }
 
-.Stars li {
-    list-style-type: none; /* Removes bullet points */
-    margin: 0; /* Removes extra margin */
-    font-size: 20px; /* Adjust size of the stars */
-} 
+.Stars {
+    list-style-type: none;
+    margin: 0; 
+    display: inline-block; 
+}
+
 
 #Order {
     position: absolute;
-    right: 0; /* Aligns the dropdown to the right */
-    top: 0; /* Adjust if you want the dropdown at the top */
-    margin-top: 1px; /* Adjust the spacing as needed */
+    right: 0; 
+    top: 0; 
+    margin-top: 1px; 
     margin-left: 20px;
 
 }
@@ -180,15 +190,16 @@ main {
 
 .upload-image {
     width: 60%;
-    height: 100px;
+    height: 120px;
     border: 2px dashed #ccc;
     text-align: center;
+    margin-top: 10px;
     padding: 80px; 
     cursor: pointer;
 }
 
 .feedback-section {
-    width: 70%;
+    width: 80%;
 }
 
 .feedback {
