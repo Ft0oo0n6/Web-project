@@ -89,8 +89,8 @@ header {
     appearance: none;
     box-shadow: 0 4px 8px rgba(82, 59, 59, 0.1);
 }
-#Order , .dropdown select {
-    border-radius: 0px;
+  #Order,  select {
+    border-radius: 0em;
     box-shadow:  1em rgba(82, 59, 59, 0.1);
 }
 
