@@ -245,3 +245,39 @@ line-height: 15px;
     border: none;
     background-color: #fff;
 }
+
+
+
+
+.breadcrumb2 {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 20px 20px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #666;
+    border: 1px solid #e4cbcb;
+    background-color: #fff2eb;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    z-index: 1;
+    line-height: 2px;
+}
+
+.breadcrumb2 a {
+    text-decoration: none;
+    color: #af7e7e;
+}
+
+.breadcrumb2 a:hover {
+    color: #e4a3a3;
+}
+
+.breadcrumb2 span {
+    color:  #995a5a;
+}

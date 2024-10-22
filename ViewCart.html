@@ -2,33 +2,37 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>View cart</title>
+        <title>View Cart</title>
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="ViewCart.css">
     </head>
 <body>
     <header>
-        <!-- Logo and Title on the Left -->
         <div class="logo-title">
             <div id="logo">
-                <a href="Index.html">
+                <a href="Home.html">
                     <img src="images/Logo.png" alt="Website Logo">
                 </a>
             </div>
             <h1>Bloom Mart</h1>
         </div>
-
-
-
-        <!-- Navigation in the Center -->
-        <div id="navigation-container">
-            <div id="navigation">
-                <a href="SellerDash.html"><img src="images/dashboard.webp" alt="Dashboard" width="20" height="20">Seller's dashboard</a>
-                <a href="UserPage.html"><img src="images/profile.svg" alt="User Profile" width="15" height="15">User's page</a>
-                <a href="#"><img src="images/categories.webp" alt="Categories" width="15" height="15">Categories</a>
-                <a href="Cart.html"><img src="images/cart.webp" alt="Cart" width="20" height="20"></a>
+        <nav id="navigation-container">
+            <div id="navigation"> 
+                <a href="SellerDash.html">Seller's dashboard</a>
+                <a href="UserPage.html">User's page</a> 
+                <div class="dropdown">
+                    <select id="categories" onchange="location = this.value;">
+                        <option value="#" disabled selected>Categories</option>
+                        <option value="category1.html">Category 1</option>
+                        <option value="category2.html">Category 2</option>
+                        <option value="category3.html">Category 3</option>
+                    </select>
+                </div>
+                <a href="ViewCart.html">
+                    <img src="images/cart.webp" alt="Cart" width="20" height="20">
+                </a>
             </div>
-        </div>
+        </nav>
     </header>
 
 
@@ -36,7 +40,7 @@
 
 
     <main id="ViewCartMain">
-        <div class="breadcrumb"> 
+        <div class="breadcrumb2"> 
            <p><a href="Home.html">home</a> > <a href="UserPage.html">user's page</a> > <a href="view cart.html">user's page</a><br><br></p>
         </div>
         <h3 id="MyCart">My Cart </h3>
