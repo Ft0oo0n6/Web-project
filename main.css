@@ -137,17 +137,13 @@ header {
 }
     *//
 
-main {
-    margin-right: 220px;
-    padding: 20px;
-}
 
-main {
+#HomePageMain {
     margin-top: 50px;
     padding-bottom: 50px;
+    padding: 20px;
 }
-
-#HomePageMain h2 {
+ h2 {
     padding: 10px 20px;
     display: inline-block;
     font-weight: bold;
