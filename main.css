@@ -936,63 +936,64 @@ color: rgb(150, 130, 143);
 
 /* Container for products with a grid layout */
 .Products-s {
-display: flex;
-justify-content: center;
-flex-wrap: nowrap;
-gap: 20px;
-margin-top: 40px;
-overflow-x: auto;
-white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 1.25em;         
+    margin-top: 2.5em;   
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
 .Product-s {
-border: 1px solid #ddd;
-padding: 20px;
-background-color: #fff;
-border-radius: 10px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-width: 250px;
-
+    border: 0.063em solid #ddd; 
+    padding: 1.25em;          
+    background-color: #fff;
+    border-radius: 0.625em;     
+    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;            
+    max-width: 15.625em;      
 }
 
 .Product-s img {
-width: 100%;
-height: 150px;
-object-fit: cover;
-margin-bottom: 10px;
-background-color: #f0f0f0;
-border-radius: 5px;
+    width: 100%;
+    height: 9.375em;        
+    object-fit: cover;
+    margin-bottom: 0.625em; 
+    background-color: #f0f0f0;
+    border-radius: 0.313em; 
 }
 
 .Product-s h3 {
-font-size: 18px;
-margin-bottom: 10px;
+    font-size: 1.125em;     
+    margin-bottom: 0.625em; 
 }
 
 .Product-s p {
-font-size: 14px;
-color: #666;
-margin-bottom: 10px;
+    font-size: 0.875em;     
+    color: #666;
+    margin-bottom: 0.625em; 
 }
 
 .Product-s .price {
-font-size: 16px;
-font-weight: bold;
-margin-bottom: 10px;
+    font-size: 1em;      
+    font-weight: bold;
+    margin-bottom: 0.625em; 
 }
 
 .Product-s .quantity {
-font-size: 12px;
-font-weight: bold;
-border: 1px solid #ccc;
-padding: 5px;
-border-radius: 3px;
-background-color: #f0f0f0;
-text-align: center;
+    font-size: 0.75em;      
+    font-weight: bold;
+    border: 0.063em solid #ccc; 
+    padding: 0.313em;      
+    border-radius: 0.188em; 
+    background-color: #f0f0f0;
+    text-align: center;
 }
+
 
 .buttons-s {
 margin-top: 20px;
