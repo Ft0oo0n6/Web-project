@@ -295,7 +295,7 @@ footer {
 
 #UserPageMain {
     padding: 20px;
-    margin-top: 70px;
+    margin-top: 90px;
 }
 
 .UserPage {
@@ -539,6 +539,11 @@ input[type="range"]::-webkit-slider-thumb {
     color:  #995a5a;
 }
 
+#AddNewProductMain {
+    padding: 20px;
+    margin-top: 120px;
+}
+
 .AddProductContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -622,6 +627,11 @@ input[type="range"]::-webkit-slider-thumb {
     cursor: pointer;
 }
 
+#MakeDelOfferMain {
+    padding: 20px;
+    margin-top: 120px;
+}
+
 .sellerOff {
     border: 1px solid black;
     padding: 10px 20px;
@@ -668,7 +678,7 @@ input[type="range"]::-webkit-slider-thumb {
     border-radius: 25px;
     cursor: pointer;
     position: absolute;
-    bottom: 390px;
+    bottom: 210px;
     right: 50px;
 }
 
@@ -688,7 +698,7 @@ input[type="range"]::-webkit-slider-thumb {
     border-radius: 25px;
     cursor: pointer;
     position: absolute;
-    bottom: -30px;
+    bottom: -210px;
     right: 50px;
 }
 
