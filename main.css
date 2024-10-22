@@ -95,7 +95,7 @@ header {
     color: rgb(150, 130, 143);
 }
 
-.sidebar {
+//*.sidebar {
     display: flex;
     flex-direction: column;
     background-color: #fff2eb;
@@ -135,6 +135,7 @@ header {
     background-color: rgb(255, 211, 211);
     color: rgb(150, 130, 143);
 }
+    *//
 
 main {
     margin-right: 220px;
