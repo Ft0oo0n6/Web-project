@@ -3,7 +3,6 @@
 <body>
     <head>
         <title>Make or delete offers</title>
-        <link rel="stylesheet" href="MakeOrDeleteOffers.css">
         <link rel="stylesheet" href="main.css">
     </head>
 
@@ -75,20 +74,20 @@
                 <input type="checkbox">
             </div>
 
-            <div class"DeleteBtn"><button type="submit" id="DeleteBtn">Delete Offer</button></div>
+            <div class="DeleteBtn"><button type="submit" id="DeleteBtn">Delete Offer</button></div>
         </div>
 
         <h2 class="addOff">Add Offer</h2>
         <div class="add-offer-form">
 
             <form action="/action_page.php" method="post">
-                <div class="container">
+                <div class="OfferFormContainer">
                     <div>
                         <label for="title">Title:</label>
                         <input type="text" id="title" name="title" placeholder="Enter offer title">
 
                         <label for="description">Description:</label>
-                        <textarea id="description" name="description" placeholder="Enter offer description"></textarea>
+                        <textarea id="OfferTextarea" name="description" placeholder="Enter offer description"></textarea>
                     </div>
                      
                     <div class="upload-image">

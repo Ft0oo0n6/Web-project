@@ -3,7 +3,6 @@
 <body>
     <head>
         <title>Add a new product</title>
-        <link rel="stylesheet" href="AddNewProduct.css">
         <link rel="stylesheet" href="main.css">
     </head>
 
@@ -40,17 +39,17 @@
 
     <main>
         <div class="breadcrumb">
-            <p><a href="Home.html">home</a> > <a href="#">seller's dashboard</a> > <a href="AddNewProduct.html">add a new product</a></p>
+            <p><a href="Home.html">home</a> > <a href="SellerDash.html">seller's dashboard</a> > <a href="AddNewProduct.html">add a new product</a></p>
         </div>
         <form action="/action_page.php" method="post">
-            <div class="container">
+            <div class="AddProductContainer">
                 <div>
                     <h2>General Information</h2>
                     <label for="product-name">Name of product:</label>
                     <input type="text" class="generalInfo" name="product-name" placeholder="Enter product name">
 
                     <label for="description">Description:</label>
-                    <textarea class="generalInfo" name="description" placeholder="Enter product description"></textarea>
+                    <textarea id ="AddProductTextarea" class="generalInfo" name="description" placeholder="Enter product description"></textarea>
                 </div>
 
                 <div>
@@ -74,7 +73,7 @@
                 </div>
                 <div>
                     <h2>Category</h2>
-                    <select id="category" name="category">
+                    <select id="AddProductCategory" name="category">
                         <option value="category1">Category1</option>
                         <option value="category2">Category2</option>
                         <option value="category3">Category3</option>
@@ -82,8 +81,8 @@
                 </div>
             </div>
 
-            <div class="footer">
-                <button type="submit"> ADD PRODUCT </button>
+            <div class="FormFooter">
+                <button id="AddProductBtn" type="submit"> ADD PRODUCT </button>
             </div>
         </form>
     </main>
