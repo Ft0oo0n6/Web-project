@@ -99,7 +99,7 @@ header {
     color: rgb(150, 130, 143);
 }
 
-//*.sidebar {
+/*.sidebar {
     display: flex;
     flex-direction: column;
     background-color: #fff2eb;
@@ -139,7 +139,7 @@ header {
     background-color: rgb(255, 211, 211);
     color: rgb(150, 130, 143);
 }
-    *//
+    */
 
 
 #HomePageMain {
@@ -891,4 +891,127 @@ input[type="range"]::-webkit-slider-thumb {
     font-weight: bold;
     border-radius: 1.5625em; 
     cursor: pointer;
+}
+/*SellerDashboard*/
+#SellerDashboardMain  {
+    padding: 40px;
+    margin-top: 90px;
+}
+
+
+/* Navigation Links in the Center */
+#navigation-container-s {
+display: flex;
+justify-content: center;
+flex-grow: 1;
+}
+
+#navigation-s {
+display: flex;
+gap: 25px;
+}
+
+#navigation-s a {
+display: flex;
+align-items: center;
+gap: 10px;
+text-decoration: none;
+color: rgb(83, 82, 82);
+background-color: #ecd5c8;
+font-size: 18px;
+font-weight: bold;
+border: 1px ridge #3d3d3d;
+padding: 5px 15px;
+border-radius: 25px;
+line-height: 1;
+transition: background-color 0.3s, color 0.3s;
+}
+
+#navigation-s a:hover {
+background-color: rgb(255, 211, 211);
+color: rgb(150, 130, 143);
+}
+
+
+
+/* Container for products with a grid layout */
+.Products-s {
+display: flex;
+justify-content: center;
+flex-wrap: nowrap;
+gap: 20px;
+margin-top: 40px;
+overflow-x: auto;
+white-space: nowrap;
+}
+
+.Product-s {
+border: 1px solid #ddd;
+padding: 20px;
+background-color: #fff;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+width: 250px;
+
+}
+
+.Product-s img {
+width: 100%;
+height: 150px;
+object-fit: cover;
+margin-bottom: 10px;
+background-color: #f0f0f0;
+border-radius: 5px;
+}
+
+.Product-s h3 {
+font-size: 18px;
+margin-bottom: 10px;
+}
+
+.Product-s p {
+font-size: 14px;
+color: #666;
+margin-bottom: 10px;
+}
+
+.Product-s .price {
+font-size: 16px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.Product-s .quantity {
+font-size: 12px;
+font-weight: bold;
+border: 1px solid #ccc;
+padding: 5px;
+border-radius: 3px;
+background-color: #f0f0f0;
+text-align: center;
+}
+
+.buttons-s {
+margin-top: 20px;
+display: flex;
+justify-content: flex-end;
+gap: 10px;
+}
+
+.buttons-s a {
+text-decoration: none;
+padding: 10px 20px;
+border: 2px solid #ddd;
+background-color: #fff;
+border-radius: 5px;
+cursor: pointer;
+font-size: 14px;
+color: #333;
+}
+
+.buttons-s a:hover {
+background-color: #f0f0f0;
 }
