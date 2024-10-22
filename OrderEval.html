@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
        
         <title>Bloom Mart</title>
-        <link rel="stylesheet" href="OrderEval.css">
+    
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
@@ -49,7 +49,7 @@
   
     <form action="/action_page.php">
     
-<div class="Products">
+<div class="Products-Eval">
     <div class="dropdown">
         <select id="Order"name="order-list">
             <option value="#" disabled selected>Previous Orders</option>
@@ -58,24 +58,24 @@
  
         </select>
     </div>
-    <div class="Product">
-        <img src="" alt="Product 1">
-        <h3>Product #111</h3>
-        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+    <div class="Product-Eval">
+        <img src="images/camera_old_camera_agfa.jpg" alt="Product 1">
+        <h3>Film Camera</h3>
+        <p> The "AGFAMATIC 2000 pocket", Vintage, compact, point-and-shoot film camera. </p>
         <input  type="checkbox" checked >
     </div>
 
-    <div class="Product">
-        <img src="" alt="Product 2">
-        <h3>Product #112</h3>
-        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+    <div class="Product-Eval">
+        <img src="images/cup_tee_teacup_glass_0.jpg" alt="Product 2">
+        <h3>Glass Cup</h3>
+        <p>150 ml clear glassware for hot beverages.</p>
         <input type="checkbox"  >
     </div>
     
-    <div class="Product">
-        <img src="" alt="Product 3">
-        <h3>Product #113</h3>
-        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+    <div class="Product-Eval">
+        <img src="images/vase_porcelain_flower_vase.jpg" alt="Product 3">
+        <h3>Traditional Chinese porcelain vase</h3>
+        <p>  Decorative vessel featuring painted design of woman playing stringed instrument.</p>
         <input type="checkbox"  >
     </div>
 
@@ -84,7 +84,7 @@
   <h2>Upload Images</h2>
   <div class="Product-details">
 
-      <div class="upload-image">
+      <div class="upload-image-eval">
         <p>+</p>
         <p>Upload Images</p>
         <input type="file" id="image" name="image">
@@ -110,8 +110,8 @@
 </div>
 
 
-</div class="footer">
-<button type="submit">  submit </button>
+</div >
+<button type="submit" id="Submit-feedback">   submit </button>
 </form>
 
 
