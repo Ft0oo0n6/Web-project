@@ -95,7 +95,7 @@ header {
     color: rgb(150, 130, 143);
 }
 
-.sidebar {
+//*.sidebar {
     display: flex;
     flex-direction: column;
     background-color: #fff2eb;
@@ -135,6 +135,7 @@ header {
     background-color: rgb(255, 211, 211);
     color: rgb(150, 130, 143);
 }
+    *//
 
 main {
     margin-right: 220px;
@@ -142,9 +143,8 @@ main {
 }
 
 main {
-    margin-top: 100px;
-    flex: 1;
-    padding-bottom: 100px;
+    margin-top: 50px;
+    padding-bottom: 50px;
 }
 
 #HomePageMain h2 {
@@ -445,7 +445,7 @@ input[type="range"]::-webkit-slider-thumb {
     flex-wrap: wrap; 
     justify-content: flex-start; 
     gap: 3%; 
-    margin: 5% 5%;
+    margin: 5% ;
 }
 
 .product-card {
