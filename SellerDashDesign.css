@@ -8,13 +8,13 @@
    
 }*/
 
-#SellerDashboardMain  {
+/* #SellerDashboardMain  {
         padding: 40px;
         margin-top: 90px;
-    }
+    }*/
 
 
-/* Navigation Links in the Center */
+/* Navigation Links in the Center 
 #navigation-container-s {
     display: flex;
     justify-content: center;
@@ -49,7 +49,7 @@
 
     
 
-/* Container for products with a grid layout */
+/* Container for products with a grid layout 
 .Products-s {
     display: flex;
     justify-content: center;
@@ -139,4 +139,5 @@ footer {
     background-color: #fff2eb;
     padding: 15px 30px;
     border-top: 2px solid #3d3d3d;
-}
+} */
+
