@@ -83,7 +83,6 @@ main { flex:1 }
     padding: 0.625em 1.25em;
     font-size: 1.125em;
     font-weight: bold;
-    color: rgb(83, 82, 82);
     background-color: #f7dfd2;
     border: 0.0625em solid #dabfb7;
     border-radius: 1.5625em;
@@ -147,7 +146,7 @@ main { flex:1 }
     flex-direction: column;
     align-items: flex-start;
     margin-left: 2%;
-    margin-top: 5%;
+    margin-top: 1%;
 }
 
 .custReview-container {
@@ -337,7 +336,7 @@ dd {
     display: flex;
     gap: 2%;
     align-items: center;
-    margin-left: 4%;
+    margin-left: 11.5%;
     margin-top: 6%;
 }
 
@@ -407,8 +406,11 @@ input[type="range"]::-webkit-slider-thumb {
     display: flex; 
     flex-wrap: wrap; 
     justify-content: flex-start; 
-    margin: 2% 1% 2% 1%;
+    align-items: center;
+    margin: 2% 11%;
+    gap: 5%;
 }
+
 
 .product-card {
     border: 1px solid #ddd; 
@@ -417,18 +419,24 @@ input[type="range"]::-webkit-slider-thumb {
     background-color: #fff; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     text-align: left; 
-    max-width: 250px; 
-    margin: 10px; 
+    width: 250px; /* Set a fixed width */
+    height: 350px; /* Set a fixed height */
+    margin: 2% 1%; 
     position: relative; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
 
 
 .product-image {
     width: 100%;
-    height: 150px;
-    object-fit: cover;
+    height: 200px; /* Ensure a consistent height */
+    object-fit: cover; /* This prevents the image from stretching */
     border-radius: 5px;
 }
+
 
 .product-title {
     font-size: 16px;
