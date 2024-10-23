@@ -893,39 +893,37 @@ input[type="range"]::-webkit-slider-thumb {
     cursor: pointer;
 }
 /*SellerDashboard*/
-#SellerDashboardMain  {
-    padding: 40px;
-    margin-top: 90px;
-}
-
+#SellerDashboardMain {
+    padding: 2.5em;
+    margin-top: 5.625em;
+  }
 
 /* Navigation Links in the Center */
 #navigation-container-s {
-display: flex;
-justify-content: center;
-flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
 }
-
-#navigation-s {
-display: flex;
-gap: 25px;
-}
-
-#navigation-s a {
-display: flex;
-align-items: center;
-gap: 10px;
-text-decoration: none;
-color: rgb(83, 82, 82);
-background-color: #ecd5c8;
-font-size: 18px;
-font-weight: bold;
-border: 1px ridge #3d3d3d;
-padding: 5px 15px;
-border-radius: 25px;
-line-height: 1;
-transition: background-color 0.3s, color 0.3s;
-}
+    #navigation-s {
+      display: flex;
+      gap: 1.5625em;
+    }
+    
+    #navigation-s a {
+      display: flex;
+      align-items: center;
+      gap: 0.625em;
+      text-decoration: none;
+      color: rgb(83, 82, 82);
+      background-color: #ecd5c8;
+      font-size: 1.125em;
+      font-weight: bold;
+      border: 0.0625em ridge #3d3d3d;
+      padding: 0.3125em 0.9375em;
+      border-radius: 1.5625em;
+      line-height: 1;
+      transition: background-color 0.3s, color 0.3s;
+    }
 
 #navigation-s a:hover {
 background-color: rgb(255, 211, 211);
@@ -994,24 +992,23 @@ color: rgb(150, 130, 143);
     text-align: center;
 }
 
-
 .buttons-s {
-margin-top: 20px;
-display: flex;
-justify-content: flex-end;
-gap: 10px;
-}
-
-.buttons-s a {
-text-decoration: none;
-padding: 10px 20px;
-border: 2px solid #ddd;
-background-color: #fff;
-border-radius: 5px;
-cursor: pointer;
-font-size: 14px;
-color: #333;
-}
+    margin-top: 1.25em;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.625em;
+  }
+  
+  .buttons-s a {
+    text-decoration: none;
+    padding: 0.625em 1.25em;
+    border: 0.125em solid #ddd;
+    background-color: #fff;
+    border-radius: 0.3125em;
+    cursor: pointer;
+    font-size: 0.875em;
+    color: #333;
+  }
 
 .buttons-s a:hover {
 background-color: #f0f0f0;
