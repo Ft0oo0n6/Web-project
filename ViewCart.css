@@ -77,7 +77,7 @@
     display: flex;
     justify-content: left;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 25px;
     margin-top: 30px;
 
 }
@@ -113,9 +113,7 @@
 .image-Down:hover {
     background-color: #f8bfbf; /* تغيير لون البوردر إلى الأحمر عند مرور الفأرة */
 }
-.checkout-button:hover{
-    background-color: #f8bfbf;
-}
+
 
 .productNameee{
     line-height: 55px;
@@ -139,9 +137,10 @@ input[type="number"] {
 }
 
 pre.check {
-    font-size: 15px ;
+    font-size: 16px ;
    
     font-weight: bold ;
+    
 }
 
 .c {
@@ -153,9 +152,9 @@ pre.check {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #fff;
-line-height: 15px;
+line-height: 50px;
  position: absolute;
-    top: 250px; 
+    top: 265px; 
     right: 50px; 
 }
 
@@ -189,33 +188,41 @@ line-height: 15px;
 }
 
 
-.checkout-button a {
-    display: block;       
-    height: 100%;        
-    width: 100%;
-    text-decoration: none;
-    color: #000;
-    font-size: 16px;
-    font-weight: bold;
-   
-}
 
 
 
-
-
-.checkout-button{
-    height: 25;
-    width: 50;
-    padding: 13px 20px;
-    margin: 30px;
-    border-radius: 4px;
+.checkout-button {
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #f8f8f8;
-  margin-top: 80px;
-
+    margin-top: 60px; /* هذا يمكن أن يبقى إذا كنت تريد للمجموعة بأكملها margin-top */
 }
+
+.checkout-button input[type="button"] {
+    padding: 15px 120px;
+    margin: 20px;
+    border: 1px solid #f0f0f0;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    color: #000;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   margin-left: 20px;
+}
+
+.checkout-button input[type="button"]:hover {
+    background-color: #f8bfbf;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -244,40 +251,4 @@ line-height: 15px;
     text-align: center;
     border: none;
     background-color: #fff;
-}
-
-
-
-
-.breadcrumb2 {
-    display: flex;
-    align-items: center;
-    margin-top: 12px;
-    margin-bottom: 12px;
-    padding: 20px 20px;
-    font-weight: bold;
-    font-size: 16px;
-    color: #666;
-    border: 1px solid #e4cbcb;
-    background-color: #fff2eb;
-    position: fixed;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    z-index: 1;
-    line-height: 2px;
-}
-
-.breadcrumb2 a {
-    text-decoration: none;
-    color: #af7e7e;
-}
-
-.breadcrumb2 a:hover {
-    color: #e4a3a3;
-}
-
-.breadcrumb2 span {
-    color:  #995a5a;
-}
+}  
