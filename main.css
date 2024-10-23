@@ -794,14 +794,7 @@ input[type="range"]::-webkit-slider-thumb {
     margin-left: 1.25em; 
 }
 
-.container-Eval {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.25em; 
-    border: 0.125em solid #ddd; 
-    margin: 1.25em; 
-    padding: 6.25em; 
-}
+
 
 .Products-Eval {
     position: relative;
@@ -869,22 +862,24 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .feedback-section {
-    width: 80%;
-}
-
-.feedback {
+  width: 80%;
+  
+    }
+    
+    .feedback {
     width: 95%;
-    height: 10em; 
-    margin-top: 1em; 
-    border: 0.0625em solid #ddd; 
-    border-radius: 0.3125em; 
-    padding: 0.625em; 
-}
+    height: 10em;
+    margin-top: 1em;
+    border: 0.0625em solid #ddd;
+    border-radius: 0.3125em;
+    padding: 0.625em;
+    }
+    
+    #Submit-feedback {
 
-#Submit-feedback {
-    float: right;
+    float:right;
     margin-right: 0.625em; 
-    padding: 0.3125em 1.25em; 
+    padding: 0.5em 1.25em; 
     margin-top: 0.625em;
     background-color: #fff2eb;
     color: rgb(83, 82, 82);
@@ -893,7 +888,8 @@ input[type="range"]::-webkit-slider-thumb {
     font-weight: bold;
     border-radius: 1.5625em; 
     cursor: pointer;
-}
+    }
+    
 /*SellerDashboard*/
 #SellerDashboardMain {
     padding: 2.5em;
