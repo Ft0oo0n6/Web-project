@@ -142,6 +142,9 @@ main { flex:1 }
     box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
 }
 
+.offer h3{
+    color: #e2a0a0;
+}
 .reviews-wrapper {
     display: flex;
     flex-direction: column;
@@ -206,7 +209,7 @@ main { flex:1 }
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-    color: #000;
+    color:rgb(150, 130, 143);
     font-weight: bold;
     font-size: 1.125em;
 }
@@ -216,7 +219,8 @@ main { flex:1 }
     height: 6.25em;
     border-radius: 50%;
     object-fit: cover;
-    border: 0.125em solid #000;
+    border: 0.125em solid #f0f0f0;
+    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
 }
 
 .category img:hover {
