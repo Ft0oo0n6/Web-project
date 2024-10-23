@@ -295,58 +295,59 @@ footer {
 }
 
 #UserPageMain {
-    padding: 20px;
-    margin-top: 90px;
+    padding: 1.25em;
+    margin-top: 5.625em;
 }
 
 .UserPage {
     display: flex;
     justify-content: space-around;
-    padding: 200px;
-    border: 1px ridge #dabfb7;
+    padding: 12.5em;
+    border: 0.0625em ridge #dabfb7;
 }
 
 .UserInfo {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 1.25em;
 }
 
 .ProfilePicture {
-    width: 200px;
-    height: 200px;
+    width: 12.5em;
+    height: 12.5em;
     border-radius: 50%;
     background-color: #ccc;
     background-image: url(images/profile.svg);
     background-position: center;
-    background-size: 250px;
-    border: 2px ridge #dabfb7;
+    background-size: 15.625em;
+    border: 0.125em ridge #dabfb7;
 }
 
 .UserDetails {
-    font-size: 20px;
+    font-size: 1.25em;
 }
 
 .UserLinks {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 1.875em;
 }
 
 .LinkButton {
     display: inline-block;
-    padding: 20px 40px;
-    border: 1px ridge #dabfb7;
+    padding: 1.25em 2.5em;
+    border: 0.0625em ridge #dabfb7;
     text-decoration: none;
     color: #000;
-    border-radius: 25px;
+    border-radius: 1.5625em;
     background-color: #fff2eb;
 }
 
-.LinkButton:hover {
-    background-color: rgb(255, 211, 211);
-    color: rgb(150, 130, 143);
-}
+    .LinkButton:hover {
+        background-color: rgb(255, 211, 211);
+        color: rgb(150, 130, 143);
+    }
+
 
 dl {
     border: 1px solid #e4cbcb;
@@ -664,6 +665,7 @@ input[type="range"]::-webkit-slider-thumb {
     border: 0.0625em ridge #dabfb7; 
     gap: 1.25em; 
     margin-bottom: 2.5em; 
+    position: relative;
 }
 
 .offer img {
@@ -693,7 +695,7 @@ input[type="range"]::-webkit-slider-thumb {
     border-radius: 1.5625em; 
     cursor: pointer;
     position: absolute;
-    bottom: 34%; 
+    bottom: 7%; 
     right: 3.125em; 
 }
 
@@ -713,7 +715,7 @@ input[type="range"]::-webkit-slider-thumb {
     border-radius: 1.5625em; 
     cursor: pointer;
     position: absolute;
-    bottom: -12%; 
+    bottom: 7%; 
     right: 3.125em; 
 }
 
@@ -758,6 +760,7 @@ input[type="range"]::-webkit-slider-thumb {
     border: 0.0625em ridge #dabfb7; 
     padding: 1.25em; 
     gap: 1.25em; 
+    position: relative;
 }
 
     .add-offer-form input, .add-offer-form textarea {
