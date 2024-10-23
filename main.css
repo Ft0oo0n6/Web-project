@@ -540,35 +540,36 @@ input[type="range"]::-webkit-slider-thumb {
     color:  #995a5a;
 }
 
+/* Add a new product */
 #AddNewProductMain {
-    padding: 1.25em; /* 20px to 1.25em */
-    margin-top: 7.5em; /* 120px to 7.5em */
+    padding: 1.25em; 
+    margin-top: 7.5em; 
 }
 
 .AddProductContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1.25em; /* 20px to 1.25em */
+    gap: 1.25em; 
 }
 
     .AddProductContainer > div {
-        padding: 0.9375em; /* 15px to 0.9375em */
-        border: 0.0625em ridge #dabfb7; /* 1px to 0.0625em */
-        border-radius: 0.625em; /* 10px to 0.625em */
+        padding: 0.9375em; 
+        border: 0.0625em ridge #dabfb7; 
+        border-radius: 0.625em; 
     }
 
 .generalInfo {
     width: 95%;
-    padding: 0.625em; /* 10px to 0.625em */
-    margin-top: 0.625em; /* 10px to 0.625em */
-    margin-bottom: 1.25em; /* 20px to 1.25em */
-    border: 0.0625em ridge #dabfb7; /* 1px to 0.0625em */
-    border-radius: 0.3125em; /* 5px to 0.3125em */
+    padding: 0.625em; 
+    margin-top: 0.625em;
+    margin-bottom: 1.25em; 
+    border: 0.0625em ridge #dabfb7; 
+    border-radius: 0.3125em; 
 }
 
 .price-stock {
     display: flex;
-    gap: 1.25em; /* 20px to 1.25em */
+    gap: 1.25em; 
 }
 
     .price-stock > div {
@@ -578,110 +579,122 @@ input[type="range"]::-webkit-slider-thumb {
     }
 
 #stock {
-    padding-top: 2.125em; /* 34px to 2.125em */
-    margin-top: 2.0625em; /* 33px to 2.0625em */
+    padding-top: 2.125em; 
+    margin-top: 2.0625em; 
 }
 
 .price-stock label {
-    margin-bottom: 0.3125em; /* 5px to 0.3125em */
+    margin-bottom: 0.3125em; 
 }
 
 .PriceAndStock {
     width: 90%;
-    padding: 0.625em; /* 10px to 0.625em */
-    margin-top: 0.625em; /* 10px to 0.625em */
-    margin-bottom: 1.25em; /* 20px to 1.25em */
-    border: 0.0625em ridge #dabfb7; /* 1px to 0.0625em */
-    border-radius: 0.3125em; /* 5px to 0.3125em */
+    padding: 0.625em;
+    margin-top: 0.625em; 
+    margin-bottom: 1.25em;
+    border: 0.0625em ridge #dabfb7; 
+    border-radius: 0.3125em; 
 }
 
 #AddProductTextarea {
-    height: 6.25em; /* 100px to 6.25em */
+    height: 6.25em; 
 }
 
 .upload-image {
-    border: 0.125em dashed #ccc; /* 2px to 0.125em */
+    border: 0.125em dashed #ccc; 
     text-align: center;
-    padding: 5em; /* 80px to 5em */
+    padding: 5em;
     cursor: pointer;
 }
 
 #AddProductCategory {
     width: 100%;
-    padding: 0.625em; /* 10px to 0.625em */
-    border: 0.0625em ridge #dabfb7; /* 1px to 0.0625em */
-    border-radius: 0.3125em; /* 5px to 0.3125em */
+    padding: 0.625em;
+    border: 0.0625em ridge #dabfb7;
+    border-radius: 0.3125em;
 }
 
 .FormFooter {
-    margin-top: 1.25em; /* 20px to 1.25em */
+    margin-top: 1.25em;
     text-align: right;
 }
 
 #AddProductBtn {
-    padding: 0.625em 1.25em; /* 10px 20px to 0.625em 1.25em */
+    padding: 0.625em 1.25em; 
     background-color: #fff2eb;
     color: rgb(83, 82, 82);
-    border: 0.0625em ridge #dabfb7; /* 1px to 0.0625em */
-    font-size: 1em; /* 15px to 1em */
+    border: 0.0625em ridge #dabfb7; 
+    font-size: 1em;
     font-weight: bold;
-    border-radius: 1.5625em; /* 25px to 1.5625em */
+    border-radius: 1.5625em; 
     cursor: pointer;
 }
 
+/* Make Or Delete Offer */
 #MakeDelOfferMain {
-    padding: 1.25em; /* 20px to 1.25em */
-    margin-top: 7.5em; /* 120px to 7.5em */
+    padding: 1.25em; 
+    margin-top: 7.5em; 
+}
+
+.h2Off {
+    padding: 10px 20px;
+    display: inline-block;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 0;
+    border: 1px ridge #dabfb7;
+    background-color: #fff2eb;
+    margin-bottom: 1.25em;
 }
 
 .sellerOff {
-    border: 0.0625em ridge #dabfb7; /* 1px to 0.0625em */
-    padding: 0.625em 1.25em; /* 10px 20px to 0.625em 1.25em */
+    border: 0.0625em ridge #dabfb7; 
+    padding: 0.625em 1.25em; 
     display: inline-block;
     font-weight: bold;
-    border-radius: 0.3125em; /* 5px to 0.3125em */
+    border-radius: 0.3125em; 
     background-color: #f7e9e9;
     margin: 0;
-    margin-bottom: 1.25em; /* 20px to 1.25em */
+    margin-bottom: 1.25em; 
 }
 
 .SellerOffers {
     display: flex;
-    padding: 1.25em 1.25em 4.375em 1.25em; /* 20px 20px 70px 20px to em equivalents */
-    border: 0.125em ridge #dabfb7; /* 2px to 0.125em */
-    gap: 1.25em; /* 20px to 1.25em */
-    margin-bottom: 2.5em; /* 40px to 2.5em */
+    padding: 1.25em 1.25em 4.375em 1.25em; 
+    border: 0.0625em ridge #dabfb7; 
+    gap: 1.25em; 
+    margin-bottom: 2.5em; 
 }
 
 .offer img {
-    width: 6.25em; /* 100px to 6.25em */
-    height: 6.25em; /* 100px to 6.25em */
+    width: 6.25em;
+    height: 6.25em; 
     background-color: #eaeaea;
     display: block;
-    margin: 0 auto 0.625em; /* 10px to 0.625em */
+    margin: 0 auto 0.625em; 
 }
 
 .offer label {
     display: block;
-    margin-bottom: 0.3125em; /* 5px to 0.3125em */
+    margin-bottom: 0.3125em; 
 }
 
 .offer input[type="checkbox"] {
-    margin-top: 0.625em; /* 10px to 0.625em */
+    margin-top: 0.625em; 
 }
 
 #DeleteBtn {
-    padding: 0.625em 1.5625em; /* 10px 25px to 0.625em 1.5625em */
+    padding: 0.625em 1.5625em; 
     background-color: #fff2eb;
     color: rgb(83, 82, 82);
-    border: 0.0625em ridge #dabfb7; /* 1px to 0.0625em */
-    font-size: 1em; /* 15px to 1em */
+    border: 0.0625em ridge #dabfb7; 
+    font-size: 1em; 
     font-weight: bold;
-    border-radius: 1.5625em; /* 25px to 1.5625em */
+    border-radius: 1.5625em; 
     cursor: pointer;
     position: absolute;
-    bottom: 13.125em; /* 210px to 13.125em */
-    right: 3.125em; /* 50px to 3.125em */
+    bottom: 34%; 
+    right: 3.125em; 
 }
 
 .offerInfo {
@@ -691,34 +704,34 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 #AddBtn {
-    padding: 0.625em 1.5625em; /* 10px 25px to 0.625em 1.5625em */
+    padding: 0.625em 1.5625em; 
     background-color: #fff2eb;
     color: rgb(83, 82, 82);
-    border: 0.0625em ridge #dabfb7; /* 1px to 0.0625em */
-    font-size: 1em; /* 15px to 1em */
+    border: 0.0625em ridge #dabfb7; 
+    font-size: 1em; 
     font-weight: bold;
-    border-radius: 1.5625em; /* 25px to 1.5625em */
+    border-radius: 1.5625em; 
     cursor: pointer;
     position: absolute;
-    bottom: -13.125em; /* -210px to -13.125em */
-    right: 3.125em; /* 50px to 3.125em */
+    bottom: -12%; 
+    right: 3.125em; 
 }
 
 .addOff {
-    border: 0.0625em ridge #dabfb7; /* 1px to 0.0625em */
-    padding: 0.625em 1.25em; /* 10px 20px to 0.625em 1.25em */
+    border: 0.0625em ridge #dabfb7;
+    padding: 0.625em 1.25em; 
     display: inline-block;
     font-weight: bold;
-    border-radius: 0.3125em; /* 5px to 0.3125em */
+    border-radius: 0.3125em; 
     background-color: #f7e9e9;
     margin: 0;
-    margin-bottom: 1.25em; /* 20px to 1.25em */
+    margin-bottom: 1.25em; 
 }
 
 .OfferFormContainer {
     display: flex;
-    gap: 1.25em; /* 20px to 1.25em */
-    margin-bottom: 3.125em; /* 50px to 3.125em */
+    gap: 1.25em; 
+    margin-bottom: 3.125em; 
 }
 
     .OfferFormContainer > div {
@@ -729,30 +742,30 @@ input[type="range"]::-webkit-slider-thumb {
 
 .upload-image {
     display: flex;
-    margin-left: 6.25em; /* 100px to 6.25em */
-    margin-bottom: 0.625em; /* 10px to 0.625em */
-    border: 0.125em dashed #ccc; /* 2px to 0.125em */
+    margin-left: 6.25em; 
+    margin-bottom: 0.625em; 
+    border: 0.125em dashed #ccc; 
     text-align: center;
-    padding: 3.125em; /* 50px to 3.125em */
+    padding: 3.125em; 
     cursor: pointer;
 }
 
 #OfferTextarea {
-    height: 5em; /* 80px to 5em */
+    height: 5em; 
 }
 
 .add-offer-form {
-    border: 0.0625em ridge #dabfb7; /* 1px to 0.0625em */
-    padding: 1.25em; /* 20px to 1.25em */
-    gap: 1.25em; /* 20px to 1.25em */
+    border: 0.0625em ridge #dabfb7; 
+    padding: 1.25em; 
+    gap: 1.25em; 
 }
 
     .add-offer-form input, .add-offer-form textarea {
         width: 110%;
-        padding: 0.625em; /* 10px to 0.625em */
-        margin: 0.625em 0; /* 10px to 0.625em */
-        border: 0.0625em ridge #dabfb7; /* 1px to 0.0625em */
-        border-radius: 0.25em; /* 4px to 0.25em */
+        padding: 0.625em; 
+        margin: 0.625em 0; 
+        border: 0.0625em ridge #dabfb7; 
+        border-radius: 0.25em;
     }
 
 
@@ -794,7 +807,14 @@ input[type="range"]::-webkit-slider-thumb {
     margin-left: 1.25em; 
 }
 
-
+.container-Eval {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25em; 
+    border: 0.125em solid #ddd; 
+    margin: 1.25em; 
+    padding: 6.25em; 
+}
 
 .Products-Eval {
     position: relative;
@@ -862,24 +882,22 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .feedback-section {
-  width: 80%;
-  
-    }
-    
-    .feedback {
-    width: 95%;
-    height: 10em;
-    margin-top: 1em;
-    border: 0.0625em solid #ddd;
-    border-radius: 0.3125em;
-    padding: 0.625em;
-    }
-    
-    #Submit-feedback {
+    width: 80%;
+}
 
-    float:right;
+.feedback {
+    width: 95%;
+    height: 10em; 
+    margin-top: 1em; 
+    border: 0.0625em solid #ddd; 
+    border-radius: 0.3125em; 
+    padding: 0.625em; 
+}
+
+#Submit-feedback {
+    float: right;
     margin-right: 0.625em; 
-    padding: 0.5em 1.25em; 
+    padding: 0.3125em 1.25em; 
     margin-top: 0.625em;
     background-color: #fff2eb;
     color: rgb(83, 82, 82);
@@ -888,8 +906,7 @@ input[type="range"]::-webkit-slider-thumb {
     font-weight: bold;
     border-radius: 1.5625em; 
     cursor: pointer;
-    }
-    
+}
 /*SellerDashboard*/
 #SellerDashboardMain {
     padding: 2.5em;
