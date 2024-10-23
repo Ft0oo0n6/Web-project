@@ -406,6 +406,7 @@ input[type="range"]::-webkit-slider-thumb {
     display: flex; 
     flex-wrap: wrap; 
     justify-content: space-around; 
+    align-items: center;
     margin: 2% 4%;
     
 }
