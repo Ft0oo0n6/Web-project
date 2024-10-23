@@ -83,6 +83,7 @@ main { flex:1 }
     padding: 0.625em 1.25em;
     font-size: 1.125em;
     font-weight: bold;
+    color: rgb(83, 82, 82);
     background-color: #f7dfd2;
     border: 0.0625em solid #dabfb7;
     border-radius: 1.5625em;
