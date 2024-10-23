@@ -3,13 +3,11 @@
 <body>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Add a new product</title>
         <link rel="stylesheet" href="main.css">
     </head>
 
     <header>
-        <!-- Logo and Title on the Left -->
         <div class="logo-title">
             <div id="logo">
                 <a href="Home.html">
@@ -19,9 +17,6 @@
             <h1>Bloom Mart</h1>
         </div>
 
-
-
-        <!-- Navigation in the Center -->
         <div id="navigation-container">
             <div id="navigation">
                 <a href="SellerDash.html">Seller's dashboard</a>
@@ -39,10 +34,13 @@
         </div>
     </header>
 
+    <nav class="breadcrumb">
+        <a href="Home.html">home</a> &gt; 
+        <a href="SellerDash.html">Seller's dashboard</a> &gt; 
+        <span>Add a new product</span>
+    </nav>
+
     <main id="AddNewProductMain">
-        <div class="breadcrumb">
-            <p><a href="Home.html">home</a> > <a href="SellerDash.html">seller's dashboard</a> > <a href="AddNewProduct.html">add a new product</a></p>
-        </div>
         <form action="/action_page.php" method="post">
             <div class="AddProductContainer">
                 <div>
@@ -51,7 +49,7 @@
                     <input type="text" class="generalInfo" name="product-name" placeholder="Enter product name">
 
                     <label for="description">Description:</label>
-                    <textarea id ="AddProductTextarea" class="generalInfo" name="description" placeholder="Enter product description"></textarea>
+                    <textarea id="AddProductTextarea" class="generalInfo" name="description" placeholder="Enter product description"></textarea>
                 </div>
 
                 <div>

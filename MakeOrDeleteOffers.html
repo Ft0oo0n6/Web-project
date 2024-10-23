@@ -3,7 +3,6 @@
 <body>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Make or delete offers</title>
         <link rel="stylesheet" href="main.css">
     </head>
@@ -37,11 +36,13 @@
         </div>
     </header>
 
-    <main id="MakeDelOfferMain">
-        <div class="breadcrumb">
-            <p><a href="Home.html">home</a> > <a href="SellerDash.html">seller's dashboard</a> > <a href="MakeOrDeleteOffers.html">make or delete offers</a></p>
-        </div>
+    <nav class="breadcrumb">
+        <a href="Home.html">Home</a> &gt;
+        <a href="SellerDash.html">Seller's dashboard</a> &gt; 
+        <span>Make or delete offers</span>
+    </nav>
 
+    <main id="MakeDelOfferMain">
         <h2 class="h2Off">Seller's offers</h2>
         <div class="SellerOffers">
 
@@ -91,7 +92,7 @@
                         <label for="description">Description:</label>
                         <textarea id="OfferTextarea" name="description" placeholder="Enter offer description"></textarea>
                     </div>
-                     
+
                     <div class="upload-image">
                         <p>+</p>
                         <p>Upload Images</p>
