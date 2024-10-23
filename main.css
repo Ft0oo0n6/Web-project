@@ -405,7 +405,7 @@ input[type="range"]::-webkit-slider-thumb {
 .products-container {
     display: flex; 
     flex-wrap: wrap; 
-    justify-content: space-between; 
+    justify-content: space-around; 
     margin: 2% 4%;
     
 }
