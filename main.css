@@ -334,9 +334,10 @@ dd {
 
 .sort-container {
     display: flex;
-    gap: 5%;
+    gap: 2%;
     align-items: center;
-    margin-left: 5%;
+    margin-left: 4%;
+    margin-top: 6%;
 }
 
 .sort-by-name-container, .sort-by-price-container {
@@ -405,8 +406,7 @@ input[type="range"]::-webkit-slider-thumb {
     display: flex; 
     flex-wrap: wrap; 
     justify-content: flex-start; 
-    gap: 3%; 
-    margin: 5% ;
+    margin: 2% 1% 2% 1%;
 }
 
 .product-card {
