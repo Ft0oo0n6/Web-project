@@ -1060,7 +1060,7 @@ input[type="range"]::-webkit-slider-thumb {
     position: relative;
 }
 
-.product-image {
+.Cart-product-image {
     width: 100px;
     height: 100px;
     object-fit: cover;
@@ -1073,12 +1073,12 @@ input[type="range"]::-webkit-slider-thumb {
     flex-direction: column;
 }
 
-.quantity {
+.CartQuantity {
     display: flex;
     align-items: center;
 }
 
-.quantity button {
+.CartQuantity button {
     margin: 0 5px;
 }
 
