@@ -341,8 +341,8 @@ dd {
     display: flex;
     gap: 2%;
     align-items: center;
-    margin-left: 11.5%;
-    margin-top: 6%;
+    margin-left: 8%;
+    margin-top: 8%;
 }
 
 .sort-by-name-container, .sort-by-price-container {
@@ -412,8 +412,7 @@ input[type="range"]::-webkit-slider-thumb {
     flex-wrap: wrap; 
     justify-content: flex-start; 
     align-items: center;
-    margin: 2% 11%;
-    gap: 5%;
+    margin-left: 7%;
 }
 
 
@@ -638,6 +637,7 @@ input[type="range"]::-webkit-slider-thumb {
     border: 0.0625em ridge #dabfb7; 
     gap: 1.25em; 
     margin-bottom: 2.5em; 
+    position: relative;
 }
 
 .offer img {
@@ -667,7 +667,7 @@ input[type="range"]::-webkit-slider-thumb {
     border-radius: 1.5625em; 
     cursor: pointer;
     position: absolute;
-    bottom: 34%; 
+    bottom: 5%; 
     right: 3.125em; 
 }
 
@@ -687,7 +687,7 @@ input[type="range"]::-webkit-slider-thumb {
     border-radius: 1.5625em; 
     cursor: pointer;
     position: absolute;
-    bottom: -12%; 
+    bottom: 5%; 
     right: 3.125em; 
 }
 
@@ -732,6 +732,7 @@ input[type="range"]::-webkit-slider-thumb {
     border: 0.0625em ridge #dabfb7; 
     padding: 1.25em; 
     gap: 1.25em; 
+    position: relative;
 }
 
     .add-offer-form input, .add-offer-form textarea {

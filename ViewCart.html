@@ -1,47 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <title>View Cart</title>
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="ViewCart.css">
     </head>
-<body>
-    <header>
-        <div class="logo-title">
-            <div id="logo">
-                <a href="Home.html">
-                    <img src="images/Logo.png" alt="Website Logo">
-                </a>
-            </div>
-            <h1>Bloom Mart</h1>
-        </div>
-        <nav id="navigation-container">
-            <div id="navigation"> 
-                <a href="SellerDash.html">Seller's dashboard</a>
-                <a href="UserPage.html">User's page</a> 
-                <div class="dropdown">
-                    <select id="categories" onchange="location = this.value;">
-                        <option value="#" disabled selected>Categories</option>
-                        <option value="category1.html">Furniture</option>
-                        <option value="category2.html">Beauty</option>
-                        <option value="category3.html">Electronics</option>
-                    </select>
+
+    <body>
+        <header>
+            <div class="logo-title">
+                <div id="logo">
+                    <a href="Home.html">
+                        <img src="images/Logo.png" alt="Website Logo">
+                    </a>
                 </div>
-                <a href="ViewCart.html">
-                    <img src="images/cart.webp" alt="Cart" width="20" height="20">
-                </a>
+                <h1>Bloom Mart</h1>
             </div>
-        </nav>
-    </header>
-    </header>
-
-
-
-
-
-    <main id="ViewCartMain">
-        
+            <nav id="navigation-container">
+                <div id="navigation"> 
+                    <a href="SellerDash.html">Seller's dashboard</a>
+                    <a href="UserPage.html">User's page</a> 
+                    <div class="dropdown">
+                        <select id="categories" onchange="location = this.value;">
+                            <option value="#" disabled selected>Categories</option>
+                            <option value="category1.html">Furniture</option>
+                            <option value="category2.html">Beauty</option>
+                            <option value="category3.html">Electronics</option>
+                        </select>
+                    </div>
+                    <a href="ViewCart.html">
+                        <img src="images/cart.webp" alt="Cart" width="20" height="20">
+                    </a>
+                </div>
+            </nav>
+        </header>
 
         <nav class="breadcrumb">
             <a href="Home.html">home</a> >
@@ -49,212 +42,116 @@
             <span>Cart page</span>
         </nav>
 
-        <h3 id="MyCart">My Cart </h3>
+        <main id="ViewCartMain">
+            <h2 class="h2Uni">My Cart</h2>
+            <div id="allContainer">
+                <div id="itemsContainer">
+                    <div class="cart-item">
+                        <img src="placeholder-image-url.jpg" alt="Product Image" class="product-image">
+                        <div class="quanDescrip">
+                            <div class="descrip">
+                                <h3>Product Name</h3>
+                                <p>Product description goes here. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            </div>
+                            <div class="quantity">
+                                <button>-</button>
+                                <span>1</span>
+                                <button>+</button>
+                            </div>
+                        </div>
+                        <p class="price">$$$</p>
+                        <div class="clearItem">
+                            <button class="delete">🗑️</button>
+                        </div>
+                    </div>
 
+                    <div class="cart-item">
+                        <img src="placeholder-image-url.jpg" alt="Product Image" class="product-image">
+                        <div class="quanDescrip">
+                            <div class="descrip">
+                                <h3>Product Name</h3>
+                                <p>Product description goes here. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            </div>
+                            <div class="quantity">
+                                <button>-</button>
+                                <span>1</span>
+                                <button>+</button>
+                            </div>
+                        </div>
+                        <p class="price">$$$</p>
+                        <div class="clearItem">
+                            <button class="delete">🗑️</button>
+                        </div>
+                    </div>
 
-        
-        <div class="CartElemnt">
-            
-            <div class=CartElemntImg > <img src="images/111.webp" alt="Website Logo" width="100" height="100"></div>
-              <div class=productNameee>       
-                <div class=productName>
-    
-                   <p><strong>Gray Sectional</strong> </p>
-                   <p>This product is a gray sectional sofa with removable cushions.Itfeatures <br>
-                    a modern, comfortable design.
-                    </p>
+                    <div class="cart-item">
+                        <img src="placeholder-image-url.jpg" alt="Product Image" class="product-image">
+                        <div class="quanDescrip">
+                            <div class="descrip">
+                                <h3>Product Name</h3>
+                                <p>Product description goes here. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            </div>
+                            <div class="quantity">
+                                <button>-</button>
+                                <span>1</span>
+                                <button>+</button>
+                            </div>
+                        </div>
+                        <p class="price">$$$</p>
+                        <div class="clearItem">
+                            <button class="delete">🗑️</button>
+                        </div>
+                    </div>
 
-                     
+                    <div class="cart-item">
+                        <img src="placeholder-image-url.jpg" alt="Product Image" class="product-image">
+                        <div class="quanDescrip">
+                            <div class="descrip">
+                                <h3>Product Name</h3>
+                                <p>Product description goes here. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            </div>
+                            <div class="quantity">
+                                <button>-</button>
+                                <span>1</span>
+                                <button>+</button>
+                            </div>
+                        </div>
+                        <p class="price">$$$</p>
+                        <div class="clearItem">
+                            <button class="delete">🗑️</button>
+                        </div>
+                    </div>
                 </div>
-                <div id="qty-container">
-                    <button class="qty-btn minus" >-</button>
-                    <input type="text" id="quantity" value="1" readonly>
-                    <button class="qty-btn plus">+</button>
-                
-                </div> 
-             </div>
-         
-
-             <pre>                 </pre>
-
-      <div class="price">    
-        <p><strong>869SR</strong></p>
-    
-    
-        <div class="CartElemntImgDown">
-            <div class="image-Down">
-                <input type="image" src="images/trash.png" alt="Trash Icon" width="25" height="25" />
-            </div>
-        </div>
-    </div>
-           </div>
-        
-
-
-
-      
-      
-
-
-           <div class="CartElemnt">
-            
-            <div class=CartElemntImg > <img src="images/333.jpeg" alt="Website Logo" width="100" height="100"></div>
-              <div class=productNameee>       
-                <div class=productName>
-    
-                   <p><strong>Canon camera</strong> </p>
-                   <p>The Canon EOS R6 Mark II is a full-frame mirrorless camera with fast autofocus and 4K video,ideal <br>
-                     for photography and videography.
-                    </p>
-
+                <div class="cartSum">
+                    <div class="summary">
+                        <div class="row"><span>Subtotal:</span> <span>0000 SAR</span></div>
+                        <div class="row"><span>Taxes:</span> <span>000 SAR</span></div>
+                        <div class="row"><span>Delivery Fee:</span> <span>00 SAR</span></div>
+                        <div class="row total"><span>Total:</span> <span>0000 SAR</span></div>
+                        <div class="sumCheckout">
+                            <button class="checkout">Checkout</button>
+                        </div>
+                    </div>
+                    <div class="emptybtn">
+                        <button class="empty-cart">Empty Cart</button>
+                    </div>
                 </div>
-                <div id="qty-container">
-                    <button class="qty-btn minus" >-</button>
-                    <input type="text" id="quantity" value="1" readonly>
-                    <button class="qty-btn plus">+</button>
-                
-                </div> 
-             </div>
-         
-
-             
-
-      <div class="price">    
-        <p><strong>3500SR</strong></p>
-    
-    
-        <div class="CartElemntImgDown">
-            <div class="image-Down">
-                <input type="image" src="images/trash.png" alt="Trash Icon" width="25" height="25" />
             </div>
-        </div>
-    </div>
-           </div>
+        </main>
 
-      
-       
-           <div class="CartElemnt">
-            
-            <div class=CartElemntImg > <img src="images/222.jpeg" alt="Website Logo" width="100" height="100"></div>
-              <div class=productNameee>       
-                <div class=productName>
     
-                   <p><strong>Golden vasa</strong> </p>
-                   <p> This elegant vase features a striking geometric gold stand, adding a modern and <br>
-                    sophisticated touch to any decor. 
-                    </p>
-
-                   
-                </div>
-                <div id="qty-container">
-                    <button class="qty-btn minus" >-</button>
-                    <input type="text" id="quantity" value="1" readonly>
-                    <button class="qty-btn plus">+</button>
-                
-                </div> 
-             </div>
-         
-
-             <pre>         </pre>
-
-      <div class="price">    
-        <p><strong>100SR</strong></p>
-    
-    
-        <div class="CartElemntImgDown">
-            <div class="image-Down">
-                <input type="image" src="images/trash.png" alt="Trash Icon" width="25" height="25" />
+        <footer>
+            <div class="footer-left">
+                <p>Contact Us:</p>
+                <img src="images/twitter.webp" alt="Twitter Icon"> @BloomMart
+                <img src="images/instagram.webp" alt="Instagram Icon"> @BloomMart
+                <img src="images/email.png" alt="Email Icon"> BloomMart@gmail.com
             </div>
-        </div>
-    </div>
-           </div>
-
-     
-              
-                       
-
-
-           <div class="CartElemnt">
-            
-            <div class=CartElemntImg > <img src="images/444.webp" alt="Website Logo" width="100" height="100"></div>
-              <div class=productNameee>       
-                <div class=productName>
-    
-                   <p><strong>Davena Curler.</strong> </p>
-                   <p> Professional hair curler with fast heating technology and ergonomic design for <br>
-                    perfect curls. Includes a heat-resistant glove for safe use.
-                    </p>
-
-                   
-                </div>
-                <div id="qty-container">
-                    <button class="qty-btn minus" >-</button>
-                    <input type="text" id="quantity" value="1" readonly>
-                    <button class="qty-btn plus">+</button>
-                
-                </div> 
-             </div>
-         
-
-             <pre>            </pre>
-
-      <div class="price">    
-        <p><strong>160SR</strong></p>
-    
-    
-        <div class="CartElemntImgDown">
-            <div class="image-Down">
-                <input type="image" src="images/trash.png" alt="Trash Icon" width="25" height="25" />
+            <div class="footer-right">
+                &copy; 2024 BloomMart
             </div>
-        </div>
-    </div>
-           </div>
+        </footer>
 
-
-
-
-
-
-
-<div class="c">
-    
-    <pre class="check">Price                             4600SR </pre>
-
-    
-    <pre class="check">dicount                            40SR </pre>
-        
-    
-    <pre class="check">Delivery fees                      20SR </pre>
-        
-    
-
-    <div class="checkout-button">
-     <input type="button" value="checkout" >
-    </div>
-</div>
-
-
-
-
-
-<div class="cart-buttons">
-    <input type="button" value="Empty Cart" >
-</div>
-
-
-    </main>
-   
-    <footer>
-        <div class="footer-left">
-            <p>Contact Us:</p>
-            <img src="images/twitter.webp" alt="Twitter Icon"> @BloomMart
-            <img src="images/instagram.webp" alt="Instagram Icon"> @BloomMart
-            <img src="images/email.png" alt="Email Icon"> BloomMart@gmail.com
-        </div>
-        <div class="footer-right">
-            &copy; 2024 BloomMart
-        </div>
-    </footer>
-</body>
+    </body>
 
 </html>
