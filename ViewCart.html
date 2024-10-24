@@ -43,99 +43,101 @@
 
         <main id="ViewCartMain">
             <h2 class="h2Uni">My Cart</h2>
-            <div id="allContainer">
-                <div id="itemsContainer">
-                    <div class="cart-item">
-                        <img src="images/lipstick.jpg" alt="Lipstick" class="Cart-product-image">
-                        <div class="quanDescrip">
-                            <div class="descrip">
-                                <h3>Lipstick</h3>
-                                <p>A creamy nude lipstick with a matte finish, perfect for everyday wear. The shade is a soft, natural brown-pink, designed to flatter a wide range of skin tones while offering long-lasting coverage.</p>
+            <form action="nextPhase.ex" method="post">
+                <div id="allContainer">
+                    <div id="itemsContainer">
+                        <div class="cart-item">
+                            <img src="images/lipstick.jpg" alt="Lipstick" class="Cart-product-image">
+                            <div class="quanDescrip">
+                                <div class="descrip">
+                                    <h3>Lipstick</h3>
+                                    <p>A creamy nude lipstick with a matte finish, perfect for everyday wear. The shade is a soft, natural brown-pink, designed to flatter a wide range of skin tones while offering long-lasting coverage.</p>
+                                </div>
+                                <div class="CartQuantity">
+                                    <button>-</button>
+                                    <input type="number" name="item quantity">
+                                    <button>+</button>
+                                </div>
                             </div>
-                            <div class="quantity">
-                                <button>-</button>
-                                <span>1</span>
-                                <button>+</button>
+                            <p class="price">75SAR</p>
+                            <div class="clearItem">
+                                <button class="delete">🗑️</button>
                             </div>
                         </div>
-                        <p class="price">75SAR</p>
-                        <div class="clearItem">
-                            <button class="delete">🗑️</button>
+
+                        <div class="cart-item">
+                            <img src="images/earings.jpg" alt="Earings" class="Cart-product-image">
+                            <div class="quanDescrip">
+                                <div class="descrip">
+                                    <h3>Earings</h3>
+                                    <p>A pair of elegant silver hoop earrings featuring multiple intertwined bands, some of which are embellished with sparkling crystals. These earrings have a modern, sophisticated design that can complement both casual and formal attire.</p>
+                                </div>
+                                <div class="CartQuantity">
+                                    <button>-</button>
+                                    <input type="number" name="item quantity">
+                                    <button>+</button>
+                                </div>
+                            </div>
+                            <p class="price">110SAR</p>
+                            <div class="clearItem">
+                                <button class="delete">🗑️</button>
+                            </div>
+                        </div>
+
+                        <div class="cart-item">
+                            <img src="images/444.webp" alt="Hair Curler" class="Cart-product-image">
+                            <div class="quanDescrip">
+                                <div class="descrip">
+                                    <h3>Hair Curler</h3>
+                                    <p>A professional 25mm hair curling wand from Davena, featuring a sleek pink and black design. The curling wand comes with adjustable temperature controls and a protective glove to help create perfect, long-lasting curls without damaging the hair.</p>
+                                </div>
+                                <div class="CartQuantity">
+                                    <button>-</button>
+                                    <input type="number" name="item quantity">
+                                    <button>+</button>
+                                </div>
+                            </div>
+                            <p class="price">159SAR</p>
+                            <div class="clearItem">
+                                <button class="delete">🗑️</button>
+                            </div>
+                        </div>
+
+                        <div class="cart-item">
+                            <img src="images/SonyHeadphones.jpeg" alt="Sony Headphones" class="Cart-product-image">
+                            <div class="quanDescrip">
+                                <div class="descrip">
+                                    <h3>Sony Headphones</h3>
+                                    <p>High-quality over-ear wireless headphones in sleek black. These headphones offer excellent sound quality with noise-cancellation features, ideal for immersive music experiences and calls. The cushioned ear cups ensure comfort during long listening sessions.</p>
+                                </div>
+                                <div class="CartQuantity">
+                                    <button>-</button>
+                                    <input type="number" name="item quantity">
+                                    <button>+</button>
+                                </div>
+                            </div>
+                            <p class="price">199SAR</p>
+                            <div class="clearItem">
+                                <button class="delete">🗑️</button>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="cart-item">
-                        <img src="images/earings.jpg" alt="Earings" class="Cart-product-image">
-                        <div class="quanDescrip">
-                            <div class="descrip">
-                                <h3>Earings</h3>
-                                <p>A pair of elegant silver hoop earrings featuring multiple intertwined bands, some of which are embellished with sparkling crystals. These earrings have a modern, sophisticated design that can complement both casual and formal attire.</p>
-                            </div>
-                            <div class="quantity">
-                                <button>-</button>
-                                <span>1</span>
-                                <button>+</button>
+                    <div class="cartSum">
+                        <div class="summary">
+                            <div class="row"><span>Subtotal:</span> <span>543 SAR</span></div>
+                            <div class="row"><span>Taxes:</span> <span>12.76 SAR</span></div>
+                            <div class="row"><span>Delivery Fee:</span> <span>20 SAR</span></div>
+                            <div class="row total"><span>Total:</span> <span>575.76 SAR</span></div>
+                            <div class="sumCheckout">
+                                <button class="checkout" onclick="alert('Your purchase is complete!')">Checkout</button>
                             </div>
                         </div>
-                        <p class="price">110SAR</p>
-                        <div class="clearItem">
-                            <button class="delete">🗑️</button>
-                        </div>
-                    </div>
-
-                    <div class="cart-item">
-                        <img src="images/444.webp" alt="Hair Curler" class="Cart-product-image">
-                        <div class="quanDescrip">
-                            <div class="descrip">
-                                <h3>Hair Curler</h3>
-                                <p>A professional 25mm hair curling wand from Davena, featuring a sleek pink and black design. The curling wand comes with adjustable temperature controls and a protective glove to help create perfect, long-lasting curls without damaging the hair.</p>
-                            </div>
-                            <div class="quantity">
-                                <button>-</button>
-                                <span>1</span>
-                                <button>+</button>
-                            </div>
-                        </div>
-                        <p class="price">159SAR</p>
-                        <div class="clearItem">
-                            <button class="delete">🗑️</button>
-                        </div>
-                    </div>
-
-                    <div class="cart-item">
-                        <img src="images/SonyHeadphones.jpeg" alt="Sony Headphones" class="Cart-product-image">
-                        <div class="quanDescrip">
-                            <div class="descrip">
-                                <h3>Sony Headphones</h3>
-                                <p>High-quality over-ear wireless headphones in sleek black. These headphones offer excellent sound quality with noise-cancellation features, ideal for immersive music experiences and calls. The cushioned ear cups ensure comfort during long listening sessions.</p>
-                            </div>
-                            <div class="CartQuantity">
-                                <button>-</button>
-                                <span>1</span>
-                                <button>+</button>
-                            </div>
-                        </div>
-                        <p class="price">199SAR</p>
-                        <div class="clearItem">
-                            <button class="delete">🗑️</button>
+                        <div class="emptybtn">
+                            <button class="empty-cart">Empty Cart</button>
                         </div>
                     </div>
                 </div>
-                <div class="cartSum">
-                    <div class="summary">
-                        <div class="row"><span>Subtotal:</span> <span>543 SAR</span></div>
-                        <div class="row"><span>Taxes:</span> <span>12.76 SAR</span></div>
-                        <div class="row"><span>Delivery Fee:</span> <span>20 SAR</span></div>
-                        <div class="row total"><span>Total:</span> <span>575.76 SAR</span></div>
-                        <div class="sumCheckout">
-                            <button class="checkout" onclick="alert('Your purchase is complete!')">Checkout</button>
-                        </div>
-                    </div>
-                    <div class="emptybtn">
-                        <button class="empty-cart">Empty Cart</button>
-                    </div>
-                </div>
-            </div>
+            </form>
         </main>
 
     
