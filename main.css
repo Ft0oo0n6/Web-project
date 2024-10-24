@@ -155,6 +155,7 @@ main { flex:1 }
 
 .custReview-container {
     display: flex;
+    justify-content: space-around;
     gap: 2%;
     width: 100%;
     margin: 2% auto;
@@ -1030,4 +1031,108 @@ input[type="range"]::-webkit-slider-thumb {
 #OrderHistory {
     padding: 3% 2%;
     margin-top: 6%;
+}
+
+/* view cart */
+#ViewCartMain {
+    padding: 30px;
+    margin-top: 100px;
+}
+
+#allContainer {
+    display: flex;
+}
+
+#itemsContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.cart-item {
+    display: flex;
+    border: 1px ridge #dabfb7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.product-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 15px;
+    float: left;
+}
+
+.quanDescrip {
+    display: flex;
+    flex-direction: column;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+}
+
+.quantity button {
+    margin: 0 5px;
+}
+
+.clearItem {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.cartSum {
+    margin-left: 30px;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    border: 1px ridge #dabfb7;
+    height: 250px;
+    margin-top: 20px;
+    width: 250px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.summary .row{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.summary button{
+    padding: 0.625em 1.5625em; 
+    background-color: #fff2eb;
+    color: rgb(83, 82, 82);
+    border: 0.0625em ridge #dabfb7; 
+    font-size: 1em; 
+    font-weight: bold;
+    border-radius: 1.5625em; 
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.empty-cart {
+    margin-top: 30px;
+    margin-left: 90px;
+    padding: 0.625em 1.5625em; 
+    background-color: #fff2eb;
+    color: rgb(83, 82, 82);
+    border: 0.0625em ridge #dabfb7; 
+    font-size: 1em; 
+    font-weight: bold;
+    border-radius: 1.5625em; 
+    cursor: pointer;
 }
