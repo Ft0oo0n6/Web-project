@@ -40,168 +40,176 @@
         </nav>
 
         
-        <main id="CategoriesMain">
+        <main class="CategoriesMain">
             <div class="sort-container">
-                <div class="sort-by-name-container">
-                    <label for="sort-name" class="sort-label">Sort by Name:</label>
-                    <form action="nextPhase.ex" method="post" id="sort-name" class="sort-by-name">
-                        <label>
-                            <input type="radio" name="sortName" value="asc" checked> A-Z
-                        </label>
-                        <label>
-                            Z-A<input type="radio" name="sortName" value="desc"> 
-                        </label>
-                    </form>
-                </div>
-        
-                <div class="sort-by-price-container">
-                    <label for="price-range" class="sort-label">Sort by Price:</label>
-                    <div class="price-label">
-                        1 SAR - 10,000 SAR & above
-                    </div>
-                    <input type="range" id="price-range" min="0" max="100" step="10">
-                </div>
-        
-                <div class="button-container">
-                    <button class="find-button">Find</button>
-                </div>
+                <select id="sortNamePrice">
+                    <option disabled selected>Sort items by</option>
+                    <optgroup label="Price:">
+                        <option>low to high</option>
+                        <option>high to low</option>
+                    </optgroup>
+                    <optgroup label="Name:">
+                        <option>A-Z</option>
+                        <option>Z-A</option>
+                    </optgroup>
+                </select>
             </div>
-
-            <div class="products-container">
-                <div class="product-card">
-                    <div class="product-info">
-                        <img src="images/Laptop.webp" alt="Laptop" class="product-image">
-                        <h3 class="product-title">Laptop</h3>
-                        <div class="product-rating">★★★★☆ (38)</div>
-                        <div class="product-price">2599 SAR</div>
-                        <div class="product-seller">Circuit City</div>
-                    </div>
-                    <button class="add-to-cart">
-                        <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
-                    </button>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-info">
-                        <img src="images/SmartWatch.jpeg" alt="SmartWatch" class="product-image">
-                        <h3 class="product-title">Smart Watch</h3>
-                        <div class="product-rating">★★★☆☆ (43)</div>
-                        <div class="product-price">339 SAR</div>
-                        <div class="product-seller">Innovatech</div>
-                    </div>
-                    <button class="add-to-cart">
-                        <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
-                    </button>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-info">
-                        <img src="images/SonyHeadphones.jpeg" alt="SonyHeadphones" class="product-image">
-                        <h3 class="product-title">Sony Headphones</h3>
-                        <div class="product-rating">★★☆☆☆ (64)</div>
-                        <div class="product-price">199 SAR</div>
-                        <div class="product-seller">Innovatech</div>
-                    </div>
-                    <button class="add-to-cart">
-                        <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
-                    </button>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-info">
-                        <img src="images/Bluetooth Speaker.jpeg" alt="Bluetooth Speaker" class="product-image">
-                        <h3 class="product-title">Bluetooth Speaker</h3>
-                        <div class="product-rating">★★★☆☆ (7)</div>
-                        <div class="product-price">469 SAR</div>
-                        <div class="product-seller">Innovatech</div>
-                    </div>
-                    <button class="add-to-cart">
-                        <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
-                    </button>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-info">
-                        <img src="images/camera_old_camera_flash.jpg" alt="Digital Camera" class="product-image">
-                        <h3 class="product-title">Digital Camera</h3>
-                        <div class="product-rating">★★★★☆ (39)</div>
-                        <div class="product-price">299 SAR</div>
-                        <div class="product-seller">SmartGear Store</div>
-                    </div>
-                    <button class="add-to-cart">
-                        <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
-                    </button>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-info">
-                        <img src="images/printer.jpg" alt="Printer" class="product-image">
-                        <h3 class="product-title">Printer</h3>
-                        <div class="product-rating">★★★☆☆ (11)</div>
-                        <div class="product-price">799 SAR</div>
-                        <div class="product-seller">Circuit City</div>
-                    </div>
-                    <button class="add-to-cart">
-                        <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
-                    </button>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-info">
-                        <img src="images/earbuds.webp" alt="Earbuds" class="product-image">
-                        <h3 class="product-title">Earbuds</h3>
-                        <div class="product-rating">★★☆☆☆ (34)</div>
-                        <div class="product-price">199 SAR</div>
-                        <div class="product-seller">SmartGear Store</div>
-                    </div>
-                    <button class="add-to-cart">
-                        <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
-                    </button>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-info">
-                        <img src="images/tv.webp" alt="Televsion" class="product-image">
-                        <h3 class="product-title">Televsion</h3>
-                        <div class="product-rating">★★★★☆ (23)</div>
-                        <div class="product-price">560 SAR</div>
-                        <div class="product-seller">Volt Tech</div>
-                    </div>
-                    <button class="add-to-cart">
-                        <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
-                    </button>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-info">
-                        <img src="images/Ninetendo.jpeg" alt="Ninetendo Switch" class="product-image">
-                        <h3 class="product-title">Ninetendo Switch</h3>
-                        <div class="product-rating">★★★★☆ (87)</div>
-                        <div class="product-price">1999 SAR</div>
-                        <div class="product-seller">Circuit City</div>
-                    </div>
-                    <button class="add-to-cart">
-                        <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
-                    </button>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-info">
-                        <img src="images/444.webp" alt="Davena Curler" class="product-image">
-                        <h3 class="product-title">Davena Curler</h3>
-                        <div class="product-rating">★★★★☆ (87)</div>
-                        <div class="product-price">159 SAR</div>
-                        <div class="product-seller">Sleek & style</div>
-                    </div>
-                    <button class="add-to-cart">
-                        <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
-                    </button>
-                </div>
-    
-            </div>
-            
         
-        </main>
+            <ul class="ulCategory">
+                <div class="products-container">
+                    <li>
+                        <div class="product-card">
+                            <div class="product-info">
+                                <img src="images/Laptop.webp" alt="Laptop" class="product-image">
+                                <h3 class="product-title">Laptop</h3>
+                                <div class="product-rating">★★★★☆ (38)</div>
+                                <div class="product-price">2599 SAR</div>
+                                <div class="product-seller">Circuit City</div>
+                            </div>
+                            <button class="add-to-cart">
+                                <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                            </button>
+                        </div>
+                    </li>
+        
+                    <li>
+                        <div class="product-card">
+                            <div class="product-info">
+                                <img src="images/SmartWatch.jpeg" alt="SmartWatch" class="product-image">
+                                <h3 class="product-title">Smart Watch</h3>
+                                <div class="product-rating">★★★☆☆ (43)</div>
+                                <div class="product-price">339 SAR</div>
+                                <div class="product-seller">Innovatech</div>
+                            </div>
+                            <button class="add-to-cart">
+                                <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                            </button>
+                        </div>
+                    </li>
+        
+                    <li>
+                        <div class="product-card">
+                            <div class="product-info">
+                                <img src="images/SonyHeadphones.jpeg" alt="SonyHeadphones" class="product-image">
+                                <h3 class="product-title">Sony Headphones</h3>
+                                <div class="product-rating">★★☆☆☆ (64)</div>
+                                <div class="product-price">199 SAR</div>
+                                <div class="product-seller">Innovatech</div>
+                            </div>
+                            <button class="add-to-cart">
+                                <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                            </button>
+                        </div>
+                    </li>
+        
+                    <li>
+                        <div class="product-card">
+                            <div class="product-info">
+                                <img src="images/Bluetooth Speaker.jpeg" alt="Bluetooth Speaker" class="product-image">
+                                <h3 class="product-title">Bluetooth Speaker</h3>
+                                <div class="product-rating">★★★☆☆ (7)</div>
+                                <div class="product-price">469 SAR</div>
+                                <div class="product-seller">Innovatech</div>
+                            </div>
+                            <button class="add-to-cart">
+                                <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                            </button>
+                        </div>
+                    </li>
+        
+                    <li>
+                        <div class="product-card">
+                            <div class="product-info">
+                                <img src="images/camera_old_camera_flash.jpg" alt="Digital Camera" class="product-image">
+                                <h3 class="product-title">Digital Camera</h3>
+                                <div class="product-rating">★★★★☆ (39)</div>
+                                <div class="product-price">299 SAR</div>
+                                <div class="product-seller">SmartGear Store</div>
+                            </div>
+                            <button class="add-to-cart">
+                                <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                            </button>
+                        </div>
+                    </li>
+        
+                    <li>
+                        <div class="product-card">
+                            <div class="product-info">
+                                <img src="images/printer.jpg" alt="Printer" class="product-image">
+                                <h3 class="product-title">Printer</h3>
+                                <div class="product-rating">★★★☆☆ (11)</div>
+                                <div class="product-price">799 SAR</div>
+                                <div class="product-seller">Circuit City</div>
+                            </div>
+                            <button class="add-to-cart">
+                                <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                            </button>
+                        </div>
+                    </li>
+        
+                    <li>
+                        <div class="product-card">
+                            <div class="product-info">
+                                <img src="images/earbuds.webp" alt="Earbuds" class="product-image">
+                                <h3 class="product-title">Earbuds</h3>
+                                <div class="product-rating">★★☆☆☆ (34)</div>
+                                <div class="product-price">199 SAR</div>
+                                <div class="product-seller">SmartGear Store</div>
+                            </div>
+                            <button class="add-to-cart">
+                                <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                            </button>
+                        </div>
+                    </li>
+        
+                    <li>
+                        <div class="product-card">
+                            <div class="product-info">
+                                <img src="images/tv.webp" alt="Televsion" class="product-image">
+                                <h3 class="product-title">Televsion</h3>
+                                <div class="product-rating">★★★★☆ (23)</div>
+                                <div class="product-price">560 SAR</div>
+                                <div class="product-seller">Volt Tech</div>
+                            </div>
+                            <button class="add-to-cart">
+                                <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                            </button>
+                        </div>
+                    </li>
+        
+                    <li>
+                        <div class="product-card">
+                            <div class="product-info">
+                                <img src="images/Ninetendo.jpeg" alt="Ninetendo Switch" class="product-image">
+                                <h3 class="product-title">Ninetendo Switch</h3>
+                                <div class="product-rating">★★★★☆ (87)</div>
+                                <div class="product-price">1999 SAR</div>
+                                <div class="product-seller">Circuit City</div>
+                            </div>
+                            <button class="add-to-cart">
+                                <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                            </button>
+                        </div>
+                    </li>
+        
+                    <li>
+                        <div class="product-card">
+                            <div class="product-info">
+                                <img src="images/444.webp" alt="Davena Curler" class="product-image">
+                                <h3 class="product-title">Davena Curler</h3>
+                                <div class="product-rating">★★★★☆ (87)</div>
+                                <div class="product-price">159 SAR</div>
+                                <div class="product-seller">Sleek & style</div>
+                            </div>
+                            <button class="add-to-cart">
+                                <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                            </button>
+                        </div>
+                    </li>
+                
+                </div>
+            </ul>
+        </main>        
         
         <footer>
             <div class="footer-left">

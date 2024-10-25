@@ -39,167 +39,176 @@
             <span>Furniture</span>
         </nav>
 
-        <main id="CategoriesMain">
+        <main class="CategoriesMain">
             <div class="sort-container">
-                <div class="sort-by-name-container">
-                    <label for="sort-name" class="sort-label">Sort by Name:</label>
-                    <form action="nextPhase.ex" method="post" id="sort-name" class="sort-by-name">
-                        <label>
-                            <input type="radio" name="sortName" value="asc" checked> A-Z
-                        </label>
-                        <label>
-                            Z-A<input type="radio" name="sortName" value="desc"> 
-                        </label>
-                    </form>
-                </div>
-        
-                <div class="sort-by-price-container">
-                    <label for="price-range" class="sort-label">Sort by Price:</label>
-                    <div class="price-label">
-                        1 SAR - 10,000 SAR & above
-                    </div>
-                    <input type="range" id="price-range" min="0" max="100" step="10">
-                </div>
-        
-                <div class="button-container">
-                    <button class="find-button">Find</button>
-                </div>
+                <select id="sortNamePrice">
+                    <option disabled selected>Sort items by</option>
+                    <optgroup label="Price:">
+                        <option>low to high</option>
+                        <option>high to low</option>
+                    </optgroup>
+                    <optgroup label="Name:">
+                        <option>A-Z</option>
+                        <option>Z-A</option>
+                    </optgroup>
+                </select>
             </div>
-
-            <div class="products-container">
-                <div class="product-card">
-                    <div class="product-info">
-                        <img src="images/singleSofa.jpg" alt="Single Sofa" class="product-image">
-                        <h3 class="product-title">Single Sofa</h3>
-                        <div class="product-rating">★★★★☆ (38)</div>
-                        <div class="product-price">600 SAR</div>
-                        <div class="product-seller">Living Lux</div>
-                    </div>
-                    <button class="add-to-cart">
-                        <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
-                    </button>
+        
+            <ul class="ulCategory">
+                <div class="products-container">
+                    <li>
+                        <div class="product-card">
+                            <div class="product-info">
+                                <img src="images/singleSofa.jpg" alt="Single Sofa" class="product-image">
+                                <h3 class="product-title">Single Sofa</h3>
+                                <div class="product-rating">★★★★☆ (38)</div>
+                                <div class="product-price">600 SAR</div>
+                                <div class="product-seller">Living Lux</div>
+                            </div>
+                            <button class="add-to-cart">
+                                <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                            </button>
+                        </div>
+                    </li>
+        
+                    <li>
+                        <div class="product-card">
+                            <div class="product-info">
+                                <img src="images/candlestick-18th-century-ch-18640197-ebf3f2-1024.jpg" alt="Candle Stick" class="product-image">
+                                <h3 class="product-title">Candle Stick</h3>
+                                <div class="product-rating">★★★☆☆ (12)</div>
+                                <div class="product-price">120 SAR</div>
+                                <div class="product-seller">Antique Attic</div>
+                            </div>
+                            <button class="add-to-cart">
+                                <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                            </button>
+                        </div>
+                    </li>
+        
+                    <li>
+                        <div class="product-card">
+                            <div class="product-info">
+                                <img src="images/coffeeTable.jpg" alt="Coffee Table" class="product-image">
+                                <h3 class="product-title">Coffee Table</h3>
+                                <div class="product-rating">★★☆☆☆ (19)</div>
+                                <div class="product-price">199 SAR</div>
+                                <div class="product-seller">Living Luxe</div>
+                            </div>
+                            <button class="add-to-cart">
+                                <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                            </button>
+                        </div>
+                    </li>
+        
+                    <li>
+                        <div class="product-card">
+                            <div class="product-info">
+                                <img src="images/photo-of-a-bed-with-a-blue-blanket-and-wooden-headboard.jpeg" alt="Bed" class="product-image">
+                                <h3 class="product-title">Bed</h3>
+                                <div class="product-rating">★★★☆☆ (4)</div>
+                                <div class="product-price">299 SAR</div>
+                                <div class="product-seller">Living Luxe</div>
+                            </div>
+                            <button class="add-to-cart">
+                                <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                            </button>
+                        </div>
+                    </li>
+        
+                    <li>
+                        <div class="product-card">
+                            <div class="product-info">
+                                <img src="images/cup_tee_teacup_glass_0.jpg" alt="Glass Cup" class="product-image">
+                                <h3 class="product-title">Glass cup</h3>
+                                <div class="product-rating">★★★★☆ (000)</div>
+                                <div class="product-price">70 SAR</div>
+                                <div class="product-seller">Modern Muse</div>
+                            </div>
+                            <button class="add-to-cart">
+                                <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                            </button>
+                        </div>
+                    </li>
+        
+                    <li>
+                        <div class="product-card">
+                            <div class="product-info">
+                                <img src="images/dressingTable.jpg" alt="dressingTable" class="product-image">
+                                <h3 class="product-title">Dressing Table</h3>
+                                <div class="product-rating">★★★★☆ (000)</div>
+                                <div class="product-price">340 SAR</div>
+                                <div class="product-seller">Modern Muse</div>
+                            </div>
+                            <button class="add-to-cart">
+                                <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                            </button>
+                        </div>
+                    </li>
+        
+                    <li>
+                        <div class="product-card">
+                            <div class="product-info">
+                                <img src="images/Food Table.jpg" alt="FoodTable" class="product-image">
+                                <h3 class="product-title">Food Table</h3>
+                                <div class="product-rating">★★★★☆ (000)</div>
+                                <div class="product-price">2000 SAR</div>
+                                <div class="product-seller">Living Luxe</div>
+                            </div>
+                            <button class="add-to-cart">
+                                <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                            </button>
+                        </div>
+                    </li>
+        
+                    <li>
+                        <div class="product-card">
+                            <div class="product-info">
+                                <img src="images/frames wall.jpg" alt="Wall Frame" class="product-image">
+                                <h3 class="product-title">Wall Frame</h3>
+                                <div class="product-rating">★★★★☆ (24)</div>
+                                <div class="product-price">89 SAR</div>
+                                <div class="product-seller">Living Luxe</div>
+                            </div>
+                            <button class="add-to-cart">
+                                <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                            </button>
+                        </div>
+                    </li>
+        
+                    <li>
+                        <div class="product-card">
+                            <div class="product-info">
+                                <img src="images/interior-interior-design-furniture-room-preview.jpg" alt="Luxurious Leather Sofa" class="product-image">
+                                <h3 class="product-title">Luxurious Leather Sofa</h3>
+                                <div class="product-rating">★★★★☆ (21)</div>
+                                <div class="product-price">1000 SAR</div>
+                                <div class="product-seller">Living Luxe</div>
+                            </div>
+                            <button class="add-to-cart">
+                                <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                            </button>
+                        </div>
+                    </li>
+        
+                    <li>
+                        <div class="product-card">
+                            <div class="product-info">
+                                <img src="images/seven-plates-from-the-service-of-stadtholder-william-v-25bd6b-1024.jpg" alt="Product Image" class="product-image">
+                                <h3 class="product-title">Decorated plate</h3>
+                                <div class="product-rating">★★★★☆ (16)</div>
+                                <div class="product-price">110 SAR</div>
+                                <div class="product-seller">Antique Attic</div>
+                            </div>
+                            <button class="add-to-cart">
+                                <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
+                            </button>
+                        </div>
+                    </li>
                 </div>
-
-                <div class="product-card">
-                    <div class="product-info">
-                        <img src="images/candlestick-18th-century-ch-18640197-ebf3f2-1024.jpg" alt="Candle Stick" class="product-image">
-                        <h3 class="product-title">Candle Stick</h3>
-                        <div class="product-rating">★★★☆☆ (12)</div>
-                        <div class="product-price">120 SAR</div>
-                        <div class="product-seller">Antique Attic</div>
-                    </div>
-                    <button class="add-to-cart">
-                        <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
-                    </button>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-info">
-                        <img src="images/coffeeTable.jpg" alt="Coffee Table" class="product-image">
-                        <h3 class="product-title">Coffee Table</h3>
-                        <div class="product-rating">★★☆☆☆ (19)</div>
-                        <div class="product-price">199 SAR</div>
-                        <div class="product-seller">Living Luxe</div>
-                    </div>
-                    <button class="add-to-cart">
-                        <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
-                    </button>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-info">
-                        <img src="images/photo-of-a-bed-with-a-blue-blanket-and-wooden-headboard.jpeg" alt="Bed" class="product-image">
-                        <h3 class="product-title">Bed</h3>
-                        <div class="product-rating">★★★☆☆ (4)</div>
-                        <div class="product-price">299 SAR</div>
-                        <div class="product-seller">Living Luxe</div>
-                    </div>
-                    <button class="add-to-cart">
-                        <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
-                    </button>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-info">
-                        <img src="images/cup_tee_teacup_glass_0.jpg" alt="Glass Cup" class="product-image">
-                        <h3 class="product-title">Glass cup</h3>
-                        <div class="product-rating">★★★★☆ (000)</div>
-                        <div class="product-price">70 SAR</div>
-                        <div class="product-seller">Modern Muse</div>
-                    </div>
-                    <button class="add-to-cart">
-                        <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
-                    </button>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-info">
-                        <img src="images/dressingTable.jpg" alt="dressingTable" class="product-image">
-                        <h3 class="product-title">Dressing Table</h3>
-                        <div class="product-rating">★★★★☆ (000)</div>
-                        <div class="product-price">340 SAR</div>
-                        <div class="product-seller">Modern Muse</div>
-                    </div>
-                    <button class="add-to-cart">
-                        <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
-                    </button>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-info">
-                        <img src="images/Food Table.jpg" alt="FoodTable" class="product-image">
-                        <h3 class="product-title">Food Table</h3>
-                        <div class="product-rating">★★★★☆ (000)</div>
-                        <div class="product-price">2000 SAR</div>
-                        <div class="product-seller">Living Luxe</div>
-                    </div>
-                    <button class="add-to-cart">
-                        <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
-                    </button>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-info">
-                        <img src="images/frames wall.jpg" alt="Wall Frame" class="product-image">
-                        <h3 class="product-title">Wall Frameً</h3>
-                        <div class="product-rating">★★★★☆ (24)</div>
-                        <div class="product-price">89 SAR</div>
-                        <div class="product-seller">Living Luxe</div>
-                    </div>
-                    <button class="add-to-cart">
-                        <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
-                    </button>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-info">
-                        <img src="images/interior-interior-design-furniture-room-preview.jpg" alt="Luxurious Leather Sofa" class="product-image">
-                        <h3 class="product-title">Luxurious Leather Sofa</h3>
-                        <div class="product-rating">★★★★☆ (21)</div>
-                        <div class="product-price">1000 SAR</div>
-                        <div class="product-seller">Living Luxe</div>
-                    </div>
-                    <button class="add-to-cart">
-                        <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
-                    </button>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-info">
-                        <img src="images/seven-plates-from-the-service-of-stadtholder-william-v-25bd6b-1024.jpg" alt="Product Image" class="product-image">
-                        <h3 class="product-title">Decorated plate</h3>
-                        <div class="product-rating">★★★★☆ (16)</div>
-                        <div class="product-price">110 SAR</div>
-                        <div class="product-seller">Antique Attic</div>
-                    </div>
-                    <button class="add-to-cart">
-                        <img src="images/cart.webp" alt="Cart Icon" width="20" height="20">
-                    </button>
-                </div>
-
-            </div>
-             
+            </ul>            
         </main>
+        
         
         <footer>
             <div class="footer-left">
