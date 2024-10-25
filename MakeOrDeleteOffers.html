@@ -22,6 +22,7 @@
                     <a href="SellerDash.html">Seller's dashboard</a>
                     <a href="UserPage.html">User's page</a> 
                     <div class="dropdown">
+                        <label for="categories">Choose a category:</label>
                         <select id="categories" onchange="location = this.value;">
                             <option value="#" disabled selected>Categories</option>
                             <option value="category1.html">Furniture</option>
@@ -48,21 +49,24 @@
 
                 <div class="offer">
                     <img src="images/sofaOffer.png" alt="Sofa Offer">
-                    <label>20% Off Your Next Purchase</label>
+                    <label for="firstOffer">20% Off Your Next Purchase</label>
+                   <!--<label>20% Off Your Next Purchase</label>-->
                     <p>Take advantage of our second offer! Receive a 20% discount on your next purchase and save big on your favorite items.</p>
                     <input type="checkbox" name="First Offer" checked>
                 </div>
                 <div class="offer">
                     <img src="images/CoffeeTableOffer.png" alt="Coffee Table Offer">
-                    <label>Seasonal Sale - Up to 50% Off</label>
+                    <label for="secondOffer">Seasonal Sale - Up to 50% Off</label>
+                    <!--<label>Seasonal Sale - Up to 50% Off</label>-->
                     <p>Get ready for our seasonal sale! Enjoy discounts of up to 50% on select items. Hurry, while supplies last!</p>
                     <input type="checkbox" name="Second Offer">
                 </div>
                 <div class="offer">
                     <img src="images/wallFrame.png" alt="Wall Frame Offer">
-                    <label>Holiday Bundle Deals</label>
+                    <label for="thirdOffer">Holiday Bundle Deals</label>
+                    <!--<label>Holiday Bundle Deals</label>-->
                     <p>Get ready for the holidays with our special bundle offers. Buy gift sets at a discounted price and make your holiday shopping easier!</p>
-                    <input type="checkbox" name="Third Offer">
+                   <input type="checkbox" name="Third Offer">
                 </div>
                 <div class="DeleteBtn"><button type="submit" id="DeleteBtn">Delete Offer</button></div>
 
@@ -85,6 +89,7 @@
                             <p>+</p>
                             <p>Upload Images</p>
                             <div class="OfferAddImageFile">
+                                <label for="uploadOfferImage">Upload Offer Image:</label>
                                 <input type="file" name="Upload Offer Image">
                             </div>
                         </div>
