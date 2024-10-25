@@ -93,6 +93,9 @@ main { flex:1 }
     box-shadow: 0 0.25em 0.5em rgba(82, 59, 59, 0.1);
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+.dropdown label{
+    display: none;
+}
 
 .dropdown select:hover {
     background-color: rgb(255, 211, 211);
@@ -541,6 +544,9 @@ dd {
     width: 50%;
     margin-left: 10.625em;
 }
+.ProductAddImageFile label{
+   display: none;
+}
 
 #AddProductCategory {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -549,6 +555,7 @@ dd {
     border: 0.0625em ridge #dabfb7;
     border-radius: 0.3125em;
 }
+
 
 .FormFooter {
     margin-top: 1.25em;
@@ -1126,4 +1133,14 @@ dd {
     border-radius: 1.5625em;
     cursor: pointer;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.sort-container label{
+    display: none;
+}
+.OfferAddImageFile label{
+    display: none;
+}
+#thirdOffer label{
+    display: none;
 }
