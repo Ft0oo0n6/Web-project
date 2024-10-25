@@ -21,6 +21,7 @@
                 <a href="SellerDash.html">Seller's dashboard</a>
                 <a href="UserPage.html">User's page</a> 
                 <div class="dropdown">
+                    <label for="categories">Choose a category:</label>
                     <select id="categories" onchange="location = this.value;">
                         <option value="#" disabled selected>Categories</option>
                         <option value="category1.html">Furniture</option>
@@ -59,6 +60,7 @@
                             <p>+</p>
                             <p>Upload Images</p>
                             <div class="ProductAddImageFile">
+                                <label for="offerImage">Upload Offer Image:</label>
                                 <input type="file" name="Offer Image">
                             </div>
                         </div>
@@ -76,7 +78,8 @@
                         </div>
                     </div>
                     <div>
-                        <h2 class="h2Product">Category</h2>
+                      <h2 class="h2Product">Category</h2>
+                       <!--<label for="AddProductCategory">Category:</label>-->
                         <select id="AddProductCategory" name="category">
                             <option value="#" disabled selected>Choose a category</option>
                             <option value="category1">Furniture</option>
