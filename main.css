@@ -2,15 +2,17 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    
 }
 
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font-family: Arial, sans-serif;
+ 
     background-color: #fffefc;
     margin-top: 2%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 header {
@@ -36,11 +38,11 @@ main { flex:1 }
 }
 
 .logo-title h1 {
-    font-size: 1.75em;
+    font-size: 1.5em;
     font-weight: bold;
     color: #f8bfbf;
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 #logo img {
@@ -89,6 +91,7 @@ main { flex:1 }
     border-radius: 1.5625em;
     appearance: none;
     box-shadow: 0 0.25em 0.5em rgba(82, 59, 59, 0.1);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .dropdown select:hover {
@@ -551,6 +554,7 @@ dd {
 }
 
 #AddProductBtn {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 0.625em 1.25em; 
     background-color: #fff2eb;
     color: rgb(83, 82, 82);
@@ -628,6 +632,7 @@ dd {
     position: absolute;
     bottom: 5%; 
     right: 3.125em; 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .offerInfo {
@@ -637,6 +642,7 @@ dd {
 }
 
 #AddBtn {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 0.625em 1.5625em; 
     background-color: #fff2eb;
     color: rgb(83, 82, 82);
@@ -659,6 +665,7 @@ dd {
     background-color: #f7e9e9;
     margin: 0;
     margin-bottom: 1.25em; 
+ 
 }
 
 .OfferFormContainer {
@@ -975,12 +982,14 @@ dd {
     font-size: 0.9375em;
     font-weight: bold;
     text-align: left;
+    
 }
 
 .DateH {
     font-size: 0.875em;
     font-weight: bold;
     text-align: left;
+  
 }
 
 #OrderHistory {
@@ -1040,6 +1049,7 @@ dd {
 
 .CartQuantity button {
     margin: 0 0.3125em;
+   
 }
 
 .clearItem {
@@ -1092,6 +1102,7 @@ dd {
     border-radius: 1.5625em;
     cursor: pointer;
     margin-top: 3.125em;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .empty-cart {
@@ -1105,4 +1116,8 @@ dd {
     font-weight: bold;
     border-radius: 1.5625em;
     cursor: pointer;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.sort-container{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
