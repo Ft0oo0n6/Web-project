@@ -1076,11 +1076,12 @@ input[type="range"]::-webkit-slider-thumb {
 
 .CartQuantity {
     display: flex;
-    align-items: center;
+
 }
 
 .CartQuantity > input {
     width: 5%;
+   text-align: center;
 }
 
 .CartQuantity button {
