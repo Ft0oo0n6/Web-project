@@ -1,105 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<body>
     <head>
         <meta charset="UTF-8">
         <title>Add a New Product</title>
         <link rel="stylesheet" href="main.css">
     </head>
-
-    <header>
-        <div class="logo-title">
-            <div id="logo">
-                <a href="Home.html">
-                    <img src="images/Logo.png" alt="Website Logo">
-                </a>
-            </div>
-            <h1>Bloom Mart</h1>
-        </div>
-
-        <div id="navigation-container">
-            <div id="navigation">
-                <a href="SellerDash.html">Seller's dashboard</a>
-                <a href="UserPage.html">User's page</a>
-                <div class="dropdown">
-                    <select id="categories" onchange="location = this.value;">
-                        <option value="#" disabled selected>Categories</option>
-                        <option value="category1.html">Category 1</option>
-                        <option value="category2.html">Category 2</option>
-                        <option value="category3.html">Category 3</option>
-                    </select>
+        
+    <body>
+        <header>
+            <div class="logo-title">
+                <div id="logo">
+                    <a href="Home.html">
+                        <img src="images/Logo.png" alt="Website Logo">
+                    </a>
                 </div>
-                <a href="Cart.html"><img src="images/cart.webp" alt="Cart" width="20" height="20"></a>
+                <h1>Bloom Mart</h1>
             </div>
-        </div>
-    </header>
 
-    <nav class="breadcrumb">
-        <a href="Home.html">home</a> &gt; 
-        <a href="SellerDash.html">Living Luxe's Dashboard</a> &gt; 
-        <span>Add a New Product</span>
-    </nav>
-
-    <main id="AddNewProductMain">
-        <form action="nextPhase.ex" method="post">
-            <div class="AddProductContainer">
-                <div>
-                    <h2 class="h2Product">General Information</h2>
-                    <label for="product-name">Name of product:</label>
-                    <input type="text" class="generalInfo" name="product-name" placeholder="Enter product name">
-
-                    <label for="description">Description:</label>
-                    <textarea id="AddProductTextarea" class="generalInfo" name="description" placeholder="Enter product description"></textarea>
+            <div id="navigation-container">
+                <div id="navigation">
+                    <a href="SellerDash.html">Seller's dashboard</a>
+                    <a href="UserPage.html">User's page</a>
+                    <div class="dropdown">
+                        <select id="categories" onchange="location = this.value;">
+                            <option value="#" disabled selected>Categories</option>
+                            <option value="category1.html">Category 1</option>
+                            <option value="category2.html">Category 2</option>
+                            <option value="category3.html">Category 3</option>
+                        </select>
+                    </div>
+                    <a href="Cart.html"><img src="images/cart.webp" alt="Cart" width="20" height="20"></a>
                 </div>
+            </div>
+        </header>
 
-                <div>
-                    <h2 class="h2Product">Upload Images</h2>
-                    <div class="upload-imageProduct">
-                        <p>+</p>
-                        <p>Upload Images</p>
-                        <div class="ProductAddImageFile">
-                            <input type="file" name="Offer Image">
+        <nav class="breadcrumb">
+            <a href="Home.html">home</a> &gt; 
+            <a href="SellerDash.html">Living Luxe's Dashboard</a> &gt; 
+            <span>Add a New Product</span>
+        </nav>
+
+        <main id="AddNewProductMain">
+            <form action="nextPhase.ex" method="post">
+                <div class="AddProductContainer">
+                    <div>
+                        <h2 class="h2Product">General Information</h2>
+                        <label for="product-name">Name of product:</label>
+                        <input type="text" class="generalInfo" id="product-name" placeholder="Enter product name">
+
+                        <label for="AddProductTextarea">Description:</label>
+                        <textarea id="AddProductTextarea" class="generalInfo" placeholder="Enter product description"></textarea>
+                    </div>
+
+                    <div>
+                        <h2 class="h2Product">Upload Images</h2>
+                        <div class="upload-imageProduct">
+                            <p>+</p>
+                            <p>Upload Images</p>
+                            <div class="ProductAddImageFile">
+                                <input type="file" name="Offer Image">
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="price-stock">
-                    <div>
-                        <h2 class="h2Product">Pricing And Stock</h2>
-                        <label for="base-pricing">Base Pricing:</label>
-                        <input type="number" class="PriceAndStock" name="base-pricing" placeholder="Enter base price">
+                    <div class="price-stock">
+                        <div>
+                            <h2 class="h2Product">Pricing And Stock</h2>
+                            <label for="base-pricing">Base Pricing:</label>
+                            <input type="number" class="PriceAndStock" id="base-pricing" placeholder="Enter base price">
+                        </div>
+                        <div>
+                            <label for="stockLabel" id="stock">Stock:</label>
+                            <input type="number" class="PriceAndStock" id="stockLabel" placeholder="Enter stock quantity">
+                        </div>
                     </div>
                     <div>
-                        <label for="stock" id="stock">Stock:</label>
-                        <input type="number" class="PriceAndStock" name="stock" placeholder="Enter stock quantity">
+                        <h2 class="h2Product">Category</h2>
+                        <select id="AddProductCategory" name="category">
+                            <option value="category1">Category1</option>
+                            <option value="category2">Category2</option>
+                            <option value="category3">Category3</option>
+                        </select>
                     </div>
                 </div>
-                <div>
-                    <h2 class="h2Product">Category</h2>
-                    <select id="AddProductCategory" name="category">
-                        <option value="category1">Category1</option>
-                        <option value="category2">Category2</option>
-                        <option value="category3">Category3</option>
-                    </select>
+
+                <div class="FormFooter">
+                    <button id="AddProductBtn" type="submit"> ADD PRODUCT </button>
                 </div>
-            </div>
+            </form>
+        </main>
 
-            <div class="FormFooter">
-                <button id="AddProductBtn" type="submit"> ADD PRODUCT </button>
+        <footer>
+            <div class="footer-left">
+                <p>Contact Us:</p>
+                <img src="images/twitter.webp" alt="Twitter Icon"> @BloomMart
+                <img src="images/instagram.webp" alt="Instagram Icon"> @BloomMart
+                <img src="images/email.png" alt="Email Icon"> BloomMart@gmail.com
             </div>
-        </form>
-    </main>
-
-    <footer>
-        <div class="footer-left">
-            <p>Contact Us:</p>
-            <img src="images/twitter.webp" alt="Twitter Icon"> @BloomMart
-            <img src="images/instagram.webp" alt="Instagram Icon"> @BloomMart
-            <img src="images/email.png" alt="Email Icon"> BloomMart@gmail.com
-        </div>
-        <div class="footer-right">
-            &copy; 2024 BloomMart
-        </div>
-    </footer>
-</body>
+            <div class="footer-right">
+                &copy; 2024 BloomMart
+            </div>
+        </footer>
+    </body>
 </html>

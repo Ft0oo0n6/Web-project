@@ -1,110 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<body>
     <head>
         <meta charset="UTF-8">
         <title>Make or Delete Offers</title>
         <link rel="stylesheet" href="main.css">
     </head>
+    <body>
 
-    <header>
-        
-        <div class="logo-title">
-            <div id="logo">
-                <a href="Home.html">
-                    <img src="images/Logo.png" alt="Website Logo">
-                </a>
-            </div>
-            <h1>Bloom Mart</h1>
-        </div>
-        <nav id="navigation-container">
-            <div id="navigation"> 
-                <a href="SellerDash.html">Seller's dashboard</a>
-                <a href="UserPage.html">User's page</a> 
-                <div class="dropdown">
-                    <select id="categories" onchange="location = this.value;">
-                        <option value="#" disabled selected>Categories</option>
-                        <option value="category1.html">Furniture</option>
-                        <option value="category2.html">Beauty</option>
-                        <option value="category3.html">Electronics</option>
-                    </select>
+        <header>
+            
+            <div class="logo-title">
+                <div id="logo">
+                    <a href="Home.html">
+                        <img src="images/Logo.png" alt="Website Logo">
+                    </a>
                 </div>
-                <a href="ViewCart.html">
-                    <img src="images/cart.webp" alt="Cart" width="20" height="20">
-                </a>
+                <h1>Bloom Mart</h1>
             </div>
-        </nav>
-    </header>
-    </header>
-
-    <nav class="breadcrumb">
-        <a href="Home.html">Home</a> &gt;
-        <a href="SellerDash.html">Living Luxe's Dashboard</a> &gt; 
-        <span>Make or Delete Offers</span>
-    </nav>
-
-    <main id="MakeDelOfferMain">
-        <h2 class="h2Off">Living Luxe's offers</h2>
-        <div class="SellerOffers">
-
-            <div class="offer">
-                <img src="images/sofaOffer.png" alt="Sofa Offer">
-                <label>20% Off Your Next Purchase</label>
-                <p>Take advantage of our second offer! Receive a 20% discount on your next purchase and save big on your favorite items.</p>
-                <input type="checkbox" name="FirstOffer" checked>
-            </div>
-            <div class="offer">
-                <img src="images/CoffeeTableOffer.png" alt="Offer Image">
-                <label>Seasonal Sale - Up to 50% Off</label>
-                <p>Get ready for our seasonal sale! Enjoy discounts of up to 50% on select items. Hurry, while supplies last!</p>
-                <input type="checkbox" name="SecondOffer">
-            </div>
-            <div class="offer">
-                <img src="images/wallFrame.png" alt="Offer Image">
-                <label>Holiday Bundle Deals</label>
-                <p>Get ready for the holidays with our special bundle offers. Buy gift sets at a discounted price and make your holiday shopping easier!</p>
-                <input type="checkbox" name="ThirdOffer">
-            </div>
-            <div class="DeleteBtn"><button type="submit" id="DeleteBtn">Delete Offer</button></div>
-
-        </div>
-
-        <h2 class="h2Off">Add Offer</h2>
-        <div class="add-offer-form">
-
-            <form action="nextPhase.ex" method="post">
-                <div class="OfferFormContainer">
-                    <div>
-                        <label for="title">Title:</label>
-                        <input type="text" id="title" name="title" placeholder="Enter offer title">
-
-                        <label for="description">Description:</label>
-                        <textarea id="OfferTextarea" name="description" placeholder="Enter offer description"></textarea>
+            <nav id="navigation-container">
+                <div id="navigation"> 
+                    <a href="SellerDash.html">Seller's dashboard</a>
+                    <a href="UserPage.html">User's page</a> 
+                    <div class="dropdown">
+                        <select id="categories" onchange="location = this.value;">
+                            <option value="#" disabled selected>Categories</option>
+                            <option value="category1.html">Furniture</option>
+                            <option value="category2.html">Beauty</option>
+                            <option value="category3.html">Electronics</option>
+                        </select>
                     </div>
+                    <a href="ViewCart.html">
+                        <img src="images/cart.webp" alt="Cart" width="20" height="20">
+                    </a>
+                </div>
+            </nav>
+        </header>
 
-                    <div class="upload-image">
-                        <p>+</p>
-                        <p>Upload Images</p>
-                        <div class="OfferAddImageFile">
-                            <input type="file" name="Offer Image">
+        <nav class="breadcrumb">
+            <a href="Home.html">Home</a> &gt;
+            <a href="SellerDash.html">Living Luxe's Dashboard</a> &gt; 
+            <span>Make or Delete Offers</span>
+        </nav>
+
+        <main id="MakeDelOfferMain">
+            <h2 class="h2Off">Living Luxe's offers</h2>
+            <div class="SellerOffers">
+
+                <div class="offer">
+                    <img src="images/sofaOffer.png" alt="Sofa Offer">
+                    <label>20% Off Your Next Purchase</label>
+                    <p>Take advantage of our second offer! Receive a 20% discount on your next purchase and save big on your favorite items.</p>
+                    <input type="checkbox" name="FirstOffer" checked>
+                </div>
+                <div class="offer">
+                    <img src="images/CoffeeTableOffer.png" alt="Offer Image">
+                    <label>Seasonal Sale - Up to 50% Off</label>
+                    <p>Get ready for our seasonal sale! Enjoy discounts of up to 50% on select items. Hurry, while supplies last!</p>
+                    <input type="checkbox" name="SecondOffer">
+                </div>
+                <div class="offer">
+                    <img src="images/wallFrame.png" alt="Offer Image">
+                    <label>Holiday Bundle Deals</label>
+                    <p>Get ready for the holidays with our special bundle offers. Buy gift sets at a discounted price and make your holiday shopping easier!</p>
+                    <input type="checkbox" name="ThirdOffer">
+                </div>
+                <div class="DeleteBtn"><button type="submit" id="DeleteBtn">Delete Offer</button></div>
+
+            </div>
+
+            <h2 class="h2Off">Add Offer</h2>
+            <div class="add-offer-form">
+
+                <form action="nextPhase.ex" method="post">
+                    <div class="OfferFormContainer">
+                        <div>
+                            <label for="title">Title:</label>
+                            <input type="text" id="title" name="title" placeholder="Enter offer title">
+
+                            <label for="OfferTextarea">Description:</label>
+                            <textarea id="OfferTextarea" placeholder="Enter offer description"></textarea>
+                        </div>
+
+                        <div class="upload-image">
+                            <p>+</p>
+                            <p>Upload Images</p>
+                            <div class="OfferAddImageFile">
+                                <input type="file" name="Offer Image">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="AddBtn"><button type="submit" id="AddBtn">Add Offer</button></div>
-            </form>
-        </div>
-    </main>
+                    <div class="AddBtn"><button type="submit" id="AddBtn">Add Offer</button></div>
+                </form>
+            </div>
+        </main>
 
-    <footer>
-        <div class="footer-left">
-            <p>Contact Us:</p>
-            <img src="images/twitter.webp" alt="Twitter Icon"> @BloomMart
-            <img src="images/instagram.webp" alt="Instagram Icon"> @BloomMart
-            <img src="images/email.png" alt="Email Icon"> BloomMart@gmail.com
-        </div>
-        <div class="footer-right">
-            &copy; 2024 BloomMart
-        </div>
-    </footer>
-</body>
+        <footer>
+            <div class="footer-left">
+                <p>Contact Us:</p>
+                <img src="images/twitter.webp" alt="Twitter Icon"> @BloomMart
+                <img src="images/instagram.webp" alt="Instagram Icon"> @BloomMart
+                <img src="images/email.png" alt="Email Icon"> BloomMart@gmail.com
+            </div>
+            <div class="footer-right">
+                &copy; 2024 BloomMart
+            </div>
+        </footer>
+    </body>
 </html>
