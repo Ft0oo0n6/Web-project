@@ -337,11 +337,13 @@ dd {
 }
 
 .sort-container {
+  
     margin-left: 9%;
     margin-top: 8%;
 }
 
 #sortNamePrice {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 0.625em;
     font-size: 1.125em;
     font-weight: bold;
@@ -542,6 +544,7 @@ dd {
 }
 
 #AddProductCategory {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     width: 100%;
     padding: 0.625em;
     border: 0.0625em ridge #dabfb7;
@@ -918,6 +921,7 @@ dd {
     display: flex;
     justify-content: flex-end;
     gap: 0.625em;
+   
   }
   
   .buttons-s a {
@@ -930,6 +934,7 @@ dd {
     font-size: 0.9375em; 
     font-weight: bold;
     color: rgb(83, 82, 82); 
+   
   }
 
 .buttons-s a:hover {
@@ -1116,8 +1121,5 @@ dd {
     font-weight: bold;
     border-radius: 1.5625em;
     cursor: pointer;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-.sort-container{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
