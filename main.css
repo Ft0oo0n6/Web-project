@@ -89,11 +89,8 @@ main { flex:1 }
     color: rgb(83, 82, 82);
     border-radius: 1.5625em;
     appearance: none;
-<<<<<<< Updated upstream
     box-shadow: 0 0.25em 0.5em rgba(82, 59, 59, 0.1);
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-=======
->>>>>>> Stashed changes
 }
 .dropdown label{
     display: none;
