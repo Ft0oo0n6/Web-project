@@ -5,34 +5,35 @@
         <title>Add a New Product</title>
         <link rel="stylesheet" href="main.css">
     </head>
-        
-    <body>
-        <header>
-            <div class="logo-title">
-                <div id="logo">
-                    <a href="Home.html">
-                        <img src="images/Logo.png" alt="Website Logo">
-                    </a>
-                </div>
-                <h1>Bloom Mart</h1>
-            </div>
 
-            <div id="navigation-container">
-                <div id="navigation">
-                    <a href="SellerDash.html">Seller's dashboard</a>
-                    <a href="UserPage.html">User's page</a>
-                    <div class="dropdown">
-                        <select id="categories" onchange="location = this.value;">
-                            <option value="#" disabled selected>Categories</option>
-                            <option value="category1.html">Category 1</option>
-                            <option value="category2.html">Category 2</option>
-                            <option value="category3.html">Category 3</option>
-                        </select>
-                    </div>
-                    <a href="Cart.html"><img src="images/cart.webp" alt="Cart" width="20" height="20"></a>
-                </div>
+    <header>
+        <div class="logo-title">
+            <div id="logo">
+                <a href="Home.html">
+                    <img src="images/Logo.png" alt="Website Logo">
+                </a>
             </div>
-        </header>
+            <h1>Bloom Mart</h1>
+        </div>
+
+        <nav id="navigation-container">
+            <div id="navigation"> 
+                <a href="SellerDash.html">Seller's dashboard</a>
+                <a href="UserPage.html">User's page</a> 
+                <div class="dropdown">
+                    <select id="categories" onchange="location = this.value;">
+                        <option value="#" disabled selected>Categories</option>
+                        <option value="category1.html">Furniture</option>
+                        <option value="category2.html">Beauty</option>
+                        <option value="category3.html">Electronics</option>
+                    </select>
+                </div>
+                <a href="ViewCart.html">
+                    <img src="images/cart.webp" alt="Cart" width="20" height="20">
+                </a>
+            </div>
+        </nav>
+    </header>
 
         <nav class="breadcrumb">
             <a href="Home.html">home</a> &gt; 
@@ -83,9 +84,14 @@
                         </select>
                     </div>
                 </div>
-
-                <div class="FormFooter">
-                    <button id="AddProductBtn" type="submit"> ADD PRODUCT </button>
+                <div>
+                    <h2 class="h2Product">Category</h2>
+                    <select id="AddProductCategory" name="category">
+                        <option value="#" disabled selected>Choose a category</option>
+                        <option value="category1">Furniture</option>
+                        <option value="category2">Beauty</option>
+                        <option value="category3">Electronics</option>
+                    </select>
                 </div>
             </form>
         </main>
