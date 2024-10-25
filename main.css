@@ -1141,3 +1141,7 @@ dd {
 .OfferAddImageFile label{
     display: none;
 }
+
+.hidden {
+    display: none;
+}

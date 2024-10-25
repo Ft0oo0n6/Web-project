@@ -60,8 +60,8 @@
                             <p>+</p>
                             <p>Upload Images</p>
                             <div class="ProductAddImageFile">
-                                <label for="offerImage">Upload Offer Image:</label>
-                                <input type="file" name="Offer Image">
+                                <label for="addProductImage" class="hidden">Upload Offer Image:</label>
+                                <input type="file" id="addProductImage" name="Offer Image">
                             </div>
                         </div>
                     </div>
@@ -79,7 +79,7 @@
                     </div>
                     <div>
                       <h2 class="h2Product">Category</h2>
-                       <!--<label for="AddProductCategory">Category:</label>-->
+                       <label for="AddProductCategory" class="hidden">Choose a category</label>
                         <select id="AddProductCategory" name="category">
                             <option value="#" disabled selected>Choose a category</option>
                             <option value="category1">Furniture</option>
