@@ -1048,6 +1048,16 @@ dd {
     position: absolute;
     bottom: 1.25em;
     right: 1.25em;
+    border: 0.0625em ridge #dba0a0;
+    background-color: #f8bfbf;
+    padding: 0.625em;
+    border-radius: 0.3125em;
+    cursor: pointer;
+}
+
+.clearItem:hover {
+    border: 0.0625em ridge rgb(194, 142, 142);
+    background-color: rgb(231, 121, 121);
 }
 
 .cartSum {
