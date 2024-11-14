@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>Furniture</title>
         <link rel="stylesheet" href="main.css">
+        <script src="categoryjs.js"></script>
     </head>
     <body>
         <header>
@@ -43,18 +44,21 @@
         <main class="CategoriesMain">
             <div class="sort-container">
                 <label for="sortNamePrice">Sort items by:</label>
-                <select id="sortNamePrice">
+                <select id="sortNamePrice" onchange="sortProducts()">
                     <option disabled selected>Sort items by</option>
                     <optgroup label="Price:">
-                        <option>low to high</option>
-                        <option>high to low</option>
+                        <option value="price-asc">low to high</option>
+                        <option value="price-desc">high to low</option>
                     </optgroup>
                     <optgroup label="Name:">
-                        <option>A-Z</option>
-                        <option>Z-A</option>
+                        <option value="name-asc">A-Z</option>
+                        <option value="name-desc">Z-A</option>
                     </optgroup>
                 </select>
+    
             </div>
+
+        
             <div class="products-container">
             <ul class="ulCategory"> 
                     <li>
