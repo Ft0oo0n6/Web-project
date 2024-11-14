@@ -21,9 +21,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #fff2eb;
+    background-color: #b0c4de;
     padding: 1em 2em;
-    border-bottom: 0.1em solid #e4cbcb;
+    border-bottom: 0.1em solid #87a2c4;
     position: fixed;
     top: 0;
     left: 0;
@@ -41,7 +41,7 @@ main { flex:1 }
 .logo-title h1 {
     font-size: 1.5em;
     font-weight: bold;
-    color: #f8bfbf;
+    color: #2a4f6c;
     margin: 0;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -67,17 +67,17 @@ main { flex:1 }
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: rgb(83, 82, 82);
-    background-color: #f7dfd2;
+    color: #2a4f6c;
+    background-color: #d7e3f4;
     font-size: 1.125em;
     font-weight: bold;
-    border: 0.0625em ridge #dabfb7;
+    border: 0.0625em ridge #87a2c4;
     padding: 0.625em 1.25em;
     border-radius: 1.5625em;
 }
 
 #navigation a:hover {
-    background-color: rgb(255, 211, 211);
+    background-color: #d7e3f4;
     color: rgb(150, 130, 143);
 }
 
@@ -85,9 +85,9 @@ main { flex:1 }
     padding: 0.625em 1.25em;
     font-size: 1.125em;
     font-weight: bold;
-    background-color: #f7dfd2;
-    border: 0.0625em solid #dabfb7;
-    color: rgb(83, 82, 82);
+    background-color: #d7e3f4;
+    border: 0.0625em solid #87a2c4;
+    color: #2a4f6c;
     border-radius: 1.5625em;
     appearance: none;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -97,8 +97,8 @@ main { flex:1 }
 }
 
 .dropdown select:hover {
-    background-color: rgb(255, 211, 211);
-    color: rgb(150, 130, 143);
+    background-color: #d7e3f4;
+    color: #2a4f6c;
 }
 
 #HomePageMain {
@@ -113,8 +113,8 @@ main { flex:1 }
     font-weight: bold;
     border-radius: 0.3125em;
     margin: 0;
-    border: 0.0625em ridge #dabfb7;
-    background-color: #fff2eb;
+    border: 0.0625em ridge #87a2c4;
+    background-color: #b0c4de;
 }
 
 .offers-wrapper {
@@ -143,7 +143,7 @@ main { flex:1 }
 }
 
 .offer h3{
-    color: #e2a0a0;
+    color: #2a4f6c;
 }
 .reviews-wrapper {
     display: flex;
@@ -178,9 +178,9 @@ main { flex:1 }
     margin: 0;
     font-size: 1em;
     font-weight: bold;
-    color: #333;
-    border: 0.0625em ridge #dabfb7;
-    background-color: #fff2eb;
+    color: #2a4f6c;
+    border: 0.0625em ridge #87a2c4;
+    background-color: #b0c4de;
     border-radius: 20%;
     padding: 0.3125em;
     position: absolute;
@@ -206,7 +206,7 @@ main { flex:1 }
     bottom: 0;
     width: 100%;
     height: 50%; /* Adjust for the size of the curve */
-    background-color: #F9E8E0; /* Light beige-pink color */
+    background-color: #b0c4de; /* Light beige-pink color */
     border-top-left-radius: 100%;
     border-top-right-radius: 100%;
     z-index: -10;
@@ -223,7 +223,7 @@ main { flex:1 }
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-    color:rgb(150, 130, 143);
+    color: #2a4f6c;
     font-weight: bold;
     font-size: 1.125em;
 }
@@ -237,8 +237,6 @@ main { flex:1 }
     box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
 }
 
-
-
 .category img:hover {
     transform: scale(1.1);
 }
@@ -249,12 +247,12 @@ footer {
     position: relative;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff2eb;
-    border-top: 0.125em solid #e4cbcb;
+    background-color: #b0c4de;
+    border-top: 0.125em solid #87a2c4;
     box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
     padding: 1em 2em;
     font-size: 1em;
-    color: #644e41;
+    color: #2a4f6c;
     width: 100%;
 }
 
@@ -274,7 +272,6 @@ footer {
     margin-right: 3.125em;
 }
 
-
 #UserPageMain {
     padding: 1.25em;
     margin-top: 5.625em;
@@ -284,7 +281,7 @@ footer {
     display: flex;
     justify-content: space-around;
     padding: 12.5em;
-    border: 0.0625em ridge #dabfb7;
+    border: 0.0625em ridge #87a2c4;
 }
 
 .UserInfo {
@@ -301,7 +298,7 @@ footer {
     background-image: url(images/profile.svg);
     background-position: center;
     background-size: 15.625em;
-    border: 0.125em ridge #dabfb7;
+    border: 0.125em ridge #87a2c4;
 }
 
 .UserDetails {
@@ -317,20 +314,20 @@ footer {
 .LinkButton {
     display: inline-block;
     padding: 1.25em 2.5em;
-    border: 0.0625em ridge #dabfb7;
+    border: 0.0625em ridge #87a2c4;
     text-decoration: none;
-    color: #000;
+    color: #2a4f6c;
     border-radius: 1.5625em;
-    background-color: #fff2eb;
+    background-color: #b0c4de;
 }
 
 .LinkButton:hover {
-    background-color: rgb(255, 211, 211);
-    color: rgb(150, 130, 143);
+    background-color: #d7e3f4;
+    color: #2a4f6c;
 }
 
 dl {
-    border: 0.0625em solid #e4cbcb;
+    border: 0.0625em solid #87a2c4;
     padding: 0.625em;
     width: 95%;
     display: flex;
@@ -338,13 +335,13 @@ dl {
     text-align: center;
     gap: 0.625em;
     border-radius: 0.3125em;
-    background-color: #fff2eb;
+    background-color: #b0c4de;
 }
 
 dt {
     font-weight: bold;
     font-size: 1.5625em;
-    color: #644e41;
+    color: #2a4f6c;
 }
 
 dd {
@@ -354,19 +351,18 @@ dd {
 }
 
 .sort-container {
-  
     margin-left: 9%;
     margin-top: 8%;
 }
 
 #sortNamePrice {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 0.625em;
     font-size: 1.125em;
     font-weight: bold;
-    background-color: #f7dfd2;
-    border: 0.0625em solid #dabfb7;
-    color: rgb(83, 82, 82);
+    background-color: #d7e3f4;
+    border: 0.0625em solid #87a2c4;
+    color: #2a4f6c;
     border-radius: 0.625em;
     box-shadow: 0 0.25em 0.5em rgba(82, 59, 59, 0.1);
     position: relative;
@@ -401,8 +397,6 @@ dd {
     position: relative; 
 }
 
-
-
 .product-image {
     width: 100%;
     height: 12.5em;
@@ -414,10 +408,11 @@ dd {
     font-size: 1.25em;
     font-weight: bold;
     margin: 0.625em 0;
+    color: #2a4f6c;
 }
 
 .product-rating {
-    color: #d89b9b;
+    color: #2a4f6c;
     font-size: 1.25em;
     margin: 0.3125em 0;
 }
@@ -426,6 +421,7 @@ dd {
     font-size: 1.125em;
     font-weight: bold;
     margin: 0.3125em 0;
+    color: #2a4f6c;
 }
 
 .product-seller {
@@ -435,8 +431,8 @@ dd {
 }
 
 .add-to-cart {
-    border: 0.0625em ridge #dba0a0;
-    background-color: #f8bfbf;
+    border: 0.0625em ridge #87a2c4;
+    background-color: #d7e3f4;
     padding: 0.625em;
     border-radius: 0.3125em;
     cursor: pointer;
@@ -458,9 +454,9 @@ dd {
     padding: 0.625em 1.25em;
     font-weight: bold;
     font-size: 1em;
-    color: #666;
-    border: 0.0625em solid #e4cbcb;
-    background-color: #fff2eb;
+    color: #2a4f6c;
+    border: 0.0625em solid #87a2c4;
+    background-color: #b0c4de;
     position: fixed;
     top: 4.375em;
     left: 0;
@@ -468,10 +464,9 @@ dd {
     z-index: 1;
 }
 
-
 .breadcrumb a {
     text-decoration: none;
-    color: #af7e7e;
+    color: #2a4f6c;
 }
 
 .breadcrumb a:hover {
@@ -479,7 +474,7 @@ dd {
 }
 
 .breadcrumb span {
-    color:  #995a5a;
+    color: #995a5a;
 }
 
 /* Add a new product */
@@ -494,18 +489,18 @@ dd {
     gap: 1.25em; 
 }
 
-    .AddProductContainer > div {
-        padding: 0.9375em; 
-        border: 0.0625em ridge #dabfb7; 
-        border-radius: 0.625em; 
-    }
+.AddProductContainer > div {
+    padding: 0.9375em; 
+    border: 0.0625em ridge #87a2c4; 
+    border-radius: 0.625em; 
+}
 
 .generalInfo {
     width: 95%;
     padding: 0.625em; 
     margin-top: 0.625em;
     margin-bottom: 1.25em; 
-    border: 0.0625em ridge #dabfb7; 
+    border: 0.0625em ridge #87a2c4; 
     border-radius: 0.3125em; 
 }
 
@@ -514,11 +509,11 @@ dd {
     gap: 1.25em; 
 }
 
-    .price-stock > div {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-    }
+.price-stock > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
 
 #stock {
     padding-top: 2.125em; 
@@ -534,7 +529,7 @@ dd {
     padding: 0.625em;
     margin-top: 0.625em; 
     margin-bottom: 1.25em;
-    border: 0.0625em ridge #dabfb7; 
+    border: 0.0625em ridge #87a2c4; 
     border-radius: 0.3125em; 
 }
 
@@ -543,7 +538,7 @@ dd {
 }
 
 .upload-imageProduct {
-    border: 0.125em dashed #ccc; 
+    border: 0.125em dashed #87a2c4; 
     text-align: center;
     padding: 5em;
     cursor: pointer;
@@ -553,18 +548,18 @@ dd {
     width: 50%;
     margin-left: 10.625em;
 }
-.ProductAddImageFile label{
-   display: none;
+
+.ProductAddImageFile label {
+    display: none;
 }
 
 #AddProductCategory {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     width: 100%;
     padding: 0.625em;
-    border: 0.0625em ridge #dabfb7;
+    border: 0.0625em ridge #87a2c4;
     border-radius: 0.3125em;
 }
-
 
 .FormFooter {
     margin-top: 1.25em;
@@ -572,11 +567,11 @@ dd {
 }
 
 #AddProductBtn {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 0.625em 1.25em; 
-    background-color: #fff2eb;
-    color: rgb(83, 82, 82);
-    border: 0.0625em ridge #dabfb7; 
+    background-color: #b0c4de;
+    color: #2a4f6c;
+    border: 0.0625em ridge #87a2c4; 
     font-size: 1em;
     font-weight: bold;
     border-radius: 1.5625em; 
@@ -595,19 +590,18 @@ dd {
     font-weight: bold;
     border-radius: 0.3125em;
     margin: 0;
-    border: 0.0625em ridge #dabfb7;
-    background-color: #fff2eb;
+    border: 0.0625em ridge #87a2c4;
+    background-color: #b0c4de;
     margin-bottom: 1.25em;
 }
 
-
 .sellerOff {
-    border: 0.0625em ridge #dabfb7; 
+    border: 0.0625em ridge #87a2c4; 
     padding: 0.625em 1.25em; 
     display: inline-block;
     font-weight: bold;
     border-radius: 0.3125em; 
-    background-color: #f7e9e9;
+    background-color: #d7e3f4;
     margin: 0;
     margin-bottom: 1.25em; 
 }
@@ -615,7 +609,7 @@ dd {
 .SellerOffers {
     display: flex;
     padding: 1.25em 1.25em 4.375em 1.25em; 
-    border: 0.0625em ridge #dabfb7; 
+    border: 0.0625em ridge #87a2c4; 
     gap: 1.25em; 
     margin-bottom: 2.5em; 
     position: relative;
@@ -640,9 +634,9 @@ dd {
 
 #DeleteBtn {
     padding: 0.625em 1.5625em; 
-    background-color: #fff2eb;
-    color: rgb(83, 82, 82);
-    border: 0.0625em ridge #dabfb7; 
+    background-color: #b0c4de;
+    color: #2a4f6c;
+    border: 0.0625em ridge #87a2c4; 
     font-size: 1em; 
     font-weight: bold;
     border-radius: 1.5625em; 
@@ -662,9 +656,9 @@ dd {
 #AddBtn {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 0.625em 1.5625em; 
-    background-color: #fff2eb;
-    color: rgb(83, 82, 82);
-    border: 0.0625em ridge #dabfb7; 
+    background-color: #b0c4de;
+    color: #2a4f6c;
+    border: 0.0625em ridge #87a2c4; 
     font-size: 1em; 
     font-weight: bold;
     border-radius: 1.5625em; 
@@ -675,15 +669,14 @@ dd {
 }
 
 .addOff {
-    border: 0.0625em ridge #dabfb7;
+    border: 0.0625em ridge #87a2c4;
     padding: 0.625em 1.25em; 
     display: inline-block;
     font-weight: bold;
     border-radius: 0.3125em; 
-    background-color: #f7e9e9;
+    background-color: #d7e3f4;
     margin: 0;
     margin-bottom: 1.25em; 
- 
 }
 
 .OfferFormContainer {
@@ -692,17 +685,17 @@ dd {
     margin-bottom: 3.125em; 
 }
 
-    .OfferFormContainer > div {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-    }
+.OfferFormContainer > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
 
 .upload-image {
     display: flex;
     margin-left: 6.25em; 
     margin-bottom: 0.625em; 
-    border: 0.125em dashed #ccc; 
+    border: 0.125em dashed #87a2c4; 
     text-align: center;
     padding: 3.125em; 
     cursor: pointer;
@@ -718,26 +711,26 @@ dd {
 }
 
 .add-offer-form {
-    border: 0.0625em ridge #dabfb7; 
+    border: 0.0625em ridge #87a2c4; 
     padding: 1.25em; 
     gap: 1.25em; 
     position: relative;
 }
 
-    .add-offer-form input, .add-offer-form textarea {
-        width: 110%;
-        padding: 0.625em; 
-        margin: 0.625em 0; 
-        border: 0.0625em ridge #dabfb7; 
-        border-radius: 0.25em;
-    }
-
+.add-offer-form input, .add-offer-form textarea {
+    width: 110%;
+    padding: 0.625em; 
+    margin: 0.625em 0; 
+    border: 0.0625em ridge #87a2c4; 
+    border-radius: 0.25em;
+}
 
 /* OrderEval */
 .Stars img {
     height: 1.5em; 
     width: 1.5em; 
 }
+
 .stars-box {
     border: 0.125em solid #ddd; 
     border-radius: 0.3125em;
@@ -836,7 +829,7 @@ dd {
 }
 
 .upload-image-eval {
-    border: 0.125em dashed #ccc; 
+    border: 0.125em dashed #87a2c4; 
     width: 70%;
     height: 8em; 
     text-align: center;
@@ -863,18 +856,13 @@ dd {
     margin-right: 0.625em; 
     padding: 0.3125em 1.25em; 
     margin-top: 0.625em;
-    background-color: #fff2eb;
-    color: rgb(83, 82, 82);
+    background-color: #b0c4de;
+    color: #2a4f6c;
     border: 0.0625em ridge #3d3d3d; 
     font-size: 0.9375em; 
     font-weight: bold;
     border-radius: 1.5625em; 
     cursor: pointer;
-}
-/*SellerDashboard*/
-#SellerDashboardMain {
-    padding: 2.5em;
-    margin-top: 5.625em;
 }
 
 /* Responsive Product Section */
@@ -886,7 +874,7 @@ dd {
     margin-top: 2.5em;   
     overflow-x: auto;
     white-space: nowrap;
-    scroll-behavior: smooth; /* Smooth scrolling for better UX */
+    scroll-behavior: smooth;
 }
 
 /* Product Card Styling */
@@ -901,8 +889,8 @@ dd {
     justify-content: space-between;
     width: 100%;
     max-width: 15.625em;
-    min-width: 15.625em; /* Ensuring minimum width for scroll effect */
-    flex-shrink: 0; /* Prevent shrinking for horizontal scrolling */
+    min-width: 15.625em;
+    flex-shrink: 0;
 }
 
 .Product-s img {
@@ -917,6 +905,7 @@ dd {
 .Product-s h3 {
     font-size: 1.125em;
     margin-bottom: 0.625em;
+    color: #2a4f6c;
 }
 
 .Product-s p {
@@ -947,22 +936,21 @@ dd {
 .buttons-s a {
     text-decoration: none;
     padding: 0.625em 1.25em;
-    border: 0.0625em ridge #dabfb7;
-    background-color: #fff2eb;
+    border: 0.0625em ridge #87a2c4;
+    background-color: #b0c4de;
     border-radius: 1.5625em;
     cursor: pointer;
     font-size: 0.9375em;
     font-weight: bold;
-    color: rgb(83, 82, 82);
+    color: #2a4f6c;
     transition: background-color 0.3s ease;
 }
 
 .buttons-s a:hover {
-    background-color: #dabfb7;
+    background-color: #d7e3f4;
 }
 
-
-/* OrderHistory */
+/* Order History */
 .Orders-His {
     display: flex;
     justify-content: center;
@@ -971,7 +959,6 @@ dd {
     margin-top: 3.125em;
     margin-right: 2.5em;
     margin-left: 2.5em;
-
     border: 0.125em solid #ddd;
     padding: 0.9375em;
     border-radius: 0.625em;
@@ -1001,20 +988,21 @@ dd {
 .Order-His h3 {
     font-size: 1.125em;
     margin-bottom: 0.625em;
+    color: #2a4f6c;
 }
 
- .PriceH {
+.PriceH {
     font-size: 0.9375em;
     font-weight: bold;
     text-align: left;
-    
+    color: #2a4f6c;
 }
 
 .DateH {
     font-size: 0.875em;
     font-weight: bold;
     text-align: left;
-  
+    color: #2a4f6c;
 }
 
 #OrderHistory {
@@ -1022,7 +1010,7 @@ dd {
     margin-top: 6%;
 }
 
-/* view cart */
+/* View Cart */
 #ViewCartMain {
     padding: 1.875em;
     margin-top: 6.25em;
@@ -1041,7 +1029,7 @@ dd {
 
 .cart-item {
     display: flex;
-    border: 0.0625em ridge #dabfb7;
+    border: 0.0625em ridge #87a2c4;
     border-radius: 0.625em;
     box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
     padding: 0.9375em;
@@ -1064,38 +1052,37 @@ dd {
 
 .CartQuantity {
     display: flex;
-
 }
 
 .CartQuantity > input {
     width: 5%;
-   text-align: center;
+    text-align: center;
 }
 
 .CartQuantity button {
     margin: 0 0.3125em;
-   
 }
 
 .clearItem {
     position: absolute;
     bottom: 1.25em;
     right: 1.25em;
-    border: 0.0625em ridge #dba0a0;
-    background-color: #f8bfbf;
+    border: 0.0625em ridge #87a2c4;
+    background-color: #d7e3f4;
     padding: 0.625em;
     border-radius: 0.3125em;
     cursor: pointer;
 }
 
 .clearItem:hover {
-    border: 0.0625em ridge rgb(194, 142, 142);
-    background-color: rgb(231, 121, 121);
+    border: 0.0625em ridge rgb(142, 194, 181);
+    background-color: rgb(170, 218, 206);
 }
 
 .priceCart {
     position: absolute;
     right: 1.25em;
+    color: #2a4f6c;
 }
 
 .cartSum {
@@ -1105,7 +1092,7 @@ dd {
 .summary {
     display: flex;
     flex-direction: column;
-    border: 0.0625em ridge #dabfb7;
+    border: 0.0625em ridge #87a2c4;
     height: 15.625em;
     margin-top: 1.25em;
     width: 15.625em;
@@ -1113,6 +1100,7 @@ dd {
     border-radius: 0.625em;
     box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
     text-align: center;
+    background-color: #d7e3f4;
 }
 
 .summary .row {
@@ -1124,42 +1112,42 @@ dd {
 
 .summary button {
     padding: 0.625em 1.5625em;
-    background-color: #fff2eb;
-    color: rgb(83, 82, 82);
-    border: 0.0625em ridge #dabfb7;
+    background-color: #b0c4de;
+    color: #2a4f6c;
+    border: 0.0625em ridge #87a2c4;
     font-size: 1em;
     font-weight: bold;
     border-radius: 1.5625em;
     cursor: pointer;
     margin-top: 3.125em;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .empty-cart {
     margin-top: 1.875em;
     margin-left: 5.625em;
     padding: 0.625em 1.5625em;
-    background-color: #fff2eb;
-    color: rgb(83, 82, 82);
-    border: 0.0625em ridge #dabfb7;
+    background-color: #b0c4de;
+    color: #2a4f6c;
+    border: 0.0625em ridge #87a2c4;
     font-size: 1em;
     font-weight: bold;
     border-radius: 1.5625em;
     cursor: pointer;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.sort-container label{
+.sort-container label {
     display: none;
 }
-.OfferAddImageFile label{
+
+.OfferAddImageFile label {
     display: none;
 }
 
 .hidden {
     display: none;
 }
-
 
 #navigation-container, .categories-container {
     flex-wrap: wrap;
@@ -1170,12 +1158,8 @@ dd {
     text-align: center;                 
     font-size: 1.1em;   
     font-weight: bold;                
-    color: #c27878;                    
+    color: #2a4f6c;                    
     z-index: 1;
-}
-
-.hidden {
-    display: none;
 }
 
 .offers-wrapper {
@@ -1187,23 +1171,19 @@ dd {
     cursor: pointer;
     font-size: 1em;
     position: absolute;
-    bottom: 0.5em; /* Position slightly above the bottom of the offers */
-    right: 0.5em; /* Position slightly inside from the right edge */
+    bottom: 0.5em;
+    right: 0.5em;
     background-color: transparent;
     border: none;
-    color: #644e41;
+    color: #2a4f6c;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
-.hidden {
-    display: none;
-}
-
 .tooltip {
     position: absolute;
-    background-color: #fff2eb;
-    border: 1px solid #ddd;
+    background-color: #b0c4de;
+    border: 1px solid #87a2c4;
     padding: 1em;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -1212,32 +1192,6 @@ dd {
     color: #333;
     z-index: 10;
 }
-
-#toggle-theme-button {
-    display: inline-block;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: rgb(83, 82, 82);
-    background-color: #f7dfd2;
-    font-size: 1.125em;
-    font-weight: bold;
-    border: 0.0625em ridge #dabfb7;
-    padding: 0.625em 1.25em;
-    border-radius: 1.5625em;
-    margin-right: 5em;
-}
-
-#toggle-theme-button:hover {
-    background-color: rgb(255, 211, 211);
-    color: rgb(150, 130, 143);
-}
-
-
-
-
 
 @media (max-width: 1024px) {
     header {
@@ -1315,6 +1269,30 @@ dd {
     }
 }
 
+#toggle-theme-button {
+    display: inline-block;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #2a4f6c; /* Text color */
+    background-color: #d7e3f4; /* Light blue background */
+    font-size: 1.125em;
+    font-weight: bold;
+    border: 0.0625em ridge #87a2c4; /* Blue border */
+    padding: 0.625em 1.25em;
+    border-radius: 1.5625em;
+    margin-right: 5em;
+}
+
+#toggle-theme-button:hover {
+    background-color: #b0c4de; /* Darker blue background on hover */
+    color: #2a4f6c; /* Text color on hover */
+    border-color: #87a2c4;
+}
+
+
 
 @media (max-width: 480px) {
     body {
@@ -1333,68 +1311,5 @@ dd {
 
     #HomePageMain {
         padding: 1em;
-    }
-
-    .category img {
-        width: 4em;
-        height: 4em;
-    }
-
-    .offer img, .custReview img {
-        width: 5em;
-        height: auto;
-    }
-
-    .offer, .custReview {
-        width: 90%;
-    }
-
-    .footer-left, .footer-right {
-        text-align: center;
-        font-size: 0.8em;
-    }
-
-    .footer-left img {
-        width: 1em;
-        height: 1em;
-    }
-
-    footer {
-        padding: 1em;
-        gap: 0.5em;
-    }
-
-    .h2Uni, .h2Off {
-        font-size: 1em;
-        padding: 0.4em;
-    }
-}
-
-
-@media (max-width: 320px) {
-    .logo-title h1 {
-        font-size: 0.9em;
-    }
-
-    #navigation a {
-        font-size: 0.7em;
-        padding: 0.4em 0.6em;
-    }
-
-    .category img {
-        width: 3.5em;
-        height: 3.5em;
-    }
-
-    .offer, .custReview {
-        width: 100%;
-    }
-
-    .footer-left, .footer-right {
-        font-size: 0.7em;
-    }
-
-    footer {
-        padding: 0.5em;
     }
 }
