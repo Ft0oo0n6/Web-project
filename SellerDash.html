@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="main.css" id="main-theme-stylesheet"> 
     <link rel="stylesheet" href="bluetheme.css" id="blue-theme-stylesheet" disabled>
     <script src="themes.js"></script>
+    <script src="AddNewProduct.js"></script>
 </head>
 <body>
     <header>
@@ -43,95 +44,90 @@
     </nav>
 
     <main id="SellerDashboardMain">
-     
-      <h2 class="h2Uni">Living Luxe</h2>
-     
-       <div class="Products-s">
-        <div class="Product-s">
-            <img src="images/interior-interior-design-furniture-room-preview.jpg" alt="Couch">
-            <h3>Luxurious Leather Sofa</h3>
-            <p>A sophisticated leather sofa that adds<br> luxury and comfort to your living room.</p>
-            <div class="price-quan">
-                <div class="price">1000 SAR</div>
-                <div class="DashQuan">Quantity: 12</div>
-            </div>
-        </div>
-        <div class="Product-s">
-            <img src="images/modern-coffetable.jpg" alt="coffee table">
-            <h3>Noguchi Coffee Table</h3>
-            <p>   A unique base and a smooth wooden top, <br>
-            perfect focal point for any room.</p>
-            <div class="price-quan">
-                <div class="price">389 SAR</div>
-                <div class="DashQuan">Quantity: 17</div>
-            </div>
-        </div>
-        <div class="Product-s">
-            <img src="images/singleSofa.jpg" alt="Single Sofa">
-            <h3>Single Sofa</h3>
-            <p>A stylish single sofa offering comfort<br> and modern design, perfect for <br>small spaces.</p>
-            <div class="price-quan">
-                <div class="price">600 SAR</div>
-                <div class="DashQuan">Quantity: 10</div>
-            </div>
-        </div>
-        <div class="Product-s">
-            <img src="images/photo-of-a-bed-with-a-blue-blanket-and-wooden-headboard.jpeg" alt=" bed">
-            <h3>Bed</h3>
-            <p>A cozy bed designed for comfort and<br> support, perfect for a good night's sleep.</p>
-            <div class="price-quan">
-                <div class="price">299 SAR</div>
-                <div class="DashQuan">Quantity: 22</div>
-            </div>
-        </div>
-        <div class="Product-s">
-            <img src="images/vintage-70s-pink-ceramic-deruta-vase-with-hand-painted-daisies-3-6783c084d5449bd47c4d3113ddcae840.webp" alt=" Flower vase">
-            <h3>Flower Vase</h3>
-            <p>A stylish flower vase that enhances any<br>
-                decor, perfect for showcasing beautiful 
-                <br>arrangement.</p>
-            <div class="price-quan">
-                <div class="price">55 SAR</div>
-                <div class="DashQuan">Quantity: 37</div>
-            </div>
-        </div>
-        <div class="Product-s">
-            <img src="images/frameswall.jpg" alt="Wall Frame">
-            <h3>Wall Frame</h3>
-            <p>A decorative wall frame designed to<br> showcase your favorite pictures or<br> artwork.</p>
-            <div class="price-quan">
-                <div class="price">89 SAR</div>
-                <div class="DashQuan">Quantity: 41</div>
-            </div>
-        </div>
-        <div class="Product-s">
-            <img src="images/FoodTable.jpg" alt="Dining Table">
-            <h3>Dining Table</h3>
-            <p>A spacious dining table perfect<br> for dining and entertaining guests.</p>
-            <div class="price-quan">
-                <div class="price">2000 SAR</div>
-                <div class="DashQuan">Quantity: 27</div>
-            </div>
-        </div>
- 
-    
-    </div>
+        <h2 class="h2Uni">Living Luxe</h2>
 
-    <div class="buttons-s">
-        <a href="MakeOrDeleteOffers.html">Make or delete offers</a>
-        <a href="AddNewProduct.html">Add a new product</a>
-    </div>
-</Main>
-<footer>
-    <div class="footer-left">
-        <p>Contact Us:</p>
-        <img src="images/twitter.webp" alt="Twitter Icon"> @BloomMart
-        <img src="images/instagram.webp" alt="Instagram Icon"> @BloomMart
-        <img src="images/email.png" alt="Email Icon"> BloomMart@gmail.com
-    </div>
-    <div class="footer-right">
-        &copy; 2024 BloomMart
-    </div>
-</footer>
+        <div id="SellerProductContainer">
+            <!--<div class="Product-s">
+                <img src="images/interior-interior-design-furniture-room-preview.jpg" alt="Couch">
+                <h3>Luxurious Leather Sofa</h3>
+                <p>A sophisticated leather sofa that adds luxury and comfort to your living room.</p>
+                <div class="price-quan">
+                    <div class="price">1000 SAR</div>
+                    <div class="DashQuan">Quantity: 12</div>
+                </div>
+            </div>
+            <div class="Product-s">
+                <img src="images/modern-coffetable.jpg" alt="coffee table">
+                <h3>Noguchi Coffee Table</h3>
+                <p>A unique base and a smooth wooden top, perfect focal point for any room.</p>
+                <div class="price-quan">
+                    <div class="price">389 SAR</div>
+                    <div class="DashQuan">Quantity: 17</div>
+                </div>
+            </div>
+            <div class="Product-s">
+                <img src="images/singleSofa.jpg" alt="Single Sofa">
+                <h3>Single Sofa</h3>
+                <p>A stylish single sofa offering comfort and modern design, perfect for small spaces.</p>
+                <div class="price-quan">
+                    <div class="price">600 SAR</div>
+                    <div class="DashQuan">Quantity: 10</div>
+                </div>
+            </div>
+            <div class="Product-s">
+                <img src="images/photo-of-a-bed-with-a-blue-blanket-and-wooden-headboard.jpeg" alt=" bed">
+                <h3>Bed</h3>
+                <p>A cozy bed designed for comfort and support, perfect for a good night's sleep.</p>
+                <div class="price-quan">
+                    <div class="price">299 SAR</div>
+                    <div class="DashQuan">Quantity: 22</div>
+                </div>
+            </div>
+            <div class="Product-s">
+                <img src="images/vintage-70s-pink-ceramic-deruta-vase-with-hand-painted-daisies-3-6783c084d5449bd47c4d3113ddcae840.webp" alt=" Flower vase">
+                <h3>Flower Vase</h3>
+                <p>A stylish flower vase that enhances any decor, perfect for showcasing beautiful arrangement.</p>
+                <div class="price-quan">
+                    <div class="price">55 SAR</div>
+                    <div class="DashQuan">Quantity: 37</div>
+                </div>
+            </div>
+            <div class="Product-s">
+                <img src="images/frameswall.jpg" alt="Wall Frame">
+                <h3>Wall Frame</h3>
+                <p>A decorative wall frame designed to showcase your favorite pictures or artwork.</p>
+                <div class="price-quan">
+                    <div class="price">89 SAR</div>
+                    <div class="DashQuan">Quantity: 41</div>
+                </div>
+            </div>
+            <div class="Product-s">
+                <img src="images/FoodTable.jpg" alt="Dining Table">
+                <h3>Dining Table</h3>
+                <p>A spacious dining table perfect for dining and entertaining guests.</p>
+                <div class="price-quan">
+                    <div class="price">2000 SAR</div>
+                    <div class="DashQuan">Quantity: 27</div>
+                </div>
+            </div>-->
+        </div>
+
+        <div class="buttons-s">
+            <a href="MakeOrDeleteOffers.html">Make or delete offers</a>
+            <a href="AddNewProduct.html">Add a new product</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <p>Contact Us:</p>
+            <img src="images/twitter.webp" alt="Twitter Icon"> @BloomMart
+            <img src="images/instagram.webp" alt="Instagram Icon"> @BloomMart
+            <img src="images/email.png" alt="Email Icon"> BloomMart@gmail.com
+        </div>
+        <div class="footer-right">
+            &copy; 2024 BloomMart
+        </div>
+    </footer>
 </body>
 </html>

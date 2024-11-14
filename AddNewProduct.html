@@ -3,10 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <title>Add a New Product</title>
-        <link rel="stylesheet" href="main.css">
-        <link rel="stylesheet" href="DarkTheme.css">
-        <script src="themes.js" defer></script> 
-        
+        <link rel="stylesheet" href="main.css" id="main-theme-stylesheet"> 
+        <link rel="stylesheet" href="bluetheme.css" id="blue-theme-stylesheet" disabled>
+        <script src="themes.js"></script>
+        <script src="AddNewProduct.js"></script>
     </head>
 
     <header>
@@ -46,12 +46,12 @@
         </nav>
 
         <main id="AddNewProductMain">
-            <form action="nextPhase.ex" method="post">
+            <form method="post">
                 <div class="AddProductContainer">
                     <div>
                         <h2 class="h2Product">General Information</h2>
-                        <label for="product-name">Name of product:</label>
-                        <input type="text" class="generalInfo" name="Product Name" id="product-name" placeholder="Enter product name">
+                        <label for="product-name">Product Name:</label>
+                        <input type="text" class="generalInfo" name="ProductName" id="product-name" placeholder="Enter product name">
 
                         <label for="AddProductTextarea">Description:</label>
                         <textarea id="AddProductTextarea" class="generalInfo" placeholder="Enter product description"></textarea>
@@ -64,7 +64,7 @@
                             <p>Upload Images</p>
                             <div class="ProductAddImageFile">
                                 <label for="addProductImage" class="hidden">Upload Offer Image:</label>
-                                <input type="file" id="addProductImage" name="Offer Image">
+                                <input type="file" id="addProductImage" name="Offer Image" accept="image/png, image/jpeg, image/jpg">
                             </div>
                         </div>
                     </div>
@@ -73,27 +73,27 @@
                         <div>
                             <h2 class="h2Product">Pricing And Stock</h2>
                             <label for="base-pricing">Base Pricing:</label>
-                            <input type="number" class="PriceAndStock" id="base-pricing" name="Base Pricing" placeholder="Enter base price">
+                            <input type="text" class="PriceAndStock" id="base-pricing" name="Base Pricing" placeholder="Enter base price">
                         </div>
                         <div>
                             <label for="stockLabel" id="stock">Stock:</label>
-                            <input type="number" class="PriceAndStock" id="stockLabel" name="Stock" placeholder="Enter stock quantity">
+                            <input type="text" class="PriceAndStock" id="stockLabel" name="Stock" placeholder="Enter stock quantity">
                         </div>
                     </div>
                     <div>
                       <h2 class="h2Product">Category</h2>
                        <label for="AddProductCategory" class="hidden">Choose a category</label>
                         <select id="AddProductCategory" name="category">
-                            <option value="#" disabled selected>Choose a category</option>
-                            <option value="category1">Furniture</option>
-                            <option value="category2">Beauty</option>
-                            <option value="category3">Electronics</option>
+                            <option value="categories" disabled selected>Choose a category</option>
+                            <option value="Furniture">Furniture</option>
+                            <option value="Beauty">Beauty</option>
+                            <option value="Electronics">Electronics</option>
                         </select>
                     </div>
                 </div>
 
                 <div class="FormFooter">
-                    <button id="AddProductBtn" type="submit"> Add Product </button>
+                    <button id="AddProductBtn" type="submit" onclick="return CheckAddProductForm();"> Add Product </button>
                 </div>
             </form>
         </main>
