@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="main.css" id="main-theme-stylesheet"> 
         <link rel="stylesheet" href="bluetheme.css" id="blue-theme-stylesheet" disabled>
         <script src="themes.js"></script>
+        <script src="evaluation.js" defer></script> 
     </head>
     <body>
         <header>
@@ -17,126 +18,105 @@
                     </a>
                 </div>
                 <h1>Bloom Mart</h1>
-            </div>
-            <nav id="navigation-container">
-                <div id="navigation"> 
-                    <a href="SellerDash.html">Seller's dashboard</a>
-                    <a href="UserPage.html">User's page</a> 
-                    <div class="dropdown">
-                        <label for="categories">Choose a category:</label>
-                        <select id="categories" onchange="location = this.value;">
-                            <option value="#" disabled selected>Categories</option>
-                            <option value="category1.html">Furniture</option>
-                            <option value="category2.html">Beauty</option>
-                            <option value="category3.html">Electronics</option>
-                        </select>
-                    </div>
-                    <a href="ViewCart.html">
-                        <img src="images/cart.webp" alt="Cart" width="20" height="20">
-                    </a>
-                </div>
-            </nav>
-        </header>
-        
-        <nav class="breadcrumb">
-            <a href="Home.html">Home</a> &gt; 
-            <a href="UserPage.html">@DrSahar</a> &gt; 
-            <span>Products Evaluation</span>
-        </nav>
-<main id="OrderEval">
 
-  
-
-    <h2 class="h2Uni">Product Evaluation</h2>
-  
-    <form action="nextPhase.ex" method="post">
-    
-<div class="Products-Eval">
-    <div class="dropdown">
-        <label for="Order" class="hidden">Previous Orders</label>
-        <select id="Order" name="order-list">
-            <option value="#" disabled selected>Previous Orders</option>
-            <option value="OrderEval.html" >Order #112893</option>
-            <option value="OrderEval.html">Order #112892</option>
- 
-        </select>
-    </div>
-    <div class="Product-Eval">
-        <img src="images/camera_old_camera_agfa.jpg" alt="Film Camera">
-        <h3>Film Camera</h3>
-        <p> The "AGFAMATIC 2000 pocket", Vintage, compact, point-and-shoot film camera. </p>
-        <label for="orderEvalCheck1" class="hidden">Check a Product</label>
-        <input  type="checkbox" id="orderEvalCheck1" name="checkbox" checked >
-    </div>
-
-    <div class="Product-Eval">
-        <img src="images/cup_tee_teacup_glass_0.jpg" alt="Glass Cup">
-        <h3>Glass Cup</h3>
-        <p>150 ml clear glassware for hot beverages.</p>
-        <label for="orderEvalCheck2" class="hidden">Check a Product</label>
-        <input type="checkbox" id="orderEvalCheck2" name="checkbox" >
-    </div>
-    
-    <div class="Product-Eval">
-        <img src="images/vase_porcelain_flower_vase.jpg" alt="Vase">
-        <h3>Traditional Chinese porcelain vase</h3>
-        <p>  Decorative vessel featuring painted design of woman playing stringed instrument.</p>
-        <label for="orderEvalCheck3" class="hidden">Check a Product</label>
-        <input type="checkbox" id="orderEvalCheck3" name="checkbox" >
-    </div>
-
-</div>
-
-  <h2 class="h2Uni" >Upload Images</h2>
-  <div class="Product-details">
-
-      <div class="upload-image-eval">
-        <p>+</p>
-        <p>Upload Images</p>
-        <label for="addProductImageEval" class="hidden">Upload Offer Image:</label>
-        <input type="file" id="addProductImageEval" name="image">
         </div>
-
-        <div class="feedback-section">
-        <label for="feedback">Feedback:</label>
-        <textarea class="feedback" id="feedback" placeholder="Enter feedback"></textarea>
-        <label>Rate:</label>
-      <div class="stars-box">
-      
-        <ul id="star">
-            <li class="Stars"> <img src="images/star.png" alt="star"></li>
-            <li class="Stars"><img src="images/star.png" alt="star"></li>
-            <li class="Stars"><img src="images/star.png" alt="star"></li>
-            <li class="Stars"><img src="images/star.png" alt="star"></li>
-            <li class="Stars"><img src="images/star.png" alt="star"></li>
-   
-        </ul>
-    </div>
-
-    </div>
-
-
-</div>
-<button type="submit" id="Submit-feedback">   submit </button>
-
-</form>
-
-
+        <nav id="navigation-container">
+            <div id="navigation"> 
+                <a href="SellerDash.html">Seller's dashboard</a>
+                <a href="UserPage.html">User's page</a> 
+                <div class="dropdown">
+                    <label for="categories">Choose a category:</label>
+                    <select id="categories" onchange="location = this.value;">
+                        <option value="#" disabled selected>Categories</option>
+                        <option value="category1.html">Furniture</option>
+                        <option value="category2.html">Beauty</option>
+                        <option value="category3.html">Electronics</option>
+                    </select>
+                </div>
+                <a href="ViewCart.html">
+                    <img src="images/cart.webp" alt="Cart" width="20" height="20">
+                </a>
+            </div>
+        </nav>
+    </header>
     
+    <nav class="breadcrumb">
+        <a href="Home.html">Home</a> &gt; 
+        <a href="UserPage.html">@DrSahar</a> &gt; 
+        <span>Products Evaluation</span>
+    </nav>
 
-</main>
-
+    <main id="OrderEval">
+        <h2 class="h2Uni">Product Evaluation</h2>
+        <form id="evaluation-form">
+            <div class="Products-Eval">
+                <div class="dropdown">
+                    <label for="Order">Previous Orders</label>
+                    <select id="Order" name="order-list">
+                        <option value="#" disabled selected>Previous Orders</option>
+                        <option value="112893">Order #112893</option>
+                        <option value="112892">Order #112892</option>
+                    </select>
+                </div>
+                <div class="Product-Eval">
+                    <img src="images/camera_old_camera_agfa.jpg" alt="Film Camera">
+                    <h3>Film Camera</h3>
+                    <p>The "AGFAMATIC 2000 pocket", Vintage, compact, point-and-shoot film camera.</p>
+                    <label for="orderEvalCheck1" class="hidden">Check a Product</label>
+                    <input type="checkbox" id="orderEvalCheck1" name="checkbox" checked>
+                </div>
+                <div class="Product-Eval">
+                    <img src="images/cup_tee_teacup_glass_0.jpg" alt="Glass Cup">
+                    <h3>Glass Cup</h3>
+                    <p>150 ml clear glassware for hot beverages.</p>
+                    <label for="orderEvalCheck2" class="hidden">Check a Product</label>
+                    <input type="checkbox" id="orderEvalCheck2" name="checkbox">
+                </div>
+                <div class="Product-Eval">
+                    <img src="images/vase_porcelain_flower_vase.jpg" alt="Vase">
+                    <h3>Traditional Chinese porcelain vase</h3>
+                    <p>Decorative vessel featuring painted design of woman playing stringed instrument.</p>
+                    <label for="orderEvalCheck3" class="hidden">Check a Product</label>
+                    <input type="checkbox" id="orderEvalCheck3" name="checkbox">
+                </div>
+            </div>
+            <h2 class="h2Uni">Upload Images</h2>
+            <div class="Product-details">
+                <div class="upload-image-eval">
+                    <p>+</p>
+                    <p>Upload Images</p>
+                    <label for="addProductImageEval" class="hidden">Upload Offer Image:</label>
+                    <input type="file" id="addProductImageEval" name="image">
+                </div>
+                <div class="feedback-section">
+                    <label for="feedback">Feedback:</label>
+                    <textarea class="feedback" id="feedback" placeholder="Enter feedback"></textarea>
+                    <label>Rate:</label>
+                    <div class="stars-box">
+                        <ul id="star">
+                            <li class="Stars"><img src="images/emptystar.png" alt="star" data-value="1"></li>
+                            <li class="Stars"><img src="images/emptystar.png" alt="star" data-value="2"></li>
+                            <li class="Stars"><img src="images/emptystar.png" alt="star" data-value="3"></li>
+                            <li class="Stars"><img src="images/emptystar.png" alt="star" data-value="4"></li>
+                            <li class="Stars"><img src="images/emptystar.png" alt="star" data-value="5"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" id="Submit-feedback">Submit</button>
+        </form>
+    </main>
     
-<footer>
-    <div class="footer-left">
-        <p>Contact Us:</p>
-        <img src="images/twitter.webp" alt="Twitter Icon"> @BloomMart
-        <img src="images/instagram.webp" alt="Instagram Icon"> @BloomMart
-        <img src="images/email.png" alt="Email Icon"> BloomMart@gmail.com
-    </div>
-    <div class="footer-right">
-        &copy; 2024 BloomMart
-    </div>
-</footer>
-    </body>
-        </html>
+    <footer>
+        <div class="footer-left">
+            <p>Contact Us:</p>
+            <img src="images/twitter.webp" alt="Twitter Icon"> @BloomMart
+            <img src="images/instagram.webp" alt="Instagram Icon"> @BloomMart
+            <img src="images/email.png" alt="Email Icon"> BloomMart@gmail.com
+        </div>
+        <div class="footer-right">
+            &copy; 2024 BloomMart
+        </div>
+    </footer>
+</body>
+</html>
