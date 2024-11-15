@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bloom Mart</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.css" id="main-theme-stylesheet"> 
+    <link rel="stylesheet" href="bluetheme.css" id="blue-theme-stylesheet" disabled>
+    <script src="HomePageScript.js" defer></script>
+    <script src="themes.js"></script>
 </head>
-<body>
+<body class="light-theme">
     <header>
-        
         <div class="logo-title">
             <div id="logo">
                 <a href="Home.html">
@@ -36,29 +38,34 @@
                 </a>
             </div>
         </nav>
-        
+        <button id="toggle-theme-button" onclick="toggleTheme()">Toggle Theme</button>
+
     </header>
     <main id="HomePageMain">
+
+        <div id="WeekDate"></div>
         <dl>
             <dt><strong>Vision</strong></dt>
             <dd>To create an inclusive marketplace where shopping is easy and sellers can grow their businesses, offering a wide range of products and a seamless experience for all.</dd>
         </dl>
         <div class="category-section">
+            <div class="half-circle"></div>
             <div class="categories-container">
-                <a href="Category1.html" class="category">
-                    <img src="images/sofaHomePage.webp" alt="Home">
-                    <p>Furniture</p>
-                </a>
-                <a href="Category2.html" class="category">
-                    <img src="images/lipstick.jpg" alt="Beauty">
-                    <p>Beauty</p>
-                </a>
-                <a href="Category3.html" class="category">
-                    <img src="images/LaptopHome.png" alt="Electronics">
-                    <p>Electronics</p>
-                </a>
+               <a href="Category1.html" class="category">
+                  <img src="images/sofaHomePage.webp" alt="Home">
+                  <p>Furniture</p>
+               </a>
+               <a href="Category2.html" class="category">
+                  <img src="images/lipstick.jpg" alt="Beauty">
+                  <p>Beauty</p>
+               </a>
+               <a href="Category3.html" class="category">
+                  <img src="images/LaptopHome.png" alt="Electronics">
+                  <p>Electronics</p>
+               </a>
             </div>
-        </div>
+         </div>
+         
         <div class="offers-wrapper">
             <h2 class="h2Uni">Special Offers</h2>
             <div class="offers-container">
@@ -77,43 +84,63 @@
                     <h3>Free Shipping on Orders Over $50</h3>
                     <p>With our third offer, enjoy free shipping when you spend over $50. It’s the perfect time to stock up on what you love!</p>
                 </div>
-                <div class="offer">
+                <div class="offer hidden">
                     <img src="images/sonyheadphones2.png" alt="Sony Headphones">
                     <h3>Flash Sale – 24-Hour Discounts!</h3>
                     <p>Keep an eye on our website for flash sales every weekend! Enjoy special discounts for 24 hours only on selected items.</p>
                 </div>
-                <div class="offer">
+                <div class="offer hidden">
                     <img src="images/CoffeeTableOffer.png" alt="Coffee Table">
                     <h3>Seasonal Sale - Up to 50% Off</h3>
                     <p>Get ready for our seasonal sale! Enjoy discounts of up to 50% on select items. Hurry, while supplies last!</p>
                 </div>
-                <div class="offer">
+                <div class="offer hidden">
                     <img src="images/wallFrame.png" alt="Wall Frame">
                     <h3>Holiday Bundle Deals</h3>
                     <p>Get ready for the holidays with our special bundle offers. Buy gift sets at a discounted price and make your holiday shopping easier!</p>
                 </div>
             </div>
-        </div>
+            <button id="toggleButton" class="toggle-button">Show More</button>
+        </div>        
         <div class="reviews-wrapper">
             <h2 class="h2Uni">Customer Reviews</h2>
             <div class="custReview-container">
-                <div class="custReview">
+                <div class="custReview" 
+                     data-customer-name="@raneem12"
+                     data-product-name="Blush & Bloom"
+                     data-seller-name="Bloom Mart"
+                     data-rating="4"
+                     data-feedback="Absolutely love this store! The buy one, get one free offer saved me a ton. Plus, my items arrived quickly and in perfect condition.">
                     <pre><strong>@raneem12</strong> 4 <img src="images/25069.png" alt="star" width="12" height="12"></pre>
-                    <p>Absolutely love this store! The buy one, get one free offer saved me a ton. Plus, my items arrived quickly and in perfect condition.</p>
-                    <h3>Blush & Bloom</h3>
+                    <p>Absolutely love this store! The buy one, get one free offer saved me a ton...</p>
+                    <h3 class="seller-name-box">Bloom Mart</h3>
                 </div>
-                <div class="custReview">
+                <div class="custReview" 
+                     data-customer-name="@ftoon01"
+                     data-product-name="Living Luxe"
+                     data-seller-name="Home Essentials"
+                     data-rating="5"
+                     data-feedback="This store never disappoints! The offers are always worth it, and the quality of the products is outstanding.">
                     <pre><strong>@ftoon01</strong> 5 <img src="images/25069.png" alt="star" width="12" height="12"></pre>
-                    <p>This store never disappoints! The offers are always worth it, and the quality of the products is outstanding.</p>
-                    <h3>Living Luxe</h3>
+                    <p>This store never disappoints! The offers are always worth it...</p>
+                    <h3 class="seller-name-box">Home Essentials</h3>
                 </div>
-                <div class="custReview">
+                <div class="custReview" 
+                     data-customer-name="@ghadeer33"
+                     data-product-name="Innovatech"
+                     data-seller-name="Tech World"
+                     data-rating="4"
+                     data-feedback="Good deals and fast shipping! I appreciate the variety of options available. Just wish there were more sizes!">
                     <pre><strong>@ghadeer33</strong> 4 <img src="images/25069.png" alt="star" width="12" height="12"></pre>
-                    <p>Good deals and fast shipping! I appreciate the variety of options available. Just wish there were more sizes!</p>
-                    <h3>Innovatech</h3>
+                    <p>Good deals and fast shipping! I appreciate the variety...</p>
+                    <h3 class="seller-name-box">Tech World</h3>
                 </div>
             </div>
+            <div id="reviewTooltip" class="tooltip hidden"></div>
         </div>
+        
+        
+        
     </main>
     <footer>
         <div class="footer-left">

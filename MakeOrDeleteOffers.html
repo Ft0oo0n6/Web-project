@@ -3,7 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <title>Make or Delete Offers</title>
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="main.css" id="main-theme-stylesheet"> 
+        <link rel="stylesheet" href="bluetheme.css" id="blue-theme-stylesheet" disabled>
+        <script src="themes.js"></script>
+        <script src="MakeDelOffer.js"></script>
     </head>
     <body>
 
@@ -47,11 +50,11 @@
             <h2 class="h2Off">Living Luxe's offers</h2>
             <div class="SellerOffers">
 
-                <div class="offer">
+                <!--<div class="offer">
                     <img src="images/sofaOffer.png" alt="Sofa Offer">
                     <label for="firstOffer">20% Off Your Next Purchase</label>
                     <p>Take advantage of our second offer! Receive a 20% discount on your next purchase and save big on your favorite items.</p>
-                    <input type="checkbox" id="firstOffer" name="First Offer" checked>
+                    <input type="checkbox" id="firstOffer" name="First Offer">
                 </div>
                 <div class="offer">
                     <img src="images/CoffeeTableOffer.png" alt="Coffee Table Offer">
@@ -65,14 +68,14 @@
                     <p>Get ready for the holidays with our special bundle offers. Buy gift sets at a discounted price and make your holiday shopping easier!</p>
                    <input type="checkbox" id="thirdOffer" name="Third Offer">
                 </div>
-                <div class="DeleteBtn"><button type="submit" id="DeleteBtn">Delete Offer</button></div>
+                <div class="DeleteBtn"><button type="submit" id="DeleteBtn" onclick="deleteSelectedOffers()">Delete Offer</button></div>-->
 
             </div>
 
             <h2 class="h2Off">Add Offer</h2>
             <div class="add-offer-form">
 
-                <form action="nextPhase.ex" method="post">
+                <form method="post">
                     <div class="OfferFormContainer">
                         <div>
                             <label for="title">Title:</label>
@@ -87,11 +90,11 @@
                             <p>Upload Images</p>
                             <div class="OfferAddImageFile">
                                 <label for="uploadOfferImage" class="hidden">Upload Offer Image:</label>
-                                <input type="file" id="uploadOfferImage" name="Upload Offer Image">
+                                <input type="file" id="uploadOfferImage" name="Upload Offer Image" accept="image/png, image/jpeg, image/jpg">
                             </div>
                         </div>
                     </div>
-                    <div class="AddBtn"><button type="submit" id="AddBtn">Add Offer</button></div>
+                    <div class="AddBtn"><button type="submit" id="AddBtn" onclick="CheckAddOfferForm(event)">Add Offer</button></div>
                 </form>
             </div>
         </main>
