@@ -1,167 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>My Cart</title>
-        <link rel="stylesheet" href="main.css" id="main-theme-stylesheet"> 
-        <link rel="stylesheet" href="bluetheme.css" id="blue-theme-stylesheet" disabled>
-        <script src="themes.js"></script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <title>My Cart</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="bluetheme.css" id="blue-theme-stylesheet" disabled>
+    <script src="themes.js"></script>
+    <script src="ViewCart.js"></script>
+</head>
 
-    <body>
-        <header>
-            <div class="logo-title">
-                <div id="logo">
-                    <a href="Home.html">
-                        <img src="images/Logo.png" alt="Website Logo">
-                    </a>
-                </div>
-                <h1>Bloom Mart</h1>
+<body>
+    <header>
+        <div class="logo-title">
+            <div id="logo">
+                <a href="Home.html">
+                    <img src="images/Logo.png" alt="Website Logo">
+                </a>
             </div>
-            <nav id="navigation-container">
-                <div id="navigation"> 
-                    <a href="SellerDash.html">Seller's dashboard</a>
-                    <a href="UserPage.html">User's page</a> 
-                    <div class="dropdown">
-                        <label for="categories">Choose a category:</label>
-                        <select id="categories" onchange="location = this.value;">
-                            <option value="#" disabled selected>Categories</option>
-                            <option value="category1.html">Furniture</option>
-                            <option value="category2.html">Beauty</option>
-                            <option value="category3.html">Electronics</option>
-                        </select>
-                    </div>
-                    <a href="ViewCart.html">
-                        <img src="images/cart.webp" alt="Cart" width="20" height="20">
-                    </a>
+            <h1>Bloom Mart</h1>
+        </div>
+        <nav id="navigation-container">
+            <div id="navigation"> 
+                <a href="SellerDash.html">Seller's dashboard</a>
+                <a href="UserPage.html">User's page</a> 
+                <div class="dropdown">
+                    <label for="categories">Choose a category:</label>
+                    <select id="categories" onchange="location = this.value;">
+                        <option value="#" disabled selected>Categories</option>
+                        <option value="category1.html">Furniture</option>
+                        <option value="category2.html">Beauty</option>
+                        <option value="category3.html">Electronics</option>
+                    </select>
                 </div>
-            </nav>
-        </header>
-
-        <nav class="breadcrumb">
-            <a href="Home.html">home</a> >
-            <a href="UserPage.html">@DrSahar</a> &gt; 
-            <span>My Cart</span>
+                <a href="ViewCart.html">
+                    <img src="images/cart.webp" alt="Cart" width="20" height="20">
+                </a>
+            </div>
         </nav>
+    </header>
 
-        <main id="ViewCartMain">
-            <h2 class="h2Uni">My Cart</h2>
-            <form action="nextPhase.ex" method="post">
-                <div id="allContainer">
-                    <div id="itemsContainer">
-                        <div class="cart-item">
-                            <img src="images/lipstick.jpg" alt="Lipstick" class="Cart-product-image">
-                            <div class="quanDescrip">
-                                <div class="descrip">
-                                    <h3>Lipstick</h3>
-                                    <p>A rich, pigmented lipstick that offers long-lasting color and hydration for beautiful lips.</p>
-                                </div>
-                                <div class="CartQuantity">
-                                    <button>-</button>
-                                    <label for="Item1" class="hidden">Item Quantity</label>
-                                    <input type="number" id="Item1" name="item quantity" value="1">
-                                    <button>+</button>
-                                </div>
-                            </div>
-                            <p class="priceCart">75SAR</p>
-                            <button class="clearItem">
-                                <img src="images/trash-icon.png" alt="Cart Icon" width="20" height="20">
-                            </button>
-                        </div>
+    <nav class="breadcrumb">
+        <a href="Home.html">home</a> &gt;
+        <a href="UserPage.html">@DrSahar</a> &gt; 
+        <span>My Cart</span>
+    </nav>
 
-                        <div class="cart-item">
-                            <img src="images/earings.jpg" alt="Earings" class="Cart-product-image">
-                            <div class="quanDescrip">
-                                <div class="descrip">
-                                    <h3>Earings</h3>
-                                    <p>Stylish earrings that enhance your look, available in various designs to suit your taste.</p>
-                                </div>
-                                <div class="CartQuantity">
-                                    <button>-</button>
-                                    <label for="Item2" class="hidden">Item Quantity</label>
-                                    <input type="number" id="Item2" name="item quantity" value="2">
-                                    <button>+</button>
-                                </div>
+    <main id="ViewCartMain">
+        <h2 class="h2Uni">My Cart</h2>
+        <form action="nextPhase.ex" method="post">
+            <div id="allContainer">
+                <div id="itemsContainer">
+                    <!-- Cart Item 1 -->
+                    <div class="cart-item" data-price="75">
+                        <img src="images/lipstick.jpg" alt="Lipstick" class="Cart-product-image">
+                        <div class="quanDescrip">
+                            <div class="descrip">
+                                <h3>Lipstick</h3>
+                                <p>A rich, pigmented lipstick that offers long-lasting color and hydration for beautiful lips.</p>
                             </div>
-                            <p class="priceCart">110SAR</p>
-                            <button class="clearItem">
-                                <img src="images/trash-icon.png" alt="Cart Icon" width="20" height="20">
-                            </button>
-                        </div>
-
-                        <div class="cart-item">
-                            <img src="images/444.webp" alt="Hair Curler" class="Cart-product-image">
-                            <div class="quanDescrip">
-                                <div class="descrip">
-                                    <h3>Hair Curler</h3>
-                                    <p>A versatile hair curler designed to create beautiful curls with ease, perfect for styling at home.</p>
-                                </div>
-                                <div class="CartQuantity">
-                                    <button>-</button>
-                                    <label for="Item3" class="hidden">Item Quantity</label>
-                                    <input type="number" id="Item3" name="item quantity" value="1">
-                                    <button>+</button>
-                                </div>
+                            <div class="CartQuantity">
+                                <button type="button" class="decrease">-</button>
+                                <input type="number" class="quantity" value="1" min="1">
+                                <button type="button" class="increase">+</button>
                             </div>
-                            <p class="priceCart">159SAR</p>
-                            <button class="clearItem">
-                                <img src="images/trash-icon.png" alt="Cart Icon" width="20" height="20">
-                            </button>
                         </div>
-
-                        <div class="cart-item">
-                            <img src="images/SonyHeadphones.jpeg" alt="Sony Headphones" class="Cart-product-image">
-                            <div class="quanDescrip">
-                                <div class="descrip">
-                                    <h3>Sony Headphones</h3>
-                                    <p>Comfortable over-ear headphones delivering high-quality sound, perfect for music lovers and gamers.</p>
-                                </div>
-                                <div class="CartQuantity">
-                                    <button>-</button>
-                                    <label for="Item4" class="hidden">Item Quantity</label>
-                                    <input type="number" id="Item4" name="item quantity" value="1">
-                                    <button>+</button>
-                                </div>
-                            </div>
-                            <p class="priceCart">199SAR</p>
-                            <button class="clearItem">
-                                <img src="images/trash-icon.png" alt="Cart Icon" width="20" height="20">
-                            </button>
-                        </div>
+                        <p class="priceCart">75 SAR</p>
+                        <button type="button" class="clearItem">
+                            <img src="images/trash-icon.png" alt="Cart Icon" width="20" height="20">
+                        </button>
                     </div>
-                    <div class="cartSum">
-                        <div class="summary">
-                            <div class="row"><span>Subtotal:</span> <span>543 SAR</span></div>
-                            <div class="row"><span>Taxes:</span> <span>12.76 SAR</span></div>
-                            <div class="row"><span>Delivery Fee:</span> <span>20 SAR</span></div>
-                            <div class="row total"><span>Total:</span> <span>575.76 SAR</span></div>
-                            <div class="sumCheckout">
-                                <button class="checkout" onclick="alert('Your purchase is complete!')">Checkout</button>
+
+                    <!-- Cart Item 2 -->
+                    <div class="cart-item" data-price="110">
+                        <img src="images/earings.jpg" alt="Earings" class="Cart-product-image">
+                        <div class="quanDescrip">
+                            <div class="descrip">
+                                <h3>Earings</h3>
+                                <p>Stylish earrings that enhance your look, available in various designs to suit your taste.</p>
+                            </div>
+                            <div class="CartQuantity">
+                                <button type="button" class="decrease">-</button>
+                                <input type="number" class="quantity" value="2" min="1">
+                                <button type="button" class="increase">+</button>
                             </div>
                         </div>
-                        <div class="emptybtn" >
-                            <label for="resetbtn" class="hidden">Empty Cart</label>
-                            <input type="reset"  value="Empty Cart" class="empty-cart" id="resetbtn">
-                      
+                        <p class="priceCart">220 SAR</p>
+                        <button type="button" class="clearItem">
+                            <img src="images/trash-icon.png" alt="Cart Icon" width="20" height="20">
+                        </button>
+                    </div>
+
+                    <!-- Cart Item 3 -->
+                    <div class="cart-item" data-price="159">
+                        <img src="images/444.webp" alt="Hair Curler" class="Cart-product-image">
+                        <div class="quanDescrip">
+                            <div class="descrip">
+                                <h3>Hair Curler</h3>
+                                <p>A versatile hair curler designed to create beautiful curls with ease, perfect for styling at home.</p>
+                            </div>
+                            <div class="CartQuantity">
+                                <button type="button" class="decrease">-</button>
+                                <input type="number" class="quantity" value="1" min="1">
+                                <button type="button" class="increase">+</button>
+                            </div>
                         </div>
+                        <p class="priceCart">159 SAR</p>
+                        <button type="button" class="clearItem">
+                            <img src="images/trash-icon.png" alt="Cart Icon" width="20" height="20">
+                        </button>
+                    </div>
+
+                    <!-- Cart Item 4 -->
+                    <div class="cart-item" data-price="199">
+                        <img src="images/SonyHeadphones.jpeg" alt="Sony Headphones" class="Cart-product-image">
+                        <div class="quanDescrip">
+                            <div class="descrip">
+                                <h3>Sony Headphones</h3>
+                                <p>Comfortable over-ear headphones delivering high-quality sound, perfect for music lovers and gamers.</p>
+                            </div>
+                            <div class="CartQuantity">
+                                <button type="button" class="decrease">-</button>
+                                <input type="number" class="quantity" value="1" min="1">
+                                <button type="button" class="increase">+</button>
+                            </div>
+                        </div>
+                        <p class="priceCart">199 SAR</p>
+                        <button type="button" class="clearItem">
+                            <img src="images/trash-icon.png" alt="Cart Icon" width="20" height="20">
+                        </button>
                     </div>
                 </div>
-            </form>
-        </main>
 
-    
-        <footer>
-            <div class="footer-left">
-                <p>Contact Us:</p>
-                <img src="images/twitter.webp" alt="Twitter Icon"> @BloomMart
-                <img src="images/instagram.webp" alt="Instagram Icon"> @BloomMart
-                <img src="images/email.png" alt="Email Icon"> BloomMart@gmail.com
+                <!-- Summary Section -->
+                <div class="cartSum">
+                    <div class="summary">
+                        <div class="row"><span>Subtotal:</span> <span id="subtotal">543 SAR</span></div>
+                        <div class="row"><span>Taxes:</span> <span id="taxes">12.76 SAR</span></div>
+                        <div class="row"><span>Delivery Fee:</span> <span>20 SAR</span></div>
+                        <div class="row total"><span>Total:</span> <span id="total">575.76 SAR</span></div>
+                        <div class="sumCheckout">
+                            <button type="button" class="checkout">Checkout</button>
+                        </div>
+                    </div>
+                    <div class="emptybtn">
+                        <input type="button" value="Empty Cart" class="empty-cart">
+                    </div>
+                </div>
             </div>
-            <div class="footer-right">
-                &copy; 2024 BloomMart
-            </div>
-        </footer>
+        </form>
+    </main>
 
-    </body>
-
+    <footer>
+        <div class="footer-left">
+            <p>Contact Us:</p>
+            <img src="images/twitter.webp" alt="Twitter Icon"> @BloomMart
+            <img src="images/instagram.webp" alt="Instagram Icon"> @BloomMart
+            <img src="images/email.png" alt="Email Icon"> BloomMart@gmail.com
+        </div>
+        <div class="footer-right">
+            &copy; 2024 BloomMart
+        </div>
+    </footer>
+</body>
 </html>
