@@ -97,5 +97,6 @@ if (viewCartButton) {
 document.addEventListener('DOMContentLoaded', function() {
    setupAddToCartButtons();
    
-   localStorage.removeItem('cart');
+  /* localStorage.removeItem('cart');*/
+  
 });
