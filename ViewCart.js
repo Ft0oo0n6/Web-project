@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
 
     // Event listener for the "Checkout" button
-    document.querySelector('.checkout').addEventListener('click', () => {
+   document.querySelector('.checkout').addEventListener('click', () => {
         const total = totalElement.textContent; // Get the total amount
         alert(`Your purchase is complete! Total Cost: ${total}`); // Show a confirmation message
         window.location.href = 'OrderEval.html'; // Redirect to evaluation page
@@ -79,3 +79,4 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize cart totals when the page loads
     updateCart();
 });
+
