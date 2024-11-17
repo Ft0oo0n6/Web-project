@@ -61,7 +61,13 @@ function displayCart() {
     let subtotal = 0;
 
     cartContainer.innerHTML = ""; 
-
+    if (cart.length === 0) {
+        // إذا كانت السلة فارغة، تعيين المجموع إلى صفر
+        document.getElementById("subtotal").innerText = `0.00 SAR`;
+        document.getElementById("taxes").innerText = `0.00 SAR`;
+        document.getElementById("total").innerText = `0.00 SAR`;
+        return;
+    }
 
     cart.forEach(product => {
         const productElement = document.createElement("div");
