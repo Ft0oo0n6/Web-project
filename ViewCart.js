@@ -36,8 +36,13 @@ document.addEventListener('DOMContentLoaded', () => {
         totalElement.textContent = `${total.toFixed(2)} SAR`;
     }
 
-    // Event listeners for increasing or decreasing item quantities
+
+
+
+
+  /*  // Event listeners for increasing or decreasing item quantities
     itemsContainer.addEventListener('click', (e) => {
+
         const item = e.target.closest('.cart-item'); // Find the nearest cart item
         if (!item) return;
 
@@ -60,7 +65,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Update the cart totals after any change
         updateCart();
-    });
+    }); */
+
+
+
+
 
   /*  // Event listener for "Empty Cart" button to clear all items
     document.querySelector('.empty-cart').addEventListener('click', () => {
