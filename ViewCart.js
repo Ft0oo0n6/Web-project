@@ -62,11 +62,12 @@ document.addEventListener('DOMContentLoaded', () => {
         updateCart();
     });
 
-    // Event listener for "Empty Cart" button to clear all items
+  /*  // Event listener for "Empty Cart" button to clear all items
     document.querySelector('.empty-cart').addEventListener('click', () => {
         itemsContainer.innerHTML = ''; // Remove all items from the cart
         updateCart(); // Update totals to zero
-    });
+    });*/
+    
 
     // Event listener for the "Checkout" button
     document.querySelector('.checkout').addEventListener('click', () => {

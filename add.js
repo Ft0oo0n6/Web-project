@@ -100,3 +100,25 @@ document.addEventListener('DOMContentLoaded', function() {
   /* localStorage.removeItem('cart');*/
   
 });
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    
+    const emptyCartButton = document.querySelector(".empty-cart");
+
+    if (emptyCartButton) {
+        emptyCartButton.addEventListener("click", () => {
+            localStorage.removeItem("cart");
+            displayCart();
+            updateCartSummary();
+        });
+    }
+});
+
+
+function updateCartSummary() {
+    document.getElementById("subtotal").innerText = "0 SAR";
+    document.getElementById("taxes").innerText = "0 SAR";
+    document.getElementById("total").innerText = "0 SAR";
+}
