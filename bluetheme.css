@@ -879,6 +879,20 @@ dd {
 }
 
 /* Product Card Styling */
+/*SellerDashboard*/
+#SellerDashboardMain {
+    padding: 2.5em;
+    margin-top: 5.625em;
+}
+
+#SellerProductContainer {
+    padding: 1.25em;
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    gap: 1.25em;
+    width: 100%;
+}
 .Product-s {
     border: 0.063em solid #ddd;
     padding: 1.25em;
