@@ -1251,1219 +1251,161 @@ dd {
 
 
 @media (max-width: 1024px) {
-    html{overflow-x: hidden;}
+    header {
+        padding: 0.5em 1em;
+    }
 
+    .logo-title h1 {
+        font-size: 1.2em;
+    }
 
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
+    #navigation a {
+        font-size: 1em;
+        padding: 0.5em 1em;
+    }
 
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
- 
-    background-color: #fffefc;
-    margin-top: 2%;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+    .offers-container, .custReview-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2%;
+    }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #fff2eb;
-    padding: 1em 2em;
-    border-bottom: 0.1em solid #e4cbcb;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
-}
-main { flex:1 }
+    .offer, .custReview {
+        width: 45%;
+        margin: 1% 0;
+    }
 
-.logo-title {
-    display: flex;
-    align-items: center;
-    gap: 0.625em;
-}
-
-.logo-title h1 {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #f8bfbf;
-    margin: 0;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-#logo img {
-    height: 3.125em;
-    width: auto;
-}
-
-#navigation-container {
-    display: flex;
-    justify-content: center;
-    flex-grow: 1;
-}
-
-#navigation {
-    display: flex;
-    gap: 2.2em;
-}
-
-#navigation a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: rgb(83, 82, 82);
-    background-color: #f7dfd2;
-    font-size: 1.125em;
-    font-weight: bold;
-    border: 0.0625em ridge #dabfb7;
-    padding: 0.625em 1.25em;
-    border-radius: 1.5625em;
-}
-
-#navigation a:hover {
-    background-color: rgb(255, 211, 211);
-    color: rgb(150, 130, 143);
-}
-
-.dropdown select {
-    padding: 0.625em 1.25em;
-    font-size: 1.125em;
-    font-weight: bold;
-    background-color: #f7dfd2;
-    border: 0.0625em solid #dabfb7;
-    color: rgb(83, 82, 82);
-    border-radius: 1.5625em;
-    appearance: none;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-.dropdown label{
-    display: none;
-}
-
-.dropdown select:hover {
-    background-color: rgb(255, 211, 211);
-    color: rgb(150, 130, 143);
-}
-
-#HomePageMain {
-    margin-top: 3.125em;
-    padding-bottom: 3.125em;
-    padding: 1.25em;
-}
-
-.h2Uni {
-    padding: 0.625em 1.25em;
-    display: inline-block;
-    font-weight: bold;
-    border-radius: 0.3125em;
-    margin: 0;
-    border: 0.0625em ridge #dabfb7;
-    background-color: #fff2eb;
-}
-
-.offers-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 2%;
-}
-
-.offers-container {
-    display: flex;
-    gap: 1%;
-    width: 100%;
-    height: 30%;
-    margin: 2% auto;
-}
-
-.offer {
-    width: 15%;
-    text-align: center;
-    border: 0.125em solid #f0f0f0;
-    padding: 1.25em;
-    border-radius: 0.625em;
-    background-color: #fff;
-    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
-}
-
-.offer h3{
-    color: #e2a0a0;
-}
-.reviews-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 2%;
-    margin-top: 1%;
-}
-
-.custReview-container {
-    display: flex;
-    justify-content: space-around;
-    gap: 2%;
-    width: 100%;
-    margin: 2% auto;
-    height: 30%;
-}
-
-.custReview {
-    width: 28%;
-    height: 7em;
-    text-align: left;
-    border: 0.125em solid #f0f0f0;
-    padding: 1.25em;
-    border-radius: 0.625em;
-    background-color: #fff;
-    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
-    position: relative;
-}
-
-.custReview h3 {
-    margin: 0;
-    font-size: 1em;
-    font-weight: bold;
-    color: #333;
-    border: 0.0625em ridge #dabfb7;
-    background-color: #fff2eb;
-    border-radius: 20%;
-    padding: 0.3125em;
-    position: absolute;
-    bottom: 0.625em;
-    right: 0.625em;
-    width: auto;
-    text-align: center;
-}
-
-.category-section {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20em; /* Adjust as necessary */
-    overflow: hidden;
-    margin-top: 1em;
-    margin-bottom: 2em;
- }
- 
- .half-circle {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 50%; /* Adjust for the size of the curve */
-    background-color: #F9E8E0; /* Light beige-pink color */
-    border-top-left-radius: 100%;
-    border-top-right-radius: 100%;
-    z-index: -10;
- }
- 
-
-.categories-container {
-    display: flex;
-    gap: 3.125em;
-}
-
-.category {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    color:rgb(150, 130, 143);
-    font-weight: bold;
-    font-size: 1.125em;
-}
-
-.category img {
-    width: 6.25em;
-    height: 6.25em;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 0.125em solid #f0f0f0;
-    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
-}
-
-
-
-.category img:hover {
-    transform: scale(1.1);
-}
-
-footer {
-    flex-shrink: 0;
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff2eb;
-    border-top: 0.125em solid #e4cbcb;
-    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
-    padding: 1em 2em;
-    font-size: 1em;
-    color: #644e41;
-    width: 100%;
-}
-
-.footer-left {
-    display: flex;
-    align-items: center;
-    gap: 0.625em;
-}
-
-.footer-left img {
-    width: 1.25em;
-    height: 1.25em;
-}
-
-.footer-right {
-    font-weight: bold;
-    margin-right: 3.125em;
-}
-
-dl {
-    border: 0.0625em solid #e4cbcb;
-    padding: 0.625em;
-    width: 95%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    gap: 0.625em;
-    border-radius: 0.3125em;
-    background-color: #fff2eb;
-}
-
-dt {
-    font-weight: bold;
-    font-size: 1.5625em;
-    color: #644e41;
-}
-
-dd {
-    margin-left: 1.25em;
-    font-size: 0.9375em;
-    text-align: center;
-}
-
-
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 1em;
+        gap: 1em;
+    }
 }
 
 @media (max-width: 768px) {
-html{overflow-x: hidden;}
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
+    #navigation {
+        flex-direction: column;
+        gap: 1em;
+    }
 
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
+    #logo img {
+        height: 2.5em;
+    }
 
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
- 
-    background-color: #fffefc;
-    margin-top: 2%;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+    .offers-wrapper, .reviews-wrapper, .category-section {
+        width: 100%;
+        padding: 1em;
+    }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #fff2eb;
-    padding: 1em 2em;
-    border-bottom: 0.1em solid #e4cbcb;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
-}
-main { flex:1 }
+    .category-section {
+        background-size: cover;
+        height: auto;
+        margin-top: 0;
+    }
 
-.logo-title {
-    display: flex;
-    align-items: center;
-    gap: 0.625em;
-}
+    .categories-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
 
-.logo-title h1 {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #f8bfbf;
-    margin: 0;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+    .offer, .custReview {
+        width: 100%;
+    }
 
-#logo img {
-    height: 3.125em;
-    width: auto;
-}
-
-#navigation-container {
-    display: flex;
-    justify-content: center;
-    flex-grow: 1;
-}
-
-#navigation {
-    display: flex;
-    gap: 2.2em;
-}
-
-#navigation a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: rgb(83, 82, 82);
-    background-color: #f7dfd2;
-    font-size: 1.125em;
-    font-weight: bold;
-    border: 0.0625em ridge #dabfb7;
-    padding: 0.625em 1.25em;
-    border-radius: 1.5625em;
-}
-
-#navigation a:hover {
-    background-color: rgb(255, 211, 211);
-    color: rgb(150, 130, 143);
-}
-
-.dropdown select {
-    padding: 0.625em 1.25em;
-    font-size: 1.125em;
-    font-weight: bold;
-    background-color: #f7dfd2;
-    border: 0.0625em solid #dabfb7;
-    color: rgb(83, 82, 82);
-    border-radius: 1.5625em;
-    appearance: none;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-.dropdown label{
-    display: none;
-}
-
-.dropdown select:hover {
-    background-color: rgb(255, 211, 211);
-    color: rgb(150, 130, 143);
-}
-
-#HomePageMain {
-    margin-top: 3.125em;
-    padding-bottom: 3.125em;
-    padding: 1.25em;
-}
-
-.h2Uni {
-    padding: 0.625em 1.25em;
-    display: inline-block;
-    font-weight: bold;
-    border-radius: 0.3125em;
-    margin: 0;
-    border: 0.0625em ridge #dabfb7;
-    background-color: #fff2eb;
-}
-
-.offers-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 2%;
-}
-
-.offers-container {
-    display: flex;
-    gap: 1%;
-    width: 100%;
-    height: 30%;
-    margin: 2% auto;
-}
-
-.offer {
-    width: 15%;
-    text-align: center;
-    border: 0.125em solid #f0f0f0;
-    padding: 1.25em;
-    border-radius: 0.625em;
-    background-color: #fff;
-    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
-}
-
-.offer h3{
-    color: #e2a0a0;
-}
-.reviews-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 2%;
-    margin-top: 1%;
-}
-
-.custReview-container {
-    display: flex;
-    justify-content: space-around;
-    gap: 2%;
-    width: 100%;
-    margin: 2% auto;
-    height: 30%;
-}
-
-.custReview {
-    width: 28%;
-    height: 7em;
-    text-align: left;
-    border: 0.125em solid #f0f0f0;
-    padding: 1.25em;
-    border-radius: 0.625em;
-    background-color: #fff;
-    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
-    position: relative;
-}
-
-.custReview h3 {
-    margin: 0;
-    font-size: 1em;
-    font-weight: bold;
-    color: #333;
-    border: 0.0625em ridge #dabfb7;
-    background-color: #fff2eb;
-    border-radius: 20%;
-    padding: 0.3125em;
-    position: absolute;
-    bottom: 0.625em;
-    right: 0.625em;
-    width: auto;
-    text-align: center;
-}
-
-.category-section {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20em; /* Adjust as necessary */
-    overflow: hidden;
-    margin-top: 1em;
-    margin-bottom: 2em;
- }
- 
- .half-circle {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 50%; /* Adjust for the size of the curve */
-    background-color: #F9E8E0; /* Light beige-pink color */
-    border-top-left-radius: 100%;
-    border-top-right-radius: 100%;
-    z-index: -10;
- }
- 
-
-.categories-container {
-    display: flex;
-    gap: 3.125em;
-}
-
-.category {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    color:rgb(150, 130, 143);
-    font-weight: bold;
-    font-size: 1.125em;
-}
-
-.category img {
-    width: 6.25em;
-    height: 6.25em;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 0.125em solid #f0f0f0;
-    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
-}
-
-
-
-.category img:hover {
-    transform: scale(1.1);
-}
-
-footer {
-    flex-shrink: 0;
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff2eb;
-    border-top: 0.125em solid #e4cbcb;
-    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
-    padding: 1em 2em;
-    font-size: 1em;
-    color: #644e41;
-    width: 100%;
-}
-
-.footer-left {
-    display: flex;
-    align-items: center;
-    gap: 0.625em;
-}
-
-.footer-left img {
-    width: 1.25em;
-    height: 1.25em;
-}
-
-.footer-right {
-    font-weight: bold;
-    margin-right: 3.125em;
-}
-
-dl {
-    border: 0.0625em solid #e4cbcb;
-    padding: 0.625em;
-    width: 95%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    gap: 0.625em;
-    border-radius: 0.3125em;
-    background-color: #fff2eb;
-}
-
-dt {
-    font-weight: bold;
-    font-size: 1.5625em;
-    color: #644e41;
-}
-
-dd {
-    margin-left: 1.25em;
-    font-size: 0.9375em;
-    text-align: center;
-}
-
-
+    footer {
+        padding: 1em;
+        text-align: center;
+        gap: 0.5em;
+    }
 }
 
 
 @media (max-width: 480px) {
-html{overflow-x: hidden;}
+    body {
+        margin-top: 4em;
+        font-size: 0.9em;
+    }
 
+    .logo-title h1 {
+        font-size: 1em;
+    }
 
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
+    #navigation a {
+        font-size: 0.8em;
+        padding: 0.5em 0.8em;
+    }
 
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
- 
-    background-color: #fffefc;
-    margin-top: 2%;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+    #HomePageMain {
+        padding: 1em;
+    }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #fff2eb;
-    padding: 1em 2em;
-    border-bottom: 0.1em solid #e4cbcb;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
-}
-main { flex:1 }
+    .category img {
+        width: 4em;
+        height: 4em;
+    }
 
-.logo-title {
-    display: flex;
-    align-items: center;
-    gap: 0.625em;
-}
+    .offer img, .custReview img {
+        width: 5em;
+        height: auto;
+    }
 
-.logo-title h1 {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #f8bfbf;
-    margin: 0;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+    .offer, .custReview {
+        width: 90%;
+    }
 
-#logo img {
-    height: 3.125em;
-    width: auto;
-}
+    .footer-left, .footer-right {
+        text-align: center;
+        font-size: 0.8em;
+    }
 
-#navigation-container {
-    display: flex;
-    justify-content: center;
-    flex-grow: 1;
-}
+    .footer-left img {
+        width: 1em;
+        height: 1em;
+    }
 
-#navigation {
-    display: flex;
-    gap: 2.2em;
-}
+    footer {
+        padding: 1em;
+        gap: 0.5em;
+    }
 
-#navigation a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: rgb(83, 82, 82);
-    background-color: #f7dfd2;
-    font-size: 1.125em;
-    font-weight: bold;
-    border: 0.0625em ridge #dabfb7;
-    padding: 0.625em 1.25em;
-    border-radius: 1.5625em;
-}
-
-#navigation a:hover {
-    background-color: rgb(255, 211, 211);
-    color: rgb(150, 130, 143);
-}
-
-.dropdown select {
-    padding: 0.625em 1.25em;
-    font-size: 1.125em;
-    font-weight: bold;
-    background-color: #f7dfd2;
-    border: 0.0625em solid #dabfb7;
-    color: rgb(83, 82, 82);
-    border-radius: 1.5625em;
-    appearance: none;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-.dropdown label{
-    display: none;
-}
-
-.dropdown select:hover {
-    background-color: rgb(255, 211, 211);
-    color: rgb(150, 130, 143);
-}
-
-#HomePageMain {
-    margin-top: 3.125em;
-    padding-bottom: 3.125em;
-    padding: 1.25em;
-}
-
-.h2Uni {
-    padding: 0.625em 1.25em;
-    display: inline-block;
-    font-weight: bold;
-    border-radius: 0.3125em;
-    margin: 0;
-    border: 0.0625em ridge #dabfb7;
-    background-color: #fff2eb;
-}
-
-.offers-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 2%;
-}
-
-.offers-container {
-    display: flex;
-    gap: 1%;
-    width: 100%;
-    height: 30%;
-    margin: 2% auto;
-}
-
-.offer {
-    width: 15%;
-    text-align: center;
-    border: 0.125em solid #f0f0f0;
-    padding: 1.25em;
-    border-radius: 0.625em;
-    background-color: #fff;
-    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
-}
-
-.offer h3{
-    color: #e2a0a0;
-}
-.reviews-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 2%;
-    margin-top: 1%;
-}
-
-.custReview-container {
-    display: flex;
-    justify-content: space-around;
-    gap: 2%;
-    width: 100%;
-    margin: 2% auto;
-    height: 30%;
-}
-
-.custReview {
-    width: 28%;
-    height: 7em;
-    text-align: left;
-    border: 0.125em solid #f0f0f0;
-    padding: 1.25em;
-    border-radius: 0.625em;
-    background-color: #fff;
-    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
-    position: relative;
-}
-
-.custReview h3 {
-    margin: 0;
-    font-size: 1em;
-    font-weight: bold;
-    color: #333;
-    border: 0.0625em ridge #dabfb7;
-    background-color: #fff2eb;
-    border-radius: 20%;
-    padding: 0.3125em;
-    position: absolute;
-    bottom: 0.625em;
-    right: 0.625em;
-    width: auto;
-    text-align: center;
-}
-
-.category-section {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20em; /* Adjust as necessary */
-    overflow: hidden;
-    margin-top: 1em;
-    margin-bottom: 2em;
- }
- 
- .half-circle {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 50%; /* Adjust for the size of the curve */
-    background-color: #F9E8E0; /* Light beige-pink color */
-    border-top-left-radius: 100%;
-    border-top-right-radius: 100%;
-    z-index: -10;
- }
- 
-
-.categories-container {
-    display: flex;
-    gap: 3.125em;
-}
-
-.category {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    color:rgb(150, 130, 143);
-    font-weight: bold;
-    font-size: 1.125em;
-}
-
-.category img {
-    width: 6.25em;
-    height: 6.25em;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 0.125em solid #f0f0f0;
-    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
-}
-
-
-
-.category img:hover {
-    transform: scale(1.1);
-}
-
-footer {
-    flex-shrink: 0;
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff2eb;
-    border-top: 0.125em solid #e4cbcb;
-    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
-    padding: 1em 2em;
-    font-size: 1em;
-    color: #644e41;
-    width: 100%;
-}
-
-.footer-left {
-    display: flex;
-    align-items: center;
-    gap: 0.625em;
-}
-
-.footer-left img {
-    width: 1.25em;
-    height: 1.25em;
-}
-
-.footer-right {
-    font-weight: bold;
-    margin-right: 3.125em;
-}
-
-dl {
-    border: 0.0625em solid #e4cbcb;
-    padding: 0.625em;
-    width: 95%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    gap: 0.625em;
-    border-radius: 0.3125em;
-    background-color: #fff2eb;
-}
-
-dt {
-    font-weight: bold;
-    font-size: 1.5625em;
-    color: #644e41;
-}
-
-dd {
-    margin-left: 1.25em;
-    font-size: 0.9375em;
-    text-align: center;
-}
-
-
+    .h2Uni, .h2Off {
+        font-size: 1em;
+        padding: 0.4em;
+    }
 }
 
 
 @media (max-width: 320px) {
-html{overflow-x: hidden;}
+    .logo-title h1 {
+        font-size: 0.9em;
+    }
 
+    #navigation a {
+        font-size: 0.7em;
+        padding: 0.4em 0.6em;
+    }
 
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
+    .category img {
+        width: 3.5em;
+        height: 3.5em;
+    }
 
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
- 
-    background-color: #fffefc;
-    margin-top: 2%;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+    .offer, .custReview {
+        width: 100%;
+    }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #fff2eb;
-    padding: 1em 2em;
-    border-bottom: 0.1em solid #e4cbcb;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
-}
-main { flex:1 }
+    .footer-left, .footer-right {
+        font-size: 0.7em;
+    }
 
-.logo-title {
-    display: flex;
-    align-items: center;
-    gap: 0.625em;
-}
-
-.logo-title h1 {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #f8bfbf;
-    margin: 0;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-#logo img {
-    height: 3.125em;
-    width: auto;
-}
-
-#navigation-container {
-    display: flex;
-    justify-content: center;
-    flex-grow: 1;
-}
-
-#navigation {
-    display: flex;
-    gap: 2.2em;
-}
-
-#navigation a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: rgb(83, 82, 82);
-    background-color: #f7dfd2;
-    font-size: 1.125em;
-    font-weight: bold;
-    border: 0.0625em ridge #dabfb7;
-    padding: 0.625em 1.25em;
-    border-radius: 1.5625em;
-}
-
-#navigation a:hover {
-    background-color: rgb(255, 211, 211);
-    color: rgb(150, 130, 143);
-}
-
-.dropdown select {
-    padding: 0.625em 1.25em;
-    font-size: 1.125em;
-    font-weight: bold;
-    background-color: #f7dfd2;
-    border: 0.0625em solid #dabfb7;
-    color: rgb(83, 82, 82);
-    border-radius: 1.5625em;
-    appearance: none;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-.dropdown label{
-    display: none;
-}
-
-.dropdown select:hover {
-    background-color: rgb(255, 211, 211);
-    color: rgb(150, 130, 143);
-}
-
-#HomePageMain {
-    margin-top: 3.125em;
-    padding-bottom: 3.125em;
-    padding: 1.25em;
-}
-
-.h2Uni {
-    padding: 0.625em 1.25em;
-    display: inline-block;
-    font-weight: bold;
-    border-radius: 0.3125em;
-    margin: 0;
-    border: 0.0625em ridge #dabfb7;
-    background-color: #fff2eb;
-}
-
-.offers-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 2%;
-}
-
-.offers-container {
-    display: flex;
-    gap: 1%;
-    width: 100%;
-    height: 30%;
-    margin: 2% auto;
-}
-
-.offer {
-    width: 15%;
-    text-align: center;
-    border: 0.125em solid #f0f0f0;
-    padding: 1.25em;
-    border-radius: 0.625em;
-    background-color: #fff;
-    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
-}
-
-.offer h3{
-    color: #e2a0a0;
-}
-.reviews-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 2%;
-    margin-top: 1%;
-}
-
-.custReview-container {
-    display: flex;
-    justify-content: space-around;
-    gap: 2%;
-    width: 100%;
-    margin: 2% auto;
-    height: 30%;
-}
-
-.custReview {
-    width: 28%;
-    height: 7em;
-    text-align: left;
-    border: 0.125em solid #f0f0f0;
-    padding: 1.25em;
-    border-radius: 0.625em;
-    background-color: #fff;
-    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
-    position: relative;
-}
-
-.custReview h3 {
-    margin: 0;
-    font-size: 1em;
-    font-weight: bold;
-    color: #333;
-    border: 0.0625em ridge #dabfb7;
-    background-color: #fff2eb;
-    border-radius: 20%;
-    padding: 0.3125em;
-    position: absolute;
-    bottom: 0.625em;
-    right: 0.625em;
-    width: auto;
-    text-align: center;
-}
-
-.category-section {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20em; /* Adjust as necessary */
-    overflow: hidden;
-    margin-top: 1em;
-    margin-bottom: 2em;
- }
- 
- .half-circle {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 50%; /* Adjust for the size of the curve */
-    background-color: #F9E8E0; /* Light beige-pink color */
-    border-top-left-radius: 100%;
-    border-top-right-radius: 100%;
-    z-index: -10;
- }
- 
-
-.categories-container {
-    display: flex;
-    gap: 3.125em;
-}
-
-.category {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    color:rgb(150, 130, 143);
-    font-weight: bold;
-    font-size: 1.125em;
-}
-
-.category img {
-    width: 6.25em;
-    height: 6.25em;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 0.125em solid #f0f0f0;
-    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
-}
-
-
-
-.category img:hover {
-    transform: scale(1.1);
-}
-
-footer {
-    flex-shrink: 0;
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff2eb;
-    border-top: 0.125em solid #e4cbcb;
-    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
-    padding: 1em 2em;
-    font-size: 1em;
-    color: #644e41;
-    width: 100%;
-}
-
-.footer-left {
-    display: flex;
-    align-items: center;
-    gap: 0.625em;
-}
-
-.footer-left img {
-    width: 1.25em;
-    height: 1.25em;
-}
-
-.footer-right {
-    font-weight: bold;
-    margin-right: 3.125em;
-}
-
-dl {
-    border: 0.0625em solid #e4cbcb;
-    padding: 0.625em;
-    width: 95%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    gap: 0.625em;
-    border-radius: 0.3125em;
-    background-color: #fff2eb;
-}
-
-dt {
-    font-weight: bold;
-    font-size: 1.5625em;
-    color: #644e41;
-}
-
-dd {
-    margin-left: 1.25em;
-    font-size: 0.9375em;
-    text-align: center;
-}
-
-
+    footer {
+        padding: 0.5em;
+    }
 }
