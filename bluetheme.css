@@ -12,7 +12,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
  
-    background-color: #fffefc;
+    background-color: #e7ecf4;
     margin-top: 2%;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -470,11 +470,11 @@ dd {
 }
 
 .breadcrumb a:hover {
-    color: #e4a3a3;
+    color: #6c96b6;
 }
 
 .breadcrumb span {
-    color: #995a5a;
+    color: #153247;
 }
 
 /* Add a new product */
@@ -1050,6 +1050,37 @@ dd {
     padding: 0.9375em;
     margin-bottom: 0.9375em;
     position: relative;
+}
+
+.CartQuantity {
+    display: flex;
+
+}
+.CartQuantity11 {
+    display: flex;
+    margin-left: 45%;
+    margin-top: -3%;
+    height: 5%;
+    
+}
+.CartQuantity11 > input {
+    width: 20%;
+   
+   text-align: center;
+   
+}
+.CartQuantity11 button {
+    margin: 0 0.3125em;
+   
+}
+.CartQuantity > input {
+    width: 5%;
+   text-align: center;
+}
+
+.CartQuantity button {
+    margin: 0 0.3125em;
+   
 }
 
 .Cart-product-image {
