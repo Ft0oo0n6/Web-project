@@ -1244,82 +1244,6 @@ dd {
     z-index: 10;
 }
 
-@media (max-width: 1024px) {
-    header {
-        padding: 0.5em 1em;
-    }
-
-    .logo-title h1 {
-        font-size: 1.2em;
-    }
-
-    #navigation a {
-        font-size: 1em;
-        padding: 0.5em 1em;
-    }
-
-    .offers-container, .custReview-container {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 2%;
-    }
-
-    .offer, .custReview {
-        width: 45%;
-        margin: 1% 0;
-    }
-
-    footer {
-        flex-direction: column;
-        text-align: center;
-        padding: 1em;
-        gap: 1em;
-    }
-}
-
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    #navigation {
-        flex-direction: column;
-        gap: 1em;
-    }
-
-    #logo img {
-        height: 2.5em;
-    }
-
-    .offers-wrapper, .reviews-wrapper, .category-section {
-        width: 100%;
-        padding: 1em;
-    }
-
-    .category-section {
-        background-size: cover;
-        height: auto;
-        margin-top: 0;
-    }
-
-    .categories-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 1em;
-    }
-
-    .offer, .custReview {
-        width: 100%;
-    }
-
-    footer {
-        padding: 1em;
-        text-align: center;
-        gap: 0.5em;
-    }
-}
-
 #toggle-theme-button {
     display: inline-block;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -1341,28 +1265,6 @@ dd {
     background-color: #b0c4de; /* Darker blue background on hover */
     color: #2a4f6c; /* Text color on hover */
     border-color: #87a2c4;
-}
-
-
-
-@media (max-width: 480px) {
-    body {
-        margin-top: 4em;
-        font-size: 0.9em;
-    }
-
-    .logo-title h1 {
-        font-size: 1em;
-    }
-
-    #navigation a {
-        font-size: 0.8em;
-        padding: 0.5em 0.8em;
-    }
-
-    #HomePageMain {
-        padding: 1em;
-    }
 }
 
 @media (max-width: 1160px) {
