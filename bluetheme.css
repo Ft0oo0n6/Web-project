@@ -1359,3 +1359,205 @@ dd {
         padding: 1em;
     }
 }
+
+@media (max-width: 1160px) {
+
+.logo-title h1 {
+    font-size: 1em;
+}
+
+#logo img {
+    height: 2em;
+}
+
+#navigation {
+    gap: 0.5em;
+}
+
+#navigation a {
+    font-size: 0.65em;
+}
+
+.dropdown select {
+    font-size: 0.65em;
+}
+
+#CartImageHomePage {
+    height: 1.2em;
+    width: 1.2em;
+}
+
+#toggle-theme-button {
+    font-size: 0.65em;
+}
+
+.offers-container {
+    overflow-x: scroll;
+}
+
+.custReview {
+    height: 9em;
+}
+
+footer {
+    font-size: 0.7em;
+}
+
+.footer-left img {
+    width: 1em;
+    height: 1em;
+}
+
+}
+
+@media (max-width: 690px) {
+
+
+.logo-title h1 {
+    font-size: 0.7em;
+}
+
+#logo img {
+    height: 1.5em;
+}
+
+
+#navigation a {
+    font-size: 0.5em;
+    padding: 0.5em 1em;
+}
+
+.dropdown select {
+    padding: 0.5em 1em;
+    font-size: 0.5em;
+}
+
+#CartImageHomePage {
+    height: 1em;
+    width: 1em;
+}
+
+#toggle-theme-button {
+    font-size: 0.5em;
+    padding: 0.5em 0.7em;
+}
+
+.offers-container {
+    overflow-x: scroll;
+}
+
+.offer {
+    width: 20%;
+}
+
+.custReview-container {
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.custReview {
+    height: 12em;
+}
+
+.custReview h3 {
+    font-size: 0.6em;
+}
+ 
+.half-circle {
+    margin-bottom: 5%;
+}
+
+.category img {
+    width: 5.25em;
+    height: 5.25em;
+}
+
+footer {
+    font-size: 0.5em;
+}
+
+.footer-left img {
+    width: 0.7em;
+    height: 0.7em;
+}
+
+}
+
+@media (max-width: 480px){
+
+.logo-title h1 {
+    font-size: 0.1em;
+}
+
+#logo img {
+    height: 1em;
+}
+
+#navigation {
+    gap: 0.3em;
+}
+
+#navigation a {
+    font-size: 0.1em;
+    padding: 0.3em;
+}
+
+.dropdown select {
+    font-size: 0.1em;
+    padding: 0.3em;
+}
+
+#CartImageHomePage {
+    height: 0.7em;
+    width: 0.7em;
+}
+
+#toggle-theme-button {
+    font-size: 0.1em;
+    padding: 0.3em;
+}
+
+.offers-container {
+    overflow-x: scroll;
+}
+
+.offer {
+    width: 30%;
+}
+
+.custReview-container {
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.custReview {
+    height: 12em;
+}
+
+.custReview h3 {
+    font-size: 0.4em;
+}
+ 
+.half-circle {
+    margin-bottom: 7%;
+}
+
+.categories-container {
+    gap: 1.125em;
+}
+
+.category img {
+    width: 4.25em;
+    height: 4.25em;
+}
+
+footer {
+    font-size: 0.05em;
+}
+
+.footer-left img {
+    width: 0.7em;
+    height: 0.7em;
+}
+    
+}
