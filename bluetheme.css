@@ -81,6 +81,11 @@ main { flex:1 }
     color: rgb(150, 130, 143);
 }
 
+#CartImageHomePage {
+    height: 20px;
+    width: 20px;
+}
+
 .dropdown select {
     padding: 0.625em 1.25em;
     font-size: 1.125em;
