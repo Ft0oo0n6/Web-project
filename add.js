@@ -62,7 +62,7 @@ function displayCart() {
 
     cartContainer.innerHTML = ""; 
     if (cart.length === 0) {
-        // إذا كانت السلة فارغة، تعيين المجموع إلى صفر
+        // if cart empty the total will be 0
         document.getElementById("subtotal").innerText = `0.00 SAR`;
         document.getElementById("taxes").innerText = `0.00 SAR`;
         document.getElementById("total").innerText = `0.00 SAR`;
